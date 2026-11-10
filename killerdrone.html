@@ -126,6 +126,7 @@ function surf(x, y) {
   const o = headG.localToWorld(new THREE.Vector3(x, y, 5));
   rc.set(o, new THREE.Vector3(0, 0, -1));
   const h = rc.intersectObject(headMesh, false)[0];
+  if (!h) { const p = new THREE.Vector3(x, y, Math.sqrt(Math.max(0.05, 1 - x * x - y * y)) * 0.96); return { p, n: p.clone().normalize() }; }
   return { p: headG.worldToLocal(h.point.clone()), n: h.face.normal.clone().normalize() };
 }
 function place(x, y, off = 0) {
@@ -257,7 +258,7 @@ for (let i = 0; i < NS; i++) {
   const len = (0.5 + rnd() * 0.45) * (p.y > 0.5 ? 1.1 : 0.9);
   addSpike(p.clone().multiplyScalar(1.04), d, len, 0.17 + rnd() * 0.06);
 }
-for (const x of [-0.82, -0.62, -0.42, -0.22, -0.04, 0.16, 0.36, 0.56, 0.76, 0.9]) {
+for (const x of [-0.74, -0.58, -0.42, -0.26, -0.1, 0.06, 0.22, 0.38, 0.54, 0.7]) {
   const s = surf(x, 0.62);
   const centre = Math.exp(-Math.pow((x - 0.05) / 0.28, 2));
   const len = 0.42 + 0.28 * centre + (Math.abs(x) > 0.7 ? 0.2 : 0);
