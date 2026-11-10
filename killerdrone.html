@@ -1,0 +1,349 @@
+<title>killerdrone 3D</title>
+<style>
+  :root { --bg: #eee4ff; --fg: #2a1a6e; --pink: #ff5fd6; --cyan: #4ff2ff; }
+  html, body { height: 100%; margin: 0; }
+  body { background: var(--bg); color: var(--fg); overflow: hidden; font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif; }
+  #stage { position: fixed; inset: 0; display: block; width: 100%; height: 100%; touch-action: none; }
+  .hint { position: fixed; left: 0; right: 0; bottom: max(14px, env(safe-area-inset-bottom, 0px)); text-align: center; font-size: 13px; letter-spacing: .06em; text-transform: uppercase; opacity: .7; pointer-events: none; padding-inline: 16px; }
+</style>
+<canvas id="stage"></canvas>
+<div class="hint">Drag to rotate &middot; Scroll or pinch to zoom</div>
+
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+} }
+</script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+const canvas = document.getElementById('stage');
+let width = window.innerWidth, height = window.innerHeight;
+
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(35, width / height, 0.1, 200);
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+renderer.setSize(width, height, false);
+renderer.setClearColor(0xeee4ff, 1);
+const baseDist = 14.5;
+camera.position.set(3, 3.6, baseDist);
+
+const controls = new OrbitControls(camera, canvas);
+controls.target.set(0, 2.9, 0);
+controls.enableDamping = true;
+controls.autoRotate = true;
+controls.autoRotateSpeed = 1.4;
+controls.minDistance = 6; controls.maxDistance = 24;
+controls.maxPolarAngle = Math.PI * 0.56;
+controls.addEventListener('start', () => { controls.autoRotate = false; });
+
+function fit() {
+  width = window.innerWidth; height = window.innerHeight;
+  camera.aspect = width / height;
+  // keep the whole character in frame on tall/narrow screens
+  camera.fov = camera.aspect < 0.8 ? 35 / Math.max(camera.aspect, 0.45) * 0.8 : 35;
+  camera.updateProjectionMatrix();
+  renderer.setSize(width, height, false);
+}
+window.addEventListener('resize', fit);
+fit();
+
+// ---------- lights ----------
+scene.add(new THREE.AmbientLight(0xe8dcff, 1.25 * Math.PI));
+const key = new THREE.DirectionalLight(0xffffff, 1.7 * Math.PI); key.position.set(4, 7, 8); scene.add(key);
+const rimP = new THREE.DirectionalLight(0xff5fd6, 1.3 * Math.PI); rimP.position.set(-6, 4, -5); scene.add(rimP);
+const rimC = new THREE.DirectionalLight(0x4ff2ff, 1.2 * Math.PI); rimC.position.set(6, 2, -4); scene.add(rimC);
+
+// ---------- toon helpers ----------
+const gm = new THREE.DataTexture(new Uint8Array([85, 165, 255]), 3, 1, THREE.RedFormat);
+gm.minFilter = gm.magFilter = THREE.NearestFilter; gm.needsUpdate = true;
+const toon = (c, o = {}) => new THREE.MeshToonMaterial({ color: c, gradientMap: gm, ...o });
+const INK = 0x1c1050;
+const inkMat = new THREE.MeshBasicMaterial({ color: INK, side: THREE.BackSide });
+const UP = new THREE.Vector3(0, 1, 0), FWD = new THREE.Vector3(0, 0, 1);
+
+function mk(parent, geo, mat, x = 0, y = 0, z = 0, ol = 1.06, scl) {
+  const m = new THREE.Mesh(geo, mat);
+  m.position.set(x, y, z);
+  if (scl) m.scale.set(scl[0], scl[1], scl[2]);
+  if (ol) {
+    const o = new THREE.Mesh(geo, inkMat);
+    if (Array.isArray(ol)) o.scale.set(ol[0], ol[1], ol[2]); else o.scale.setScalar(ol);
+    m.add(o);
+  }
+  parent.add(m);
+  return m;
+}
+function bar(parent, a, b, th, mat) {
+  const d = b.clone().sub(a), len = d.length();
+  const m = new THREE.Mesh(new THREE.BoxGeometry(th, len, th * 0.6), mat);
+  m.position.copy(a).addScaledVector(d, 0.5);
+  m.quaternion.setFromUnitVectors(UP, d.normalize());
+  parent.add(m); return m;
+}
+
+const SKIN = 0xf8d9ec, SKIN_SH = 0xe2a9d8;
+const skinMat = toon(SKIN);
+const root = new THREE.Group(); scene.add(root);
+
+// ---------- pedestal + name ----------
+mk(scene, new THREE.CylinderGeometry(2.3, 2.4, 0.2, 48), toon(0xcdb8ff), 0, -0.1, 0, [1.03, 1.2, 1.03]);
+const ringC = new THREE.Mesh(new THREE.TorusGeometry(2.0, 0.04, 8, 64), new THREE.MeshBasicMaterial({ color: 0x4ff2ff }));
+ringC.rotation.x = Math.PI / 2; ringC.position.y = 0.01; scene.add(ringC);
+const ringP = new THREE.Mesh(new THREE.TorusGeometry(2.25, 0.03, 8, 64), new THREE.MeshBasicMaterial({ color: 0xff5fd6 }));
+ringP.rotation.x = Math.PI / 2; ringP.position.y = 0.01; scene.add(ringP);
+
+(function () {
+  const c = document.createElement('canvas'); c.width = 1024; c.height = 256;
+  const g = c.getContext('2d');
+  g.font = '800 150px system-ui, Arial, sans-serif'; g.textAlign = 'center'; g.textBaseline = 'middle';
+  g.shadowColor = '#ff5fd6'; g.shadowBlur = 24; g.fillStyle = '#ffffff'; g.fillText('killerdrone', 512, 128);
+  g.shadowColor = '#4ff2ff'; g.shadowBlur = 10; g.fillText('killerdrone', 512, 128);
+  const tex = new THREE.CanvasTexture(c); tex.colorSpace = THREE.SRGBColorSpace;
+  const sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: tex, transparent: true }));
+  sp.scale.set(5.2, 1.3, 1); sp.position.set(0, -1.05, 0); scene.add(sp);
+})();
+
+// ---------- HEAD ----------
+const headG = new THREE.Group(); headG.position.set(0, 4.25, 0); root.add(headG);
+const hg = new THREE.SphereGeometry(1, 48, 36);
+{
+  const hp = hg.attributes.position;
+  for (let i = 0; i < hp.count; i++) {
+    let x = hp.getX(i), y = hp.getY(i), z = hp.getZ(i);
+    if (y < -0.15) { const k = (-y - 0.15) / 0.85; const f = 1 - 0.4 * Math.pow(k, 1.3); x *= f; z *= f; }
+    hp.setXYZ(i, x, y, z * 0.96);
+  }
+  hg.computeVertexNormals();
+}
+const headMesh = mk(headG, hg, skinMat, 0, 0, 0, 1.035);
+headG.updateMatrixWorld(true);
+const rc = new THREE.Raycaster();
+function surf(x, y) {
+  const o = headG.localToWorld(new THREE.Vector3(x, y, 5));
+  rc.set(o, new THREE.Vector3(0, 0, -1));
+  const h = rc.intersectObject(headMesh, false)[0];
+  return { p: headG.worldToLocal(h.point.clone()), n: h.face.normal.clone().normalize() };
+}
+function place(x, y, off = 0) {
+  const s = surf(x, y);
+  const g = new THREE.Group();
+  g.position.copy(s.p).addScaledVector(s.n, off);
+  g.quaternion.setFromUnitVectors(FWD, s.n);
+  headG.add(g); return g;
+}
+
+// ears
+for (const sd of [-1, 1]) {
+  const e = mk(headG, new THREE.SphereGeometry(0.17, 16, 12), skinMat, sd * 0.97, -0.1, -0.02, 1.15, [0.5, 1, 0.8]);
+  e.rotation.y = sd * 0.3;
+}
+
+// eyes
+const eyes = [];
+const white = new THREE.MeshBasicMaterial({ color: 0xffffff });
+for (const sd of [-1, 1]) {
+  const g = place(sd * 0.42, -0.02, 0.0);
+  const eg = new THREE.SphereGeometry(1, 24, 16);
+  mk(g, eg, toon(0xfff8ff), 0, 0, 0, 0, [0.23, 0.3, 0.07]);
+  mk(g, eg, toon(0xff4fd0), 0, -0.01, 0.03, 0, [0.17, 0.235, 0.06]);
+  mk(g, eg, toon(0xffa3ec), 0, -0.1, 0.045, 0, [0.11, 0.09, 0.05]);
+  mk(g, eg, toon(0x35106e), 0, 0, 0.06, 0, [0.075, 0.115, 0.05]);
+  mk(g, eg, white, -0.06, 0.09, 0.085, 0, [0.045, 0.045, 0.03]);
+  mk(g, eg, white, 0.06, -0.08, 0.085, 0, [0.025, 0.025, 0.02]);
+  const lid = new THREE.Mesh(new THREE.TorusGeometry(0.24, 0.035, 6, 24, Math.PI), new THREE.MeshBasicMaterial({ color: INK }));
+  lid.position.set(0, 0.04, 0.05); lid.scale.set(1, 1.2, 1); g.add(lid);
+  bar(g, new THREE.Vector3(sd * 0.22, 0.05, 0.05), new THREE.Vector3(sd * 0.32, 0.12, 0.05), 0.04, new THREE.MeshBasicMaterial({ color: INK }));
+  eyes.push(g);
+}
+// brows
+for (const sd of [-1, 1]) {
+  const raised = sd === 1;
+  const g = place(sd * 0.45, raised ? 0.4 : 0.36, 0.03);
+  const b = new THREE.Mesh(new THREE.BoxGeometry(0.34, 0.05, 0.04), toon(0x4a2a9a));
+  b.rotation.z = sd * (raised ? 0.32 : 0.18); g.add(b);
+}
+// nose, mouth, blush
+{
+  const g = place(0, -0.26, 0.04);
+  const n = new THREE.Mesh(new THREE.ConeGeometry(0.05, 0.13, 8), toon(SKIN_SH));
+  n.rotation.x = Math.PI / 2; g.add(n);
+  const mg = place(0.04, -0.52, 0.015);
+  const arc = 1.9;
+  const mouth = new THREE.Mesh(new THREE.TorusGeometry(0.15, 0.016, 6, 20, arc), new THREE.MeshBasicMaterial({ color: 0x5a2a8a }));
+  mouth.rotation.z = -Math.PI / 2 - arc / 2 + 0.1; mouth.scale.set(1, 0.7, 1); mg.add(mouth);
+  for (const sd of [-1, 1]) {
+    const bg = place(sd * 0.56, -0.3, 0.02);
+    bg.add(new THREE.Mesh(new THREE.CircleGeometry(0.14, 20),
+      new THREE.MeshBasicMaterial({ color: 0xff7fd0, transparent: true, opacity: 0.35, depthWrite: false })));
+  }
+}
+
+// ---------- HAIR ----------
+const stops = [[0, 0x2a7bff], [0.3, 0x6a5cff], [0.55, 0xb25cff], [0.8, 0xf250e0], [1, 0xff6fd0]].map(([t, c]) => [t, new THREE.Color(c)]);
+function grad(t) {
+  t = Math.min(1, Math.max(0, t));
+  for (let i = 1; i < stops.length; i++) if (t <= stops[i][0]) {
+    const a = stops[i - 1], b = stops[i];
+    return a[1].clone().lerp(b[1], (t - a[0]) / (b[0] - a[0]));
+  }
+  return stops[stops.length - 1][1].clone();
+}
+const hairMat = toon(0xffffff, { vertexColors: true });
+
+{
+  const R = 1.07;
+  const sg = new THREE.SphereGeometry(R, 48, 36).toNonIndexed();
+  const P = sg.attributes.position, N = sg.attributes.normal;
+  const pos = [], nor = [], col = [];
+  for (let i = 0; i < P.count; i += 3) {
+    const cx = (P.getX(i) + P.getX(i + 1) + P.getX(i + 2)) / 3 / R;
+    const cy = (P.getY(i) + P.getY(i + 1) + P.getY(i + 2)) / 3 / R;
+    const cz = (P.getZ(i) + P.getZ(i + 1) + P.getZ(i + 2)) / 3 / R;
+    if (cy < (cz < -0.3 ? -0.4 : 0.0)) continue;
+    if (cz > 0.28 && cy < 0.58) continue;
+    for (let k = 0; k < 3; k++) {
+      const x = P.getX(i + k), y = P.getY(i + k);
+      pos.push(x, y, P.getZ(i + k)); nor.push(N.getX(i + k), N.getY(i + k), N.getZ(i + k));
+      const c = grad((x / R + 1) / 2).lerp(new THREE.Color(0xffffff), Math.max(0, y / R - 0.5) * 0.25);
+      col.push(c.r, c.g, c.b);
+    }
+  }
+  const g = new THREE.BufferGeometry();
+  g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+  g.setAttribute('normal', new THREE.Float32BufferAttribute(nor, 3));
+  g.setAttribute('color', new THREE.Float32BufferAttribute(col, 3));
+  const shell = new THREE.Mesh(g, hairMat); shell.scale.set(1, 1, 0.99);
+  const o = new THREE.Mesh(g, inkMat); o.scale.setScalar(1.035); shell.add(o);
+  headG.add(shell);
+}
+
+let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+const spikes = [];
+function addSpike(start, dir, len, rad) {
+  dir = dir.clone().normalize();
+  const t = (start.x + 1) / 2;
+  const base = grad(t);
+  const tip = new THREE.Color(0x6ff6ff).lerp(new THREE.Color(0xffa6ee), t);
+  const pivot = new THREE.Object3D();
+  pivot.position.copy(start);
+  pivot.quaternion.setFromUnitVectors(UP, dir);
+  const g = new THREE.ConeGeometry(rad, len, 8, 1);
+  const pa = g.attributes.position, cols = [];
+  for (let i = 0; i < pa.count; i++) {
+    const k = (pa.getY(i) + len / 2) / len;
+    const c = base.clone().lerp(tip, k * k * (3 - 2 * k));
+    cols.push(c.r, c.g, c.b);
+  }
+  g.setAttribute('color', new THREE.Float32BufferAttribute(cols, 3));
+  const m = new THREE.Mesh(g, hairMat); m.position.y = len / 2 - 0.08;
+  const o = new THREE.Mesh(new THREE.ConeGeometry(rad + 0.04, len + 0.08, 8, 1), inkMat); o.position.y = m.position.y;
+  pivot.add(o); pivot.add(m);
+  headG.add(pivot);
+  spikes.push({ pivot, q: pivot.quaternion.clone(), ph: rnd() * 6.28, amp: 0.05 + rnd() * 0.05 });
+}
+const NS = 130;
+for (let i = 0; i < NS; i++) {
+  const yy = 1 - (i + 0.5) / NS * 2, r = Math.sqrt(1 - yy * yy), th = i * 2.39996;
+  const p = new THREE.Vector3(Math.cos(th) * r, yy, Math.sin(th) * r);
+  if (p.y < -0.3) continue;
+  if (p.z > 0.25 && p.y < 0.7) continue;
+  if (p.y < 0.0 && Math.abs(p.x) < 0.7 && p.z > -0.3) continue;
+  const d = p.clone().add(new THREE.Vector3(0.25, 0.35, 0));
+  if (p.y < 0.2) d.add(new THREE.Vector3(0, -0.6, 0));
+  const len = (0.5 + rnd() * 0.45) * (p.y > 0.5 ? 1.1 : 0.9);
+  addSpike(p.clone().multiplyScalar(1.04), d, len, 0.17 + rnd() * 0.06);
+}
+for (const x of [-0.82, -0.62, -0.42, -0.22, -0.04, 0.16, 0.36, 0.56, 0.76, 0.9]) {
+  const s = surf(x, 0.62);
+  const centre = Math.exp(-Math.pow((x - 0.05) / 0.28, 2));
+  const len = 0.42 + 0.28 * centre + (Math.abs(x) > 0.7 ? 0.2 : 0);
+  addSpike(s.p.clone().addScaledVector(s.n, 0.05), new THREE.Vector3(0.12 + 0.3 * centre, -1, 0.5), len, 0.17);
+}
+for (const sd of [-1, 1]) addSpike(new THREE.Vector3(sd * 1.0, 0.18, 0.22), new THREE.Vector3(sd * 0.25, -1, 0.15), 0.7, 0.13);
+addSpike(new THREE.Vector3(0.1, 1.04, 0.1), new THREE.Vector3(0.25, 1, 0.15), 1.0, 0.13);
+
+// lightning streak
+const bolt = new THREE.Group(); headG.add(bolt);
+const boltMat = new THREE.MeshBasicMaterial({ color: 0xaffcff, transparent: true });
+const glowMat = new THREE.MeshBasicMaterial({ color: 0x4ff2ff, transparent: true, opacity: 0.4, blending: THREE.AdditiveBlending, depthWrite: false });
+{
+  const pts = [[-0.92, 0.05, 0.38], [-0.8, 0.22, 0.52], [-0.84, 0.3, 0.44], [-0.68, 0.5, 0.52], [-0.72, 0.55, 0.42], [-0.5, 0.75, 0.45]]
+    .map(a => new THREE.Vector3(...a).normalize().multiplyScalar(1.17));
+  for (let i = 1; i < pts.length; i++) { bar(bolt, pts[i - 1], pts[i], 0.028, boltMat); bar(bolt, pts[i - 1], pts[i], 0.09, glowMat); }
+}
+
+// ---------- BODY ----------
+const NAVY = 0x1d1560, JERSEY = 0x7a6cf5, CYAN = 0x4ff2ff, PINK = 0xff5fd6;
+mk(root, new THREE.CylinderGeometry(0.22, 0.26, 0.5, 16), skinMat, 0, 3.25, 0, [1.15, 1.02, 1.15]);
+mk(root, new THREE.CylinderGeometry(0.8, 0.62, 1.5, 28), toon(JERSEY), 0, 2.35, 0, [1.04, 1.02, 1.04], [1, 1, 0.62]);
+mk(root, new THREE.CylinderGeometry(0.64, 0.64, 0.14, 28), toon(PINK), 0, 1.68, 0, [1.05, 1.1, 1.05], [1, 1, 0.64]);
+{
+  const sh = new THREE.Shape(); sh.moveTo(-0.34, 0); sh.lineTo(0.34, 0); sh.lineTo(0, -0.58); sh.closePath();
+  const v = new THREE.Mesh(new THREE.ShapeGeometry(sh), toon(0xe9c6ff)); v.position.set(0, 3.08, 0.49); root.add(v);
+  const trim = toon(CYAN);
+  bar(root, new THREE.Vector3(-0.35, 3.08, 0.5), new THREE.Vector3(0, 2.49, 0.5), 0.05, trim);
+  bar(root, new THREE.Vector3(0.35, 3.08, 0.5), new THREE.Vector3(0, 2.49, 0.5), 0.05, trim);
+}
+for (const sd of [-1, 1]) bar(root, new THREE.Vector3(sd * 0.74, 3.0, 0.05), new THREE.Vector3(sd * 0.6, 1.7, 0.05), 0.07, toon(PINK));
+
+const arms = [];
+for (const sd of [-1, 1]) {
+  const sg = new THREE.Group(); sg.position.set(sd * 0.92, 2.95, 0); root.add(sg);
+  mk(sg, new THREE.SphereGeometry(0.3, 20, 14), toon(NAVY), 0, 0, 0, 1.1);
+  mk(sg, new THREE.CylinderGeometry(0.26, 0.23, 0.62, 18), toon(NAVY), 0, -0.3, 0, [1.1, 1.03, 1.1]);
+  const band = mk(sg, new THREE.TorusGeometry(0.235, 0.04, 8, 20), toon(CYAN), 0, -0.62, 0, 0); band.rotation.x = Math.PI / 2;
+  mk(sg, new THREE.CylinderGeometry(0.17, 0.14, 0.82, 16), skinMat, 0, -1.02, 0, [1.12, 1.03, 1.12]);
+  mk(sg, new THREE.SphereGeometry(0.19, 16, 12), skinMat, 0, -1.5, 0.03, 1.12);
+  sg.rotation.z = sd * 0.12;
+  arms.push({ g: sg, sd });
+}
+mk(root, new THREE.CylinderGeometry(0.62, 0.6, 0.3, 24), toon(NAVY), 0, 1.5, 0, 1.06, [1, 1, 0.65]);
+for (const sd of [-1, 1]) {
+  mk(root, new THREE.CylinderGeometry(0.29, 0.25, 1.35, 18), toon(NAVY), sd * 0.31, 0.92, 0, [1.1, 1.02, 1.1]);
+  bar(root, new THREE.Vector3(sd * 0.58, 1.55, 0.02), new THREE.Vector3(sd * 0.54, 0.35, 0.02), 0.06, toon(CYAN));
+  mk(root, new THREE.SphereGeometry(0.3, 20, 14), toon(0xf4eeff), sd * 0.31, 0.24, 0.14, 1.1, [1, 0.62, 1.55]);
+  mk(root, new THREE.SphereGeometry(0.3, 20, 14), toon(PINK), sd * 0.31, 0.08, 0.14, 1.05, [1.03, 0.25, 1.58]);
+}
+
+// ---------- sparkles ----------
+const sparkG = new THREE.BufferGeometry();
+const sp = [], sc = [];
+for (let i = 0; i < 80; i++) {
+  const a = rnd() * 6.28, r = 2.2 + rnd() * 2.5;
+  sp.push(Math.cos(a) * r, rnd() * 6.5, Math.sin(a) * r);
+  const c = new THREE.Color(rnd() > 0.5 ? CYAN : PINK); sc.push(c.r, c.g, c.b);
+}
+sparkG.setAttribute('position', new THREE.Float32BufferAttribute(sp, 3));
+sparkG.setAttribute('color', new THREE.Float32BufferAttribute(sc, 3));
+const sparks = new THREE.Points(sparkG, new THREE.PointsMaterial({ size: 0.12, vertexColors: true, transparent: true, opacity: 0.85 }));
+scene.add(sparks);
+
+// ---------- animate ----------
+const clock = new THREE.Clock();
+const tq = new THREE.Quaternion(), te = new THREE.Euler();
+function animate() {
+  requestAnimationFrame(animate);
+  const t = clock.getElapsedTime();
+  root.position.y = Math.sin(t * 1.6) * 0.04;
+  headG.rotation.z = Math.sin(t * 0.9) * 0.03;
+  headG.rotation.y = Math.sin(t * 0.6) * 0.08;
+  for (const s of spikes) {
+    te.set(Math.sin(t * 1.8 + s.ph) * s.amp, 0, Math.cos(t * 1.5 + s.ph) * s.amp);
+    s.pivot.quaternion.copy(s.q).multiply(tq.setFromEuler(te));
+  }
+  for (const a of arms) a.g.rotation.z = a.sd * (0.12 + Math.sin(t * 1.6 + 1) * 0.02);
+  const ph = t % 4.2, b = ph > 4.0 ? 1 - Math.sin((ph - 4.0) / 0.2 * Math.PI) * 0.9 : 1;
+  for (const e of eyes) e.scale.y = b;
+  const fl = 0.55 + 0.45 * Math.abs(Math.sin(t * 7)) * (Math.sin(t * 1.3) > 0.2 ? 1 : 0.35);
+  boltMat.opacity = fl; glowMat.opacity = 0.4 * fl;
+  sparks.rotation.y = t * 0.08;
+  sparks.position.y = Math.sin(t * 0.8) * 0.15;
+  controls.update();
+  renderer.render(scene, camera);
+}
+animate();
+</script>
