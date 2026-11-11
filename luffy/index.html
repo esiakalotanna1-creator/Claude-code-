@@ -1,0 +1,171 @@
+<title>Luffy Game Character</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap">
+<style>
+  /* Layout: one full-screen stage; name card top-left, animation switcher docked at the bottom. */
+  :root {
+    --bg-top: #dfe5ef; --bg-bottom: #b9c3d4; --fg: #141826; --muted: #4c556b;
+    --panel: rgba(255, 255, 255, .72); --line: rgba(20, 24, 38, .14);
+    --accent: #e8500a; --on-accent: #ffffff;
+    --display: "Space Grotesk", "Segoe UI", system-ui, sans-serif;
+    --body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg-top: #232a3b; --bg-bottom: #0e111a; --fg: #eef1f7; --muted: #a3acc0;
+      --panel: rgba(22, 26, 38, .74); --line: rgba(238, 241, 247, .16);
+      --accent: #ff6a1a; --on-accent: #1a0d04; color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg-top: #232a3b; --bg-bottom: #0e111a; --fg: #eef1f7; --muted: #a3acc0;
+    --panel: rgba(22, 26, 38, .74); --line: rgba(238, 241, 247, .16);
+    --accent: #ff6a1a; --on-accent: #1a0d04; color-scheme: dark;
+  }
+  html, body { height: 100%; }
+  body {
+    margin: 0; overflow: hidden; font-family: var(--body); color: var(--fg);
+    background: radial-gradient(120% 90% at 50% 20%, var(--bg-top), var(--bg-bottom));
+  }
+  #stage { position: fixed; inset: 0; width: 100%; height: 100%; display: block; touch-action: none; }
+  .card {
+    position: fixed; top: calc(14px + env(safe-area-inset-top, 0px));
+    left: max(16px, env(safe-area-inset-left, 0px)); right: max(16px, env(safe-area-inset-right, 0px));
+    pointer-events: none; display: flex; flex-direction: column; gap: 4px;
+  }
+  h1 { margin: 0; font: 700 clamp(26px, 6vw, 40px)/1 var(--display); letter-spacing: -.02em; }
+  .sub { margin: 0; font-size: 13px; color: var(--muted); max-width: 34ch; }
+  .dock {
+    position: fixed; bottom: calc(14px + env(safe-area-inset-bottom, 0px));
+    left: max(16px, env(safe-area-inset-left, 0px)); right: max(16px, env(safe-area-inset-right, 0px));
+    display: flex; flex-direction: column; align-items: center; gap: 8px;
+  }
+  .clips {
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; padding: 6px;
+    background: var(--panel); border: 1px solid var(--line); border-radius: 14px;
+    -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+  }
+  .clips button {
+    font: 600 14px var(--body); color: var(--fg); background: transparent; border: 0;
+    padding: 10px 16px; border-radius: 9px; cursor: pointer;
+  }
+  .clips button:hover { background: var(--line); }
+  .clips button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .clips button[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); }
+  .meta { margin: 0; font-size: 12px; color: var(--muted); text-align: center; font-variant-numeric: tabular-nums; }
+  #status { position: fixed; inset: 0; display: grid; place-items: center; padding: 16px; text-align: center; color: var(--muted); font-size: 14px; pointer-events: none; }
+</style>
+
+<canvas id="stage"></canvas>
+<div class="card">
+  <h1>Luffy</h1>
+  <p class="sub">Fan-made, rigged and animated. Drag to turn, pinch or scroll to zoom.</p>
+</div>
+<div id="status">Loading character…</div>
+<div class="dock">
+  <div class="clips" id="clips" role="group" aria-label="Animations"></div>
+  <p class="meta" id="meta"></p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.147.0/build/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.147.0/examples/js/controls/OrbitControls.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.147.0/examples/js/environments/RoomEnvironment.js"></script>
+<script>
+(function () {
+  const status = document.getElementById('status');
+  const fail = (msg) => { status.hidden = false; status.textContent = msg; };
+  window.addEventListener('error', (e) => fail('Something went wrong: ' + (e.message || 'a script failed to load')));
+  if (!window.THREE) return fail('The 3D library could not be loaded. Check your connection and reload.');
+
+  const canvas = document.getElementById('stage');
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+  renderer.outputEncoding = THREE.sRGBEncoding;
+  renderer.shadowMap.enabled = true;
+  renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+
+  const scene = new THREE.Scene();
+  scene.environment = new THREE.PMREMGenerator(renderer).fromScene(new THREE.RoomEnvironment(), 0.04).texture;
+  const sun = new THREE.DirectionalLight(0xffffff, 0.8);
+  sun.position.set(2, 4, 3); sun.castShadow = true; sun.shadow.mapSize.set(1024, 1024);
+  Object.assign(sun.shadow.camera, { left: -1.6, right: 1.6, top: 2.8, bottom: -0.6, near: 0.5, far: 12 });
+  sun.shadow.radius = 4; sun.shadow.bias = -0.0005;
+  scene.add(sun);
+
+  const ground = new THREE.Mesh(new THREE.CircleGeometry(4, 48), new THREE.ShadowMaterial({ opacity: 0.28 }));
+  ground.rotation.x = -Math.PI / 2; ground.receiveShadow = true; scene.add(ground);
+
+  const camera = new THREE.PerspectiveCamera(30, 1, 0.1, 60);
+  const controls = new THREE.OrbitControls(camera, canvas);
+  controls.target.set(0, 0.86, 0);
+  controls.enableDamping = true; controls.enablePan = false;
+  controls.minDistance = 1.6; controls.maxDistance = 12; controls.maxPolarAngle = Math.PI * 0.54;
+  controls.autoRotate = true; controls.autoRotateSpeed = 1.2;
+  controls.addEventListener('start', () => { controls.autoRotate = false; });
+
+  let framed = false;
+  function resize() {
+    const w = window.innerWidth, h = window.innerHeight;
+    renderer.setSize(w, h, false);
+    camera.aspect = w / h; camera.updateProjectionMatrix();
+    if (!framed) {
+      const dist = Math.max(5.0, 2.7 / camera.aspect);
+      camera.position.set(Math.sin(0.5) * dist, 1.15, Math.cos(0.5) * dist);
+    }
+  }
+  window.addEventListener('resize', resize);
+  resize();
+
+  let mixer = null, current = null, base = 'Idle';
+  const actions = {}, buttons = {};
+  function mark(name) { for (const k in buttons) buttons[k].setAttribute('aria-pressed', String(k === name)); }
+  function play(name) {
+    const next = actions[name];
+    if (!next || next === current) return;
+    next.reset().fadeIn(0.25).play();
+    if (current) current.fadeOut(0.25);
+    current = next; mark(name);
+    if (next.loop !== THREE.LoopOnce) base = name;
+  }
+
+  new THREE.GLTFLoader().load('luffy.glb', (gltf) => {
+    const model = gltf.scene;
+    let tris = 0, bones = 0;
+    model.traverse((o) => {
+      if (o.isMesh) {
+        o.castShadow = true; o.frustumCulled = false;
+        tris += (o.geometry.index ? o.geometry.index.count : o.geometry.attributes.position.count) / 3;
+        (Array.isArray(o.material) ? o.material : [o.material]).forEach((m) => { m.envMapIntensity = 0.28; });
+      }
+      if (o.isBone) bones++;
+    });
+    scene.add(model);
+    mixer = new THREE.AnimationMixer(model);
+    const holder = document.getElementById('clips');
+    for (const clip of gltf.animations) {
+      const a = mixer.clipAction(clip);
+      if (clip.name === 'Jump' || clip.name === 'Wave') { a.setLoop(THREE.LoopOnce, 1); a.clampWhenFinished = true; }
+      actions[clip.name] = a;
+      const b = document.createElement('button');
+      b.type = 'button'; b.id = 'clip-' + clip.name.toLowerCase(); b.textContent = clip.name;
+      b.setAttribute('aria-pressed', 'false');
+      b.addEventListener('click', () => { if (actions[clip.name] === current) current = null; play(clip.name); });
+      holder.appendChild(b); buttons[clip.name] = b;
+    }
+    mixer.addEventListener('finished', () => play(base));
+    document.getElementById('meta').textContent =
+      Math.round(tris).toLocaleString() + ' triangles · ' + bones + ' bones · ' + gltf.animations.length + ' animations · .glb';
+    status.hidden = true; framed = true;
+    play('Idle');
+  }, undefined, () => fail('The character file could not be loaded. Reload the page to try again.'));
+
+  const clock = new THREE.Clock();
+  (function tick() {
+    requestAnimationFrame(tick);
+    if (mixer) mixer.update(Math.min(clock.getDelta(), 0.05));
+    controls.update();
+    renderer.render(scene, camera);
+  })();
+})();
+</script>
