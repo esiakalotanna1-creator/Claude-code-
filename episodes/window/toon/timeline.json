@@ -1,0 +1,287 @@
+{
+ "total": 50.8,
+ "marks": {
+  "hook": 0.0,
+  "widen": 3.0,
+  "dad": 7.6,
+  "stare": 10.6,
+  "hand": 17.2,
+  "bed": 20.4,
+  "mouth": 24.8,
+  "slide": 27.8,
+  "shears": 31.6,
+  "pull": 35.6,
+  "wide": 40.4,
+  "inside": 44.2,
+  "smile": 48.0,
+  "black": 50.2,
+  "end": 50.8
+ },
+ "lines": [
+  {
+   "speaker": "NAR",
+   "text": "When I looked up...",
+   "t0": 0.4,
+   "t1": 1.58,
+   "chunks": [
+    {
+     "text": "When I [looked up]...",
+     "t0": 0.4,
+     "t1": 1.58
+    }
+   ]
+  },
+  {
+   "speaker": "NAR",
+   "text": "there was a man pressed against my window.",
+   "t0": 2.06,
+   "t1": 4.2,
+   "chunks": [
+    {
+     "text": "there was a [man]",
+     "t0": 2.06,
+     "t1": 2.862
+    },
+    {
+     "text": "pressed against",
+     "t0": 2.862,
+     "t1": 3.665
+    },
+    {
+     "text": "my [window].",
+     "t0": 3.665,
+     "t1": 4.2
+    }
+   ]
+  },
+  {
+   "speaker": "NAR",
+   "text": "I had no idea how long he'd been there.",
+   "t0": 4.82,
+   "t1": 7.08,
+   "chunks": [
+    {
+     "text": "I had no idea",
+     "t0": 4.82,
+     "t1": 5.614
+    },
+    {
+     "text": "how long",
+     "t0": 5.614,
+     "t1": 6.103
+    },
+    {
+     "text": "he'd been there.",
+     "t0": 6.103,
+     "t1": 7.08
+    }
+   ]
+  },
+  {
+   "speaker": "NAR",
+   "text": "He wasn't knocking.",
+   "t0": 11.0,
+   "t1": 12.18,
+   "chunks": [
+    {
+     "text": "He wasn't [knocking].",
+     "t0": 11.0,
+     "t1": 12.18
+    }
+   ]
+  },
+  {
+   "speaker": "NAR",
+   "text": "He wasn't asking for anything.",
+   "t0": 12.8,
+   "t1": 14.4,
+   "chunks": [
+    {
+     "text": "He wasn't asking",
+     "t0": 12.8,
+     "t1": 13.683
+    },
+    {
+     "text": "for anything.",
+     "t0": 13.683,
+     "t1": 14.4
+    }
+   ]
+  },
+  {
+   "speaker": "NAR",
+   "text": "He just stood there... smiling through the glass.",
+   "t0": 14.95,
+   "t1": 17.95,
+   "chunks": [
+    {
+     "text": "He just stood there...",
+     "t0": 14.95,
+     "t1": 16.354
+    },
+    {
+     "text": "[smiling]",
+     "t0": 16.354,
+     "t1": 16.801
+    },
+    {
+     "text": "through the glass.",
+     "t0": 16.801,
+     "t1": 17.95
+    }
+   ]
+  },
+  {
+   "speaker": "NAR",
+   "text": "My wife was asleep upstairs.",
+   "t0": 20.6,
+   "t1": 22.56,
+   "chunks": [
+    {
+     "text": "My wife was asleep",
+     "t0": 20.6,
+     "t1": 21.907
+    },
+    {
+     "text": "[upstairs].",
+     "t0": 21.907,
+     "t1": 22.56
+    }
+   ]
+  },
+  {
+   "speaker": "NAR",
+   "text": "Our little boy was in his crib.",
+   "t0": 23.0,
+   "t1": 24.58,
+   "chunks": [
+    {
+     "text": "Our little boy",
+     "t0": 23.0,
+     "t1": 23.737
+    },
+    {
+     "text": "was in his [crib].",
+     "t0": 23.737,
+     "t1": 24.58
+    }
+   ]
+  },
+  {
+   "speaker": "NAR",
+   "text": "I wanted to shout... but couldn't.",
+   "t0": 25.2,
+   "t1": 27.34,
+   "chunks": [
+    {
+     "text": "I wanted to [shout]...",
+     "t0": 25.2,
+     "t1": 26.497
+    },
+    {
+     "text": "but couldn't.",
+     "t0": 26.497,
+     "t1": 27.34
+    }
+   ]
+  },
+  {
+   "speaker": "NAR",
+   "text": "I stood frozen.",
+   "t0": 29.4,
+   "t1": 30.56,
+   "chunks": [
+    {
+     "text": "I stood [frozen].",
+     "t0": 29.4,
+     "t1": 30.56
+    }
+   ]
+  },
+  {
+   "speaker": "NAR",
+   "text": "The gardening shears were still in my hand.",
+   "t0": 32.0,
+   "t1": 34.48,
+   "chunks": [
+    {
+     "text": "The gardening [shears]",
+     "t0": 32.0,
+     "t1": 33.21
+    },
+    {
+     "text": "were still",
+     "t0": 33.21,
+     "t1": 33.815
+    },
+    {
+     "text": "in my hand.",
+     "t0": 33.815,
+     "t1": 34.48
+    }
+   ]
+  },
+  {
+   "speaker": "NAR",
+   "text": "Because I wasn't looking out of my house.",
+   "t0": 36.2,
+   "t1": 38.54,
+   "chunks": [
+    {
+     "text": "Because I wasn't",
+     "t0": 36.2,
+     "t1": 37.16
+    },
+    {
+     "text": "looking [out]",
+     "t0": 37.16,
+     "t1": 37.82
+    },
+    {
+     "text": "of my house.",
+     "t0": 37.82,
+     "t1": 38.54
+    }
+   ]
+  },
+  {
+   "speaker": "NAR",
+   "text": "I was looking in.",
+   "t0": 41.0,
+   "t1": 42.18,
+   "chunks": [
+    {
+     "text": "I was looking [in].",
+     "t0": 41.0,
+     "t1": 42.18
+    }
+   ]
+  },
+  {
+   "speaker": "NAR",
+   "text": "He was inside.",
+   "t0": 44.8,
+   "t1": 46.0,
+   "chunks": [
+    {
+     "text": "He was [inside].",
+     "t0": 44.8,
+     "t1": 46.0
+    }
+   ]
+  },
+  {
+   "speaker": "NAR",
+   "text": "With them.",
+   "t0": 46.6,
+   "t1": 47.3,
+   "chunks": [
+    {
+     "text": "With them.",
+     "t0": 46.6,
+     "t1": 47.3
+    }
+   ]
+  }
+ ]
+}

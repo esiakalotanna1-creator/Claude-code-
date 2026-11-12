@@ -1,0 +1,34 @@
+{
+ "title": "SUPPORT TIMELINE",
+ "part": 1,
+ "accent": "#FF4D4D",
+ "total": 89.864,
+ "mouth_hz": 30,
+ "speakers": {
+  "NAR": {
+   "pill": "",
+   "color": "#E8E8E8"
+  }
+ },
+ "marks": {
+  "hook": 0.0,
+  "move": 4.754,
+  "bus": 11.316,
+  "fight": 17.265,
+  "police": 21.945,
+  "party": 27.405,
+  "attack": 32.246,
+  "fire": 37.153,
+  "hospital": 39.593,
+  "mirror": 45.073,
+  "home": 53.108,
+  "smile": 56.37,
+  "gun": 61.967,
+  "bed": 68.985,
+  "twist": 77.801,
+  "legend": 79.816,
+  "name": 85.333,
+  "endcard": 87.664
+ },
+ "lines": []
+}

@@ -1,0 +1,101 @@
+{
+ "title": "THE LAMP",
+ "label": "A SHORT STORY",
+ "total": 12.5,
+ "marks": {
+  "wide": 0.0,
+  "close": 3.6,
+  "door": 6.8,
+  "feet": 9.8,
+  "end": 12.5
+ },
+ "lines": [
+  {
+   "speaker": "NAR",
+   "text": "Every night at nine, my lamp flickers once.",
+   "t0": 0.4,
+   "t1": 3.42,
+   "chunks": [
+    {
+     "text": "Every night",
+     "t0": 0.4,
+     "t1": 1.231
+    },
+    {
+     "text": "at [nine],",
+     "t0": 1.231,
+     "t1": 1.835
+    },
+    {
+     "text": "my lamp",
+     "t0": 1.835,
+     "t1": 2.363
+    },
+    {
+     "text": "flickers [once].",
+     "t0": 2.363,
+     "t1": 3.42
+    }
+   ]
+  },
+  {
+   "speaker": "NAR",
+   "text": "Tonight, it flickered twice.",
+   "t0": 4.0,
+   "t1": 5.66,
+   "chunks": [
+    {
+     "text": "Tonight,",
+     "t0": 4.0,
+     "t1": 4.511
+    },
+    {
+     "text": "it flickered",
+     "t0": 4.511,
+     "t1": 5.277
+    },
+    {
+     "text": "[twice].",
+     "t0": 5.277,
+     "t1": 5.66
+    }
+   ]
+  },
+  {
+   "speaker": "NAR",
+   "text": "Then something answered from the hallway.",
+   "t0": 7.2,
+   "t1": 9.54,
+   "chunks": [
+    {
+     "text": "Then something",
+     "t0": 7.2,
+     "t1": 8.04
+    },
+    {
+     "text": "[answered]",
+     "t0": 8.04,
+     "t1": 8.52
+    },
+    {
+     "text": "from the hallway.",
+     "t0": 8.52,
+     "t1": 9.54
+    }
+   ]
+  },
+  {
+   "speaker": "NAR",
+   "text": "Two knocks.",
+   "t0": 10.3,
+   "t1": 11.28,
+   "chunks": [
+    {
+     "text": "[Two] knocks.",
+     "t0": 10.3,
+     "t1": 11.28
+    }
+   ]
+  }
+ ]
+}

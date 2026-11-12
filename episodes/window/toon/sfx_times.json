@@ -1,0 +1,30 @@
+[
+ {
+  "name": "touch_tap",
+  "t": 18.72
+ },
+ {
+  "name": "touch_squeak",
+  "t": 18.87
+ },
+ {
+  "name": "slide_squeak",
+  "t": 28.6
+ },
+ {
+  "name": "shears_grip",
+  "t": 32.6
+ },
+ {
+  "name": "thunder_far",
+  "t": 11.8
+ },
+ {
+  "name": "thunder_swap",
+  "t": 39.2
+ },
+ {
+  "name": "reveal_low",
+  "t": 40.9
+ }
+]

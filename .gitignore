@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+# render output and generated caches
+review/
+video/
+tex/
+# bring your own voices and samples
+audio/
+assets/
