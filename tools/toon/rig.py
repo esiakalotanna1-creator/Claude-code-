@@ -279,21 +279,8 @@ def draw_eye(c, R, side, ex, L, light):
         c.drawPath(eye, paint("#1a0a0e", stroke=0.035 * R))
         return
     glow = L.get("glow")                                 # look "glow": the whole eye is lit in that colour, the pupil its brightest point
-    if glow:
-        c.drawOval(skia.Rect(-rx * 1.7, -ry * 1.6, rx * 1.7, ry * 1.6), paint(glow, a=0.4, blur=0.09 * R))
-    c.drawPath(eye, paint(shade(glow, 0.55) if glow else "#fbfbff"))
-    c.save()
-    c.clipPath(eye, skia.ClipOp.kIntersect, True)
-    if not glow:
-        c.drawRect(skia.Rect(-rx, -ry, rx, ry), paint(shader=lin((0, -ry), (0, ry), [argb("#c9cfe0"), argb("#fbfbff")], [0, 0.6])))
-    gx, gy = ex["gx"] * 0.13 * R, ex["gy"] * 0.15 * R
-    ir = L.get("iris_r", 0.17) * R                       # look "iris_r": a smaller iris reads as a fixed stare
-    iris = glow or L["iris"]
-    c.drawCircle(gx, gy, ir, paint(shader=rad((gx, gy - ir * 0.3), ir * 1.2, [argb(shade(iris, 0.25)), argb(iris), argb(shade(iris, -0.5 if not glow else -0.15))], [0, 0.55, 1])))
-    c.drawCircle(gx, gy, ir * 0.52, paint(shade(glow, 0.8) if glow else "#0b0c12"))
-    c.drawCircle(gx - ir * 0.38, gy - ir * 0.42, ir * 0.28, paint("#ffffff", a=0.95))
-    c.drawCircle(gx + ir * 0.35, gy + ir * 0.3, ir * 0.12, paint("#ffffff", a=0.7))
-    # lids: upper covers from the top down to the lid line, lower rises from the bottom
+    # lids first: the white and iris are drawn only where the eye is open (eye minus both lids), so a closing eye
+    # shows the head's own shaded skin, never a flat skin-coloured disc
     lid = max(0.0, min(1.0, ex["lid"]))
     yl = -ry * 1.05 + (1.0 - lid) * ry * 1.85
     tilt = side * ex["brow_in"] * 0.06 * R               # angry (+) lids slope down toward the nose; worried (-) lift there
@@ -303,9 +290,6 @@ def draw_eye(c, R, side, ex, L, light):
     up.lineTo(rx * 1.3, yl - tilt)
     up.quadTo(0, yl - ry * 0.25 * lid, -rx * 1.3, yl + tilt)
     up.close()
-    shut = min(1.0, lid / 0.3)                           # a shut eye is its lash line alone, the same for both eyes: no darker lid disc, no outline round it
-    skin = shade(L["skin"], -0.12 * shut)
-    c.drawPath(up, paint(skin))
     yb = ry * 1.05 - ex["lid_lo"] * ry * 0.9
     lo = skia.Path()
     lo.moveTo(-rx * 1.3, ry * 1.4)
@@ -313,15 +297,57 @@ def draw_eye(c, R, side, ex, L, light):
     lo.lineTo(rx * 1.3, yb)
     lo.quadTo(0, yb + ry * 0.2, -rx * 1.3, yb)
     lo.close()
-    c.drawPath(lo, paint(skin))
-    c.restore()
-    # lash line along the upper lid, a thin line under the eye
-    lash = skia.Path()
-    lash.moveTo(-rx * 1.0, yl + tilt * 0.8)
-    lash.quadTo(0, yl - ry * 0.25 * lid, rx * 1.12, yl - tilt * 0.8 - 0.02 * R * side)
-    c.drawPath(lash, paint("#1a1214", stroke=0.055 * R))
-    if shut > 0.02:
-        c.drawPath(eye, paint(shade(L["skin"], -0.6), stroke=0.018 * R, a=0.7 * shut))
+    vis = skia.Op(skia.Op(eye, up, skia.PathOp.kDifference_PathOp), lo, skia.PathOp.kDifference_PathOp)
+    has = vis is not None and not vis.isEmpty() and lid > 0.06
+    if glow and has:
+        c.save()
+        c.clipPath(vis, skia.ClipOp.kIntersect, True)
+        c.drawOval(skia.Rect(-rx * 1.7, -ry * 1.6, rx * 1.7, ry * 1.6), paint(glow, a=0.4, blur=0.09 * R))
+        c.restore()
+    if has:
+        c.save()
+        c.clipPath(vis, skia.ClipOp.kIntersect, True)
+        c.drawPath(eye, paint(shade(glow, 0.55) if glow else "#fbfbff"))
+        if not glow:
+            c.drawRect(skia.Rect(-rx, -ry, rx, ry), paint(shader=lin((0, -ry), (0, ry), [argb("#c9cfe0"), argb("#fbfbff")], [0, 0.6])))
+        gx, gy = ex["gx"] * 0.13 * R, ex["gy"] * 0.15 * R
+        ir = L.get("iris_r", 0.17) * R                   # look "iris_r": a smaller iris reads as a fixed stare
+        iris = glow or L["iris"]
+        c.drawCircle(gx, gy, ir, paint(shader=rad((gx, gy - ir * 0.3), ir * 1.2, [argb(shade(iris, 0.25)), argb(iris), argb(shade(iris, -0.5 if not glow else -0.15))], [0, 0.55, 1])))
+        c.drawCircle(gx, gy, ir * 0.52, paint(shade(glow, 0.8) if glow else "#0b0c12"))
+        c.drawCircle(gx - ir * 0.38, gy - ir * 0.42, ir * 0.28, paint("#ffffff", a=0.95))
+        c.drawCircle(gx + ir * 0.35, gy + ir * 0.3, ir * 0.12, paint("#ffffff", a=0.7))
+        # a soft lid shadow along the top of the white
+        c.drawRect(skia.Rect(-rx, -ry * 1.1, rx, yl + ry * 0.16), paint(shade(L["skin"], -0.5), a=0.12, blur=0.04 * R))
+        c.restore()
+    # lash line: the top edge of the open eye (the lid edge, or the eye's own rim when wide open), so the line always
+    # hugs the eye; a free arc floats above a wide-open eye and reads as a second brow
+    ink = paint("#1a1214", stroke=0.05 * R)
+    ink.setStrokeCap(skia.Paint.kRound_Cap)
+    if has and lid >= 0.3:
+        if yl - 0.125 * ry * lid < -0.97 * ry:            # lid edge above the eye: the eye's own upper rim is the lash
+            c.drawArc(skia.Rect(-rx, -ry, rx, ry), 208 - 6 * side, 124, False, ink)
+        else:                                            # the lid edge across the eye, kept inside the eye
+            c.save()
+            ov = skia.Path()
+            ov.addOval(skia.Rect(-rx * 1.02, -ry * 1.02, rx * 1.02, ry * 1.02))
+            c.clipPath(ov, skia.ClipOp.kIntersect, True)
+            edge = skia.Path()
+            edge.moveTo(-rx * 1.3, yl + tilt)
+            edge.quadTo(0, yl - ry * 0.25 * lid, rx * 1.3, yl - tilt)
+            c.drawPath(edge, ink)
+            c.restore()
+        c.drawPath(vis, paint(shade(L["skin"], -0.6), stroke=0.018 * R, a=0.7))      # the thin rim round the white
+    else:                                                # shut, or nearly: one lash line, kept inside the eye
+        c.save()
+        c.clipRect(skia.Rect(-rx * 1.08, -ry * 1.6, rx * 1.08, ry * 1.6))
+        lash = skia.Path()
+        lash.moveTo(-rx * 1.05, yl + tilt * 0.8)
+        lash.quadTo(0, yl + ry * 0.12, rx * 1.05, yl - tilt * 0.8)
+        c.drawPath(lash, ink)
+        c.restore()
+
+BROW_MU = 0.37
 
 
 def draw_brow(c, R, side, ex, L):
@@ -339,7 +365,7 @@ def draw_brow(c, R, side, ex, L):
     p.lineTo(xo, yo + th_o / 2)
     p.quadTo(0, ym + th_i * 0.5, xi, yi + th_i / 2)
     p.close()
-    c.drawPath(p, paint(shade(L["hair"], -0.25)))
+    c.drawPath(p, paint(L.get("brow_col") or shade(L["hair"], -0.5)))
 
 
 def draw_mouth(c, R, ex, L):
@@ -408,7 +434,8 @@ def hair_path(head, cam, L, lift=0.0, t=0.0):
             base = mf if a < 0.95 else mf - (a - 0.95) * 3.0
         elif style == "short":                                   # an ordinary men's cut: above the ears, level at the nape
             # level fringe, a short step at the temple, level above the ear, a short drop behind it, level at the nape
-            prof = [(0.0, 0.42), (0.95, 0.40), (1.15, 0.20), (1.65, 0.14), (1.9, 0.02), (2.35, -0.76), (3.2, -0.76)]
+            mf = L.get("mu_front", 0.42)                         # optional higher hairline (hair pulled back)
+            prof = [(0.0, mf), (0.95, mf - 0.02), (1.15, 0.20), (1.65, 0.14), (1.9, 0.02), (2.35, -0.76), (3.2, -0.76)]
             base = next(b0 + (b1 - b0) * (a - a0) / (a1 - a0) for (a0, b0), (a1, b1) in zip(prof, prof[1:]) if a <= a1)
         elif style == "lank":                                    # thin receding hair: a high bare forehead, temples receding further
             mf = L.get("mu_front", 0.66)
@@ -1264,11 +1291,6 @@ def draw(fr, cam, look, pose, light=None, glow=None, held=None, shadow=True):
                         c.concat(Hd.decal(lam, 0.02))
                         draw_eye(c, R, side, ex if ("lid_R" if side > 0 else "lid_L") not in ex else dict(ex, lid=ex["lid_R" if side > 0 else "lid_L"]), L, ld)      # (lid_R, lid_L: one eye's own lid, e.g. one eye opening)
                         c.restore()
-                    c.save()
-                    c.concat(Hd.decal(lam * 1.08, 0.30))           # just under the fringe so brows stay visible
-                    bk = "brow_R" if side > 0 else "brow_L"          # (brow_R, brow_L: one brow on its own, a raised eyebrow)
-                    draw_brow(c, R, side, ex if bk not in ex else dict(ex, brow=ex[bk]), L)
-                    c.restore()
             if Hd.facing(0.0, -0.16) > 0.05 and face == "normal":               # nose
                 c.save()
                 c.concat(Hd.decal(0.0, -0.17, 1.03))
@@ -1294,6 +1316,14 @@ def draw(fr, cam, look, pose, light=None, glow=None, held=None, shadow=True):
                 c.save()
                 c.clipRect(skia.Rect(-1e5, -1e5, 1e5, wrap_top(cam, Hd, wrap)))
             fr.part(hp, L["hair"], (ld[0] * 0.5, 1.0), width=2 * R * k, line=lw, lit=0.16, dark=0.45, rim=0.12)
+            if face == "normal" and not (L.get("sil") or L.get("blank")):
+                for side, lam in ((-1, -0.40), (1, 0.40)):
+                    if Hd.facing(lam * 1.08, L.get("brow_mu", BROW_MU)) > 0.12:      # drawn over the hair: a fringe never hides the brows
+                        c.save()
+                        c.concat(Hd.decal(lam * 1.08, L.get("brow_mu", BROW_MU)))
+                        bk = "brow_R" if side > 0 else "brow_L"      # (brow_R, brow_L: one brow on its own, a raised eyebrow)
+                        draw_brow(c, R, side, ex if bk not in ex else dict(ex, brow=ex[bk]), L)
+                        c.restore()
             if wrap > 0:
                 c.restore()
                 bandage(fr, cam, Hd, path, wrap, ld, lw, k, out)
