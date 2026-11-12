@@ -180,6 +180,35 @@ def open_cardigan(tee, rib=None):
     return extra
 
 
+def tears():
+    """pose "tear" 0..1: a wet shine along the lower lids and, past 0.5, a drop running down one cheek."""
+    def extra(parts, fr, cam, J, p, ld, lw, out):
+        t = p.get("tear", 0.0)
+        if t <= 0.02 or _facing_head(cam, J) < 0.2:
+            return
+        R = J["R"]
+        L = rig.LOOK[J["look"]]
+        Hd = Head(cam, J["head"], J["Bh"], R, L.get("head_shape"))
+
+        def draw():
+            c = fr.c
+            for lam in (-0.40, 0.40):
+                if Hd.facing(lam, -0.27) < 0.15:
+                    continue
+                q = [cam.proj(Hd.surf(lam + d, -0.27 - 0.03 * (1 - abs(d) / 0.2), 1.01))[:2] for d in (-0.2, -0.1, 0.0, 0.1, 0.2)]
+                k = cam.proj(Hd.surf(lam, -0.27, 1.0))[3]
+                c.drawPath(smooth(q, closed=False), paint("#e8f4ff", a=0.55 * min(1.0, t * 1.5), stroke=0.045 * R * k))
+            if t > 0.5 and Hd.facing(0.30, -0.5) > 0.2:
+                u = min(1.0, (t - 0.5) / 0.5)
+                a = cam.proj(Hd.surf(0.30, -0.31, 1.01))
+                b = cam.proj(Hd.surf(0.33, -0.31 - 0.35 * u, 1.01))
+                k = a[3]
+                c.drawLine(a[0], a[1], b[0], b[1], paint("#e8f4ff", a=0.45, stroke=0.035 * R * k))
+                c.drawCircle(b[0], b[1], 0.04 * R * k, paint("#f4faff", a=0.8))
+        parts.append(("face", 0.0, draw))
+    return extra
+
+
 # ---- theo -----------------------------------------------------------------------------------------------------
 def hood(colr):
     """The hood of the hoodie, bunched in a soft roll round the back and sides of the neck."""
@@ -292,8 +321,8 @@ def beard(colr):
         if _facing_head(cam, J) < -0.25:
             return
         Hd = Head(cam, J["head"], J["Bh"], R, L.get("head_shape"))
-        upper = [(-1.38, 0.05, 1.03), (-1.20, -0.25, 1.04), (-0.92, -0.44, 1.045), (-0.62, -0.52, 1.05), (-0.36, -0.50, 1.05),
-                 (0.36, -0.50, 1.05), (0.62, -0.52, 1.05), (0.92, -0.44, 1.045), (1.20, -0.25, 1.04), (1.38, 0.05, 1.03)]
+        upper = [(-1.30, -0.08, 1.03), (-1.16, -0.30, 1.04), (-0.92, -0.44, 1.045), (-0.62, -0.52, 1.05), (-0.36, -0.50, 1.05),
+                 (0.36, -0.50, 1.05), (0.62, -0.52, 1.05), (0.92, -0.44, 1.045), (1.16, -0.30, 1.04), (1.30, -0.08, 1.03)]
         lower = [(1.26, -0.50, 1.06), (0.92, -0.86, 1.09), (0.45, -1.02, 1.12), (0.0, -1.07, 1.14), (-0.45, -1.02, 1.12),
                  (-0.92, -0.86, 1.09), (-1.26, -0.50, 1.06)]
         k = cam.proj(J["head"])[3]
@@ -353,7 +382,7 @@ def shirt_collar(colr):
 
 rig.LOOK["maya"] = dict(h=1.66, skin="#b97d58", hair="#20150f", style="short", brow_mu=0.43, mu_front=0.66, top="#d6c4a2", pants="#2c2c38",
                         shoes="#e8e2d6", iris="#4a2c1a", build=0.92, brow=1.05, brow_col="#1c120c", head_shape=(0.97, 1.04, 0.0),
-                        extras=(hair_bun("#20150f"), open_cardigan("#3a3d4a"), round_glasses()))
+                        extras=(hair_bun("#20150f"), open_cardigan("#3a3d4a"), tears(), round_glasses()))
 rig.LOOK["theo"] = dict(h=1.71, skin="#f2cfb3", hair="#6b3a22", style="messy", top="#4f8a8b", pants="#8b8f99",
                         shoes="#e9e9ef", iris="#6c7a3c", build=0.84, brow=0.9, brow_col="#4a2616", head_shape=(0.96, 1.0, 0.0),
                         extras=(hood("#4f8a8b"), hoodie_front("#4f8a8b"), neck_headphones(), freckles()))

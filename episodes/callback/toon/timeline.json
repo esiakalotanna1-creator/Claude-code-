@@ -1,0 +1,1185 @@
+{
+ "title": "LEAVE A MESSAGE",
+ "label": "A SHORT STORY",
+ "total": 136.897,
+ "beats": {
+  "open": {
+   "speaker": "NAR",
+   "t0": 0.5,
+   "t1": 4.105,
+   "text": "For eleven months, Maya called her father every night at eleven."
+  },
+  "dead": {
+   "speaker": "NAR",
+   "t0": 4.455,
+   "t1": 5.945,
+   "text": "He had been dead for all of them."
+  },
+  "greet": {
+   "speaker": "FRANK",
+   "t0": 6.845,
+   "t1": 10.402,
+   "text": "Hey, it's Frank. Leave a message, kiddo. I'll call you back."
+  },
+  "never": {
+   "speaker": "NAR",
+   "t0": 10.902,
+   "t1": 14.885,
+   "text": "She never left one. She just listened to him say it. Then she hung up."
+  },
+  "twice": {
+   "speaker": "NAR",
+   "t0": 15.685,
+   "t1": 17.089,
+   "text": "Tonight, it rang twice."
+  },
+  "hello": {
+   "speaker": "THEO",
+   "t0": 18.089,
+   "t1": 18.689,
+   "text": "...Hello?"
+  },
+  "drop": {
+   "speaker": "NAR",
+   "t0": 19.339,
+   "t1": 21.663,
+   "text": "She hung up so fast she dropped the phone."
+  },
+  "across": {
+   "speaker": "NAR",
+   "t0": 22.563,
+   "t1": 24.881,
+   "text": "Across town, Theo stared at his screen."
+  },
+  "missed": {
+   "speaker": "NAR",
+   "t0": 25.181,
+   "t1": 30.246,
+   "text": "Twenty-one missed calls. Same number. Always eleven o'clock. Never a message."
+  },
+  "weeks": {
+   "speaker": "NAR",
+   "t0": 30.546,
+   "t1": 32.481,
+   "text": "He'd only had the number for three weeks."
+  },
+  "who": {
+   "speaker": "SCREEN",
+   "t0": 32.781,
+   "t1": 35.381,
+   "text": "who is this?"
+  },
+  "typed": {
+   "speaker": "NAR",
+   "t0": 35.781,
+   "t1": 37.374,
+   "text": "Maya typed for a long time."
+  },
+  "msg": {
+   "speaker": "MAYA",
+   "t0": 38.474,
+   "t1": 44.961,
+   "text": "This was my dad's number. He died last winter. I call to hear his voicemail. I'm sorry. I'll stop."
+  },
+  "dots": {
+   "speaker": "NAR",
+   "t0": 45.961,
+   "t1": 48.715,
+   "text": "The dots appeared. Disappeared. Appeared again."
+  },
+  "dont": {
+   "speaker": "SCREEN",
+   "t0": 48.915,
+   "t1": 51.715,
+   "text": "you don't have to stop"
+  },
+  "next": {
+   "speaker": "NAR",
+   "t0": 52.615,
+   "t1": 55.395,
+   "text": "The next night, at eleven, her phone buzzed first."
+  },
+  "ok": {
+   "speaker": "SCREEN",
+   "t0": 55.595,
+   "t1": 57.795,
+   "text": "it's 11. you ok?"
+  },
+  "wasnt": {
+   "speaker": "NAR",
+   "t0": 58.095,
+   "t1": 60.649,
+   "text": "She wasn't. So she called. And he picked up."
+  },
+  "loud": {
+   "speaker": "NAR",
+   "t0": 61.449,
+   "t1": 67.429,
+   "text": "His mom worked nights at the hospital. The house was loud when it was empty. So was her apartment."
+  },
+  "homework": {
+   "speaker": "NAR",
+   "t0": 68.229,
+   "t1": 74.855,
+   "text": "So every night at eleven: chemistry homework. Terrible jokes. Long silences that didn't feel lonely."
+  },
+  "laughed": {
+   "speaker": "NAR",
+   "t0": 75.455,
+   "t1": 79.061,
+   "text": "One night, she laughed. Out loud. For the first time in a year."
+  },
+  "told": {
+   "speaker": "NAR",
+   "t0": 80.461,
+   "t1": 83.894,
+   "text": "She told him how every call with her dad ended the same way."
+  },
+  "callback": {
+   "speaker": "MAYA",
+   "t0": 84.294,
+   "t1": 87.342,
+   "text": "I'll call you back. He always did. Until he didn't."
+  },
+  "sound": {
+   "speaker": "THEO",
+   "t0": 88.542,
+   "t1": 89.636,
+   "text": "What did he sound like?"
+  },
+  "smiling": {
+   "speaker": "MAYA",
+   "t0": 90.736,
+   "t1": 91.766,
+   "text": "Like he was smiling."
+  },
+  "thursday": {
+   "speaker": "NAR",
+   "t0": 94.166,
+   "t1": 96.191,
+   "text": "The anniversary came on a Thursday."
+  },
+  "goodbye": {
+   "speaker": "NAR",
+   "t0": 96.591,
+   "t1": 101.865,
+   "text": "At eleven, Maya decided it was time to say goodbye. To the number. To all of it."
+  },
+  "rang": {
+   "speaker": "NAR",
+   "t0": 102.365,
+   "t1": 105.501,
+   "text": "She called. It rang. And rang. Theo didn't pick up."
+  },
+  "voice": {
+   "speaker": "NAR",
+   "t0": 106.901,
+   "t1": 108.72,
+   "text": "Then, a voice she didn't expect."
+  },
+  "newgreet": {
+   "speaker": "THEO",
+   "t0": 109.42,
+   "t1": 114.84,
+   "text": "Hey. This isn't Frank. But this number still works. Leave a message, kiddo. Someone will call you back."
+  },
+  "beep": {
+   "speaker": "NAR",
+   "t0": 116.04,
+   "t1": 119.225,
+   "text": "And for the first time in a year, Maya spoke after the beep."
+  },
+  "okay": {
+   "speaker": "MAYA",
+   "t0": 120.525,
+   "t1": 122.279,
+   "text": "Hi, Dad. ...I'm okay."
+  },
+  "hungup": {
+   "speaker": "NAR",
+   "t0": 123.879,
+   "t1": 126.995,
+   "text": "She hung up. The screen lit up before she could put it down."
+  },
+  "incoming": {
+   "speaker": "SCREEN",
+   "t0": 127.195,
+   "t1": 130.195,
+   "text": "Incoming call: DAD"
+  },
+  "last": {
+   "speaker": "NAR",
+   "t0": 130.595,
+   "t1": 133.397,
+   "text": "For the first time in a year, someone called her back."
+  }
+ },
+ "lines": [
+  {
+   "id": "open",
+   "speaker": "NAR",
+   "text": "For eleven months, Maya called her father every night at eleven.",
+   "t0": 0.5,
+   "t1": 4.105,
+   "chunks": [
+    {
+     "text": "For eleven months,",
+     "t0": 0.5,
+     "t1": 1.581
+    },
+    {
+     "text": "Maya called",
+     "t0": 1.581,
+     "t1": 2.242
+    },
+    {
+     "text": "her [father]",
+     "t0": 2.242,
+     "t1": 2.843
+    },
+    {
+     "text": "every night",
+     "t0": 2.843,
+     "t1": 3.504
+    },
+    {
+     "text": "at eleven.",
+     "t0": 3.504,
+     "t1": 4.105
+    }
+   ]
+  },
+  {
+   "id": "dead",
+   "speaker": "NAR",
+   "text": "He had been dead for all of them.",
+   "t0": 4.455,
+   "t1": 5.945,
+   "chunks": [
+    {
+     "text": "He had been",
+     "t0": 4.455,
+     "t1": 4.983
+    },
+    {
+     "text": "[dead]",
+     "t0": 4.983,
+     "t1": 5.176
+    },
+    {
+     "text": "for all of them.",
+     "t0": 5.176,
+     "t1": 5.945
+    }
+   ]
+  },
+  {
+   "id": "greet",
+   "speaker": "FRANK",
+   "text": "Hey, it's Frank. Leave a message, kiddo. I'll call you back.",
+   "t0": 6.845,
+   "t1": 10.402,
+   "chunks": [
+    {
+     "text": "Hey, it's Frank.",
+     "t0": 6.845,
+     "t1": 7.844
+    },
+    {
+     "text": "Leave a message,",
+     "t0": 7.844,
+     "t1": 8.842
+    },
+    {
+     "text": "[kiddo].",
+     "t0": 8.842,
+     "t1": 9.217
+    },
+    {
+     "text": "I'll call you back.",
+     "t0": 9.217,
+     "t1": 10.402
+    }
+   ]
+  },
+  {
+   "id": "never",
+   "speaker": "NAR",
+   "text": "She never left one. She just listened to him say it. Then she hung up.",
+   "t0": 10.902,
+   "t1": 14.885,
+   "chunks": [
+    {
+     "text": "She never",
+     "t0": 10.902,
+     "t1": 11.445
+    },
+    {
+     "text": "left one.",
+     "t0": 11.445,
+     "t1": 11.988
+    },
+    {
+     "text": "She just [listened]",
+     "t0": 11.988,
+     "t1": 13.014
+    },
+    {
+     "text": "to him say it.",
+     "t0": 13.014,
+     "t1": 13.859
+    },
+    {
+     "text": "Then she hung up.",
+     "t0": 13.859,
+     "t1": 14.885
+    }
+   ]
+  },
+  {
+   "id": "twice",
+   "speaker": "NAR",
+   "text": "Tonight, it rang twice.",
+   "t0": 15.685,
+   "t1": 17.089,
+   "chunks": [
+    {
+     "text": "Tonight,",
+     "t0": 15.685,
+     "t1": 16.195
+    },
+    {
+     "text": "it rang [twice].",
+     "t0": 16.195,
+     "t1": 17.089
+    }
+   ]
+  },
+  {
+   "id": "hello",
+   "speaker": "THEO",
+   "text": "...Hello?",
+   "t0": 18.089,
+   "t1": 18.689,
+   "chunks": [
+    {
+     "text": "...[Hello]?",
+     "t0": 18.089,
+     "t1": 18.689
+    }
+   ]
+  },
+  {
+   "id": "drop",
+   "speaker": "NAR",
+   "text": "She hung up so fast she dropped the phone.",
+   "t0": 19.339,
+   "t1": 21.663,
+   "chunks": [
+    {
+     "text": "She hung up",
+     "t0": 19.339,
+     "t1": 19.995
+    },
+    {
+     "text": "so fast",
+     "t0": 19.995,
+     "t1": 20.412
+    },
+    {
+     "text": "she [dropped]",
+     "t0": 20.412,
+     "t1": 21.067
+    },
+    {
+     "text": "the phone.",
+     "t0": 21.067,
+     "t1": 21.663
+    }
+   ]
+  },
+  {
+   "id": "across",
+   "speaker": "NAR",
+   "text": "Across town, Theo stared at his screen.",
+   "t0": 22.563,
+   "t1": 24.881,
+   "chunks": [
+    {
+     "text": "Across town,",
+     "t0": 22.563,
+     "t1": 23.315
+    },
+    {
+     "text": "[Theo] stared",
+     "t0": 23.315,
+     "t1": 24.004
+    },
+    {
+     "text": "at his screen.",
+     "t0": 24.004,
+     "t1": 24.881
+    }
+   ]
+  },
+  {
+   "id": "missed",
+   "speaker": "NAR",
+   "text": "Twenty-one missed calls. Same number. Always eleven o'clock. Never a message.",
+   "t0": 25.181,
+   "t1": 30.246,
+   "chunks": [
+    {
+     "text": "Twenty-one",
+     "t0": 25.181,
+     "t1": 25.884
+    },
+    {
+     "text": "[missed] calls.",
+     "t0": 25.884,
+     "t1": 26.799
+    },
+    {
+     "text": "Same number.",
+     "t0": 26.799,
+     "t1": 27.643
+    },
+    {
+     "text": "Always",
+     "t0": 27.643,
+     "t1": 28.065
+    },
+    {
+     "text": "eleven o'clock.",
+     "t0": 28.065,
+     "t1": 29.12
+    },
+    {
+     "text": "Never a message.",
+     "t0": 29.12,
+     "t1": 30.246
+    }
+   ]
+  },
+  {
+   "id": "weeks",
+   "speaker": "NAR",
+   "text": "He'd only had the number for three weeks.",
+   "t0": 30.546,
+   "t1": 32.481,
+   "chunks": [
+    {
+     "text": "He'd only had",
+     "t0": 30.546,
+     "t1": 31.191
+    },
+    {
+     "text": "the number",
+     "t0": 31.191,
+     "t1": 31.687
+    },
+    {
+     "text": "for three [weeks].",
+     "t0": 31.687,
+     "t1": 32.481
+    }
+   ]
+  },
+  {
+   "id": "typed",
+   "speaker": "NAR",
+   "text": "Maya typed for a long time.",
+   "t0": 35.781,
+   "t1": 37.374,
+   "chunks": [
+    {
+     "text": "Maya [typed]",
+     "t0": 35.781,
+     "t1": 36.393
+    },
+    {
+     "text": "for a long time.",
+     "t0": 36.393,
+     "t1": 37.374
+    }
+   ]
+  },
+  {
+   "id": "msg",
+   "speaker": "MAYA",
+   "text": "This was my dad's number. He died last winter. I call to hear his voicemail. I'm sorry. I'll stop.",
+   "t0": 38.474,
+   "t1": 44.961,
+   "chunks": [
+    {
+     "text": "This was",
+     "t0": 38.474,
+     "t1": 39.044
+    },
+    {
+     "text": "my dad's number.",
+     "t0": 39.044,
+     "t1": 40.185
+    },
+    {
+     "text": "He died",
+     "t0": 40.185,
+     "t1": 40.684
+    },
+    {
+     "text": "last [winter].",
+     "t0": 40.684,
+     "t1": 41.539
+    },
+    {
+     "text": "I call to hear",
+     "t0": 41.539,
+     "t1": 42.537
+    },
+    {
+     "text": "his voicemail.",
+     "t0": 42.537,
+     "t1": 43.535
+    },
+    {
+     "text": "I'm sorry.",
+     "t0": 43.535,
+     "t1": 44.248
+    },
+    {
+     "text": "I'll stop.",
+     "t0": 44.248,
+     "t1": 44.961
+    }
+   ]
+  },
+  {
+   "id": "dots",
+   "speaker": "NAR",
+   "text": "The dots appeared. Disappeared. Appeared again.",
+   "t0": 45.961,
+   "t1": 48.715,
+   "chunks": [
+    {
+     "text": "The dots",
+     "t0": 45.961,
+     "t1": 46.462
+    },
+    {
+     "text": "appeared.",
+     "t0": 46.462,
+     "t1": 47.025
+    },
+    {
+     "text": "Disappeared.",
+     "t0": 47.025,
+     "t1": 47.776
+    },
+    {
+     "text": "Appeared [again].",
+     "t0": 47.776,
+     "t1": 48.715
+    }
+   ]
+  },
+  {
+   "id": "next",
+   "speaker": "NAR",
+   "text": "The next night, at eleven, her phone buzzed first.",
+   "t0": 52.615,
+   "t1": 55.395,
+   "chunks": [
+    {
+     "text": "The next night,",
+     "t0": 52.615,
+     "t1": 53.502
+    },
+    {
+     "text": "at eleven,",
+     "t0": 53.502,
+     "t1": 54.094
+    },
+    {
+     "text": "her phone",
+     "t0": 54.094,
+     "t1": 54.626
+    },
+    {
+     "text": "buzzed [first].",
+     "t0": 54.626,
+     "t1": 55.395
+    }
+   ]
+  },
+  {
+   "id": "wasnt",
+   "speaker": "NAR",
+   "text": "She wasn't. So she called. And he picked up.",
+   "t0": 58.095,
+   "t1": 60.649,
+   "chunks": [
+    {
+     "text": "She [wasn't].",
+     "t0": 58.095,
+     "t1": 58.78
+    },
+    {
+     "text": "So she called.",
+     "t0": 58.78,
+     "t1": 59.652
+    },
+    {
+     "text": "And he",
+     "t0": 59.652,
+     "t1": 60.026
+    },
+    {
+     "text": "picked up.",
+     "t0": 60.026,
+     "t1": 60.649
+    }
+   ]
+  },
+  {
+   "id": "loud",
+   "speaker": "NAR",
+   "text": "His mom worked nights at the hospital. The house was loud when it was empty. So was her apartment.",
+   "t0": 61.449,
+   "t1": 67.429,
+   "chunks": [
+    {
+     "text": "His mom",
+     "t0": 61.449,
+     "t1": 61.909
+    },
+    {
+     "text": "worked nights",
+     "t0": 61.909,
+     "t1": 62.763
+    },
+    {
+     "text": "at the hospital.",
+     "t0": 62.763,
+     "t1": 63.815
+    },
+    {
+     "text": "The house",
+     "t0": 63.815,
+     "t1": 64.406
+    },
+    {
+     "text": "was [loud]",
+     "t0": 64.406,
+     "t1": 64.932
+    },
+    {
+     "text": "when it was empty.",
+     "t0": 64.932,
+     "t1": 66.115
+    },
+    {
+     "text": "So was",
+     "t0": 66.115,
+     "t1": 66.509
+    },
+    {
+     "text": "her apartment.",
+     "t0": 66.509,
+     "t1": 67.429
+    }
+   ]
+  },
+  {
+   "id": "homework",
+   "speaker": "NAR",
+   "text": "So every night at eleven: chemistry homework. Terrible jokes. Long silences that didn't feel lonely.",
+   "t0": 68.229,
+   "t1": 74.855,
+   "chunks": [
+    {
+     "text": "So every night",
+     "t0": 68.229,
+     "t1": 69.216
+    },
+    {
+     "text": "at eleven:",
+     "t0": 69.216,
+     "t1": 69.921
+    },
+    {
+     "text": "chemistry homework.",
+     "t0": 69.921,
+     "t1": 71.26
+    },
+    {
+     "text": "Terrible [jokes].",
+     "t0": 71.26,
+     "t1": 72.318
+    },
+    {
+     "text": "Long silences",
+     "t0": 72.318,
+     "t1": 73.234
+    },
+    {
+     "text": "that didn't",
+     "t0": 73.234,
+     "t1": 74.01
+    },
+    {
+     "text": "feel [lonely].",
+     "t0": 74.01,
+     "t1": 74.855
+    }
+   ]
+  },
+  {
+   "id": "laughed",
+   "speaker": "NAR",
+   "text": "One night, she laughed. Out loud. For the first time in a year.",
+   "t0": 75.455,
+   "t1": 79.061,
+   "chunks": [
+    {
+     "text": "One night,",
+     "t0": 75.455,
+     "t1": 76.067
+    },
+    {
+     "text": "she [laughed].",
+     "t0": 76.067,
+     "t1": 76.8
+    },
+    {
+     "text": "Out loud.",
+     "t0": 76.8,
+     "t1": 77.35
+    },
+    {
+     "text": "For the first time",
+     "t0": 77.35,
+     "t1": 78.45
+    },
+    {
+     "text": "in a year.",
+     "t0": 78.45,
+     "t1": 79.061
+    }
+   ]
+  },
+  {
+   "id": "told",
+   "speaker": "NAR",
+   "text": "She told him how every call with her dad ended the same way.",
+   "t0": 80.461,
+   "t1": 83.894,
+   "chunks": [
+    {
+     "text": "She told him",
+     "t0": 80.461,
+     "t1": 81.183
+    },
+    {
+     "text": "how every call",
+     "t0": 81.183,
+     "t1": 82.027
+    },
+    {
+     "text": "with her dad",
+     "t0": 82.027,
+     "t1": 82.749
+    },
+    {
+     "text": "ended the [same] way.",
+     "t0": 82.749,
+     "t1": 83.894
+    }
+   ]
+  },
+  {
+   "id": "callback",
+   "speaker": "MAYA",
+   "text": "I'll call you back. He always did. Until he didn't.",
+   "t0": 84.294,
+   "t1": 87.342,
+   "chunks": [
+    {
+     "text": "\"I'll call",
+     "t0": 84.294,
+     "t1": 84.903
+    },
+    {
+     "text": "you back.\"",
+     "t0": 84.903,
+     "t1": 85.513
+    },
+    {
+     "text": "He [always] did.",
+     "t0": 85.513,
+     "t1": 86.367
+    },
+    {
+     "text": "Until he didn't.",
+     "t0": 86.367,
+     "t1": 87.342
+    }
+   ]
+  },
+  {
+   "id": "sound",
+   "speaker": "THEO",
+   "text": "What did he sound like?",
+   "t0": 88.542,
+   "t1": 89.636,
+   "chunks": [
+    {
+     "text": "What did he",
+     "t0": 88.542,
+     "t1": 89.089
+    },
+    {
+     "text": "[sound] like?",
+     "t0": 89.089,
+     "t1": 89.636
+    }
+   ]
+  },
+  {
+   "id": "smiling",
+   "speaker": "MAYA",
+   "text": "Like he was smiling.",
+   "t0": 90.736,
+   "t1": 91.766,
+   "chunks": [
+    {
+     "text": "Like he was",
+     "t0": 90.736,
+     "t1": 91.332
+    },
+    {
+     "text": "[smiling].",
+     "t0": 91.332,
+     "t1": 91.766
+    }
+   ]
+  },
+  {
+   "id": "thursday",
+   "speaker": "NAR",
+   "text": "The anniversary came on a Thursday.",
+   "t0": 94.166,
+   "t1": 96.191,
+   "chunks": [
+    {
+     "text": "The [anniversary]",
+     "t0": 94.166,
+     "t1": 95.086
+    },
+    {
+     "text": "came on",
+     "t0": 95.086,
+     "t1": 95.516
+    },
+    {
+     "text": "a Thursday.",
+     "t0": 95.516,
+     "t1": 96.191
+    }
+   ]
+  },
+  {
+   "id": "goodbye",
+   "speaker": "NAR",
+   "text": "At eleven, Maya decided it was time to say goodbye. To the number. To all of it.",
+   "t0": 96.591,
+   "t1": 101.865,
+   "chunks": [
+    {
+     "text": "At eleven,",
+     "t0": 96.591,
+     "t1": 97.294
+    },
+    {
+     "text": "Maya decided",
+     "t0": 97.294,
+     "t1": 98.138
+    },
+    {
+     "text": "it was time",
+     "t0": 98.138,
+     "t1": 98.912
+    },
+    {
+     "text": "to say [goodbye].",
+     "t0": 98.912,
+     "t1": 99.966
+    },
+    {
+     "text": "To the number.",
+     "t0": 99.966,
+     "t1": 100.951
+    },
+    {
+     "text": "To all of it.",
+     "t0": 100.951,
+     "t1": 101.865
+    }
+   ]
+  },
+  {
+   "id": "rang",
+   "speaker": "NAR",
+   "text": "She called. It rang. And rang. Theo didn't pick up.",
+   "t0": 102.365,
+   "t1": 105.501,
+   "chunks": [
+    {
+     "text": "She called.",
+     "t0": 102.365,
+     "t1": 103.099
+    },
+    {
+     "text": "It rang.",
+     "t0": 103.099,
+     "t1": 103.633
+    },
+    {
+     "text": "And rang.",
+     "t0": 103.633,
+     "t1": 104.233
+    },
+    {
+     "text": "Theo didn't",
+     "t0": 104.233,
+     "t1": 104.968
+    },
+    {
+     "text": "[pick up].",
+     "t0": 104.968,
+     "t1": 105.501
+    }
+   ]
+  },
+  {
+   "id": "voice",
+   "speaker": "NAR",
+   "text": "Then, a voice she didn't expect.",
+   "t0": 106.901,
+   "t1": 108.72,
+   "chunks": [
+    {
+     "text": "Then, a voice",
+     "t0": 106.901,
+     "t1": 107.664
+    },
+    {
+     "text": "she didn't [expect].",
+     "t0": 107.664,
+     "t1": 108.72
+    }
+   ]
+  },
+  {
+   "id": "newgreet",
+   "speaker": "THEO",
+   "text": "Hey. This isn't Frank. But this number still works. Leave a message, kiddo. Someone will call you back.",
+   "t0": 109.42,
+   "t1": 114.84,
+   "chunks": [
+    {
+     "text": "Hey.",
+     "t0": 109.42,
+     "t1": 109.646
+    },
+    {
+     "text": "This isn't Frank.",
+     "t0": 109.646,
+     "t1": 110.606
+    },
+    {
+     "text": "But this number",
+     "t0": 110.606,
+     "t1": 111.452
+    },
+    {
+     "text": "still [works].",
+     "t0": 111.452,
+     "t1": 112.13
+    },
+    {
+     "text": "Leave a message,",
+     "t0": 112.13,
+     "t1": 113.033
+    },
+    {
+     "text": "kiddo.",
+     "t0": 113.033,
+     "t1": 113.372
+    },
+    {
+     "text": "Someone will",
+     "t0": 113.372,
+     "t1": 114.049
+    },
+    {
+     "text": "call you [back].",
+     "t0": 114.049,
+     "t1": 114.84
+    }
+   ]
+  },
+  {
+   "id": "beep",
+   "speaker": "NAR",
+   "text": "And for the first time in a year, Maya spoke after the beep.",
+   "t0": 116.04,
+   "t1": 119.225,
+   "chunks": [
+    {
+     "text": "And for the",
+     "t0": 116.04,
+     "t1": 116.665
+    },
+    {
+     "text": "first time",
+     "t0": 116.665,
+     "t1": 117.234
+    },
+    {
+     "text": "in a year,",
+     "t0": 117.234,
+     "t1": 117.803
+    },
+    {
+     "text": "Maya [spoke]",
+     "t0": 117.803,
+     "t1": 118.372
+    },
+    {
+     "text": "after the beep.",
+     "t0": 118.372,
+     "t1": 119.225
+    }
+   ]
+  },
+  {
+   "id": "okay",
+   "speaker": "MAYA",
+   "text": "Hi, Dad. ...I'm okay.",
+   "t0": 120.525,
+   "t1": 122.279,
+   "chunks": [
+    {
+     "text": "Hi, [Dad].",
+     "t0": 120.525,
+     "t1": 121.227
+    },
+    {
+     "text": "...I'm okay.",
+     "t0": 121.227,
+     "t1": 122.279
+    }
+   ]
+  },
+  {
+   "id": "hungup",
+   "speaker": "NAR",
+   "text": "She hung up. The screen lit up before she could put it down.",
+   "t0": 123.879,
+   "t1": 126.995,
+   "chunks": [
+    {
+     "text": "She hung up.",
+     "t0": 123.879,
+     "t1": 124.547
+    },
+    {
+     "text": "The screen",
+     "t0": 124.547,
+     "t1": 125.103
+    },
+    {
+     "text": "[lit up]",
+     "t0": 125.103,
+     "t1": 125.437
+    },
+    {
+     "text": "before she could",
+     "t0": 125.437,
+     "t1": 126.327
+    },
+    {
+     "text": "put it down.",
+     "t0": 126.327,
+     "t1": 126.995
+    }
+   ]
+  },
+  {
+   "id": "last",
+   "speaker": "NAR",
+   "text": "For the first time in a year, someone called her back.",
+   "t0": 130.595,
+   "t1": 133.397,
+   "chunks": [
+    {
+     "text": "For the first time",
+     "t0": 130.595,
+     "t1": 131.584
+    },
+    {
+     "text": "in a year,",
+     "t0": 131.584,
+     "t1": 132.133
+    },
+    {
+     "text": "someone called",
+     "t0": 132.133,
+     "t1": 132.903
+    },
+    {
+     "text": "her [back].",
+     "t0": 132.903,
+     "t1": 133.397
+    }
+   ]
+  }
+ ],
+ "marks": {
+  "open": 0.5,
+  "dead": 4.455,
+  "greet": 6.845,
+  "never": 10.902,
+  "twice": 15.685,
+  "hello": 18.089,
+  "drop": 19.339,
+  "across": 22.563,
+  "missed": 25.181,
+  "weeks": 30.546,
+  "who": 32.781,
+  "typed": 35.781,
+  "msg": 38.474,
+  "dots": 45.961,
+  "dont": 48.915,
+  "next": 52.615,
+  "ok": 55.595,
+  "wasnt": 58.095,
+  "loud": 61.449,
+  "homework": 68.229,
+  "laughed": 75.455,
+  "told": 80.461,
+  "callback": 84.294,
+  "sound": 88.542,
+  "smiling": 90.736,
+  "thursday": 94.166,
+  "goodbye": 96.591,
+  "rang": 102.365,
+  "voice": 106.901,
+  "newgreet": 109.42,
+  "beep": 116.04,
+  "okay": 120.525,
+  "hungup": 123.879,
+  "incoming": 127.195,
+  "last": 130.595
+ }
+}

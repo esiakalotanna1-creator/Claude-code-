@@ -199,8 +199,11 @@ class Flat:
     SOFA = ((-2.2, -1.35), (0.0, 0.45), (-0.4, 1.7))
     WALL, FLOOR = "#3a3f5e", "#4a3a36"
 
-    def __init__(self):
+    def __init__(self, day=False):
+        self.day = day
         self.city = City(11, -26.0, 14, 70, -40, 40, 70, 10, 46, rain_box=((-3, 3), (-2, 4.5), (3.4, 9)))
+        self.near_rain = Rain(n=260, box=((-1.6, 1.6), (0.3, 2.8), (3.04, 3.9)), speed=6.5, seed=31)
+        self.props = []                     # [(kind, (x, y, z), lit)] loose phones etc., set per frame by the shot
 
     def lamp_level(self, T):
         return 1.0
@@ -209,8 +212,15 @@ class Flat:
         X0, X1, Z0, Z1, HT = self.X0, self.X1, self.Z0, self.Z1, self.HT
         (wx0, wx1), (wy0, wy1) = self.WIN
         # outside first (clipped to the window), then the room around it
-        if clip_to(fr, cam, [(wx0, wy0, Z1), (wx1, wy0, Z1), (wx1, wy1, Z1), (wx0, wy1, Z1)]):
-            self.city.draw(fr, cam, T)
+        outside = cam.pos[2] > Z1
+        if outside:                                                              # looking in from the rain
+            fr.c.drawRect(skia.Rect(-10, -10, W + 10, H + 10), paint("#0b1026"))
+        elif clip_to(fr, cam, [(wx0, wy0, Z1), (wx1, wy0, Z1), (wx1, wy1, Z1), (wx0, wy1, Z1)]):
+            if self.day:
+                fr.c.drawRect(skia.Rect(-10, -10, W + 10, H + 10), paint(shader=lin((0, 0), (0, H), [argb("#f2b37a"), argb("#f6d3a0"), argb("#c98a6a")], [0, 0.5, 1])))
+                glow3(fr, cam, (-6.0, 4.0, 30.0), 9.0, "#fff1c9", 0.5)
+            else:
+                self.city.draw(fr, cam, T)
             fr.c.restore()
         wall = self.WALL
         back = lambda path: lin((0, path.getBounds().top()), (0, path.getBounds().bottom()), [argb(shade(wall, -0.3)), argb(wall), argb(shade(wall, -0.15))], [0, 0.6, 1])  # noqa: E731
@@ -232,7 +242,8 @@ class Flat:
         for a, b in (((wx0 - 0.06, wy0), (wx0, wy1)), ((wx1, wy0), (wx1 + 0.06, wy1)), ((wx0 - 0.06, wy1), (wx1 + 0.06, wy1 + 0.06)),
                      ((-0.02, wy0), (0.02, wy1)), ((wx0, 1.62), (wx1, 1.66))):
             quad(fr, cam, [(a[0], a[1], Z1 - 0.01), (b[0], a[1], Z1 - 0.01), (b[0], b[1], Z1 - 0.01), (a[0], b[1], Z1 - 0.01)], "#e3ddd0")
-        glass_drops(fr, cam, T, ("z", Z1 - 0.012, wx0, wx1, wy0, wy1), seed=5, n=70)
+        if not self.day:
+            glass_drops(fr, cam, T, ("z", Z1 - 0.012, wx0, wx1, wy0, wy1), seed=5, n=70)
         # wall clock, left of the window: 11:00
         cx, cy, cd, cs = cam.proj((-1.62, 2.02, Z1 - 0.01))
         if cd > 0.3:
@@ -304,8 +315,8 @@ class Flat:
             fr.box(cam, (x0 - 0.03, x1), (y1 - 0.04, y1), (z0 - 0.03, z1 + 0.03), "#d8d2c6", line=1.5)
             for zz in (-0.9, -0.1, 0.7):
                 fr.box(cam, (x0 - 0.005, x0), (0.12, 0.8), (zz, zz + 0.62), "#7d8e95", line=1.2)
-            fr.box(cam, (x0 + 0.3, x0 + 0.55), (y1, y1 + 0.24), (0.6, 0.8), "#c9483a", line=1.5)       # kettle
-            fr.box(cam, (x0 + 0.2, x0 + 0.29), (y1, y1 + 0.1), (0.2, 0.29), "#efe8da", line=1.2)       # mug
+            fr.box(cam, (x0 + 0.3, x0 + 0.55), (y1, y1 + 0.24), (-0.95, -0.75), "#c9483a", line=1.5)       # kettle
+            fr.box(cam, (x0 + 0.2, x0 + 0.29), (y1, y1 + 0.1), (-0.45, -0.36), "#efe8da", line=1.2)       # mug
             fr.box(cam, (1.8, 2.2), (1.45, 2.05), (z0, z1), "#7d8e95", line=1.5)                       # wall cabinets
             fr.poly(cam, [(1.8, 1.44, z0), (1.8, 1.44, z1), (2.2, 1.44, z1), (2.2, 1.44, z0)], colr=WARM, a=0.9)   # under-cabinet strip
             fr.ground_ellipse(cam, 1.7, 0.1, 0.6, 1.4, WARM, 0.08, blur_m=0.3, add=True)
@@ -313,12 +324,50 @@ class Flat:
         return it
 
     def grade(self, fr, T, pid, o, phone=0.0):
-        grade(fr, o, "#8a97c4", [(WARM, 0.16, -0.7, -0.2), ("#d9e6ff", 0.14 * phone, 0.2, 0.6)])
+        if self.day:
+            grade(fr, o, "#d9b9a0", [("#ffe2b8", 0.22, 0.6, -0.4)])
+        else:
+            grade(fr, o, "#8a97c4", [(WARM, 0.16, -0.7, -0.2), ("#d9e6ff", 0.14 * phone, 0.2, 0.6)])
 
-    def draw(self, fr, cam, T, cast, phone=0.0):
+    def prop_items(self, cam, T):
+        return prop_items(self.props, cam)
+
+
+def prop_items(props, cam):
+    """Loose phones lying on things: [(kind, (x, y, z), lit)] -> depth-sorted draw items."""
+    if True:
+        it = []
+        for kind, (x, y, z), lit in props:
+            def ph(fr, x=x, y=y, z=z, lit=lit):
+                fr.ground_ellipse(cam, x, z, 0.06, 0.09, "#000000", 0.4, blur_m=0.02)
+                fr.box(cam, (x - 0.036, x + 0.036), (y, y + 0.009), (z - 0.075, z + 0.075), "#14161d", line=1.0)
+                if lit > 0.01:
+                    fr.poly(cam, [(x - 0.03, y + 0.0095, z - 0.068), (x + 0.03, y + 0.0095, z - 0.068), (x + 0.03, y + 0.0095, z + 0.068),
+                                  (x - 0.03, y + 0.0095, z + 0.068)], colr="#9fc4ff", a=lit)
+                    glow3(fr, cam, (x, y + 0.02, z), 0.25, "#9fc4ff", 0.35 * lit)
+            it.append((cam.view((x, y, z))[2] - 0.05, ph))
+        return it
+
+
+class _FlatDraw:
+    pass
+
+
+def _flat_draw(self, fr, cam, T, cast, phone=0.0):
         self.shell(fr, cam, T)
-        items = self.furniture(cam, T)
-        return draw_people(fr, cam, T, cast, items, self.LAMP, lambda fr, T, pid, o: self.grade(fr, T, pid, o, phone))
+        items = self.furniture(cam, T) + self.prop_items(cam, T)
+        outs = draw_people(fr, cam, T, cast, items, self.LAMP, lambda fr, T, pid, o: self.grade(fr, T, pid, o, phone))
+        if cam.pos[2] > self.Z1:                                              # outside: the glass and the rain are in front
+            (wx0, wx1), (wy0, wy1) = self.WIN
+            glass_drops(fr, cam, T, ("z", self.Z1 + 0.02, wx0, wx1, wy0, wy1), seed=5, n=90)
+            self.near_rain.draw(fr, cam, T, colr=(0.8, 0.86, 1.0), amax=0.3, zmin=0.15, wmax=1.6)
+            fr.c.drawRect(skia.Rect(-10, -10, W + 10, H + 10), paint("#0d1430", a=0.18))
+        if self.day:
+            fr.c.drawRect(skia.Rect(-10, -10, W + 10, H + 10), paint(shader=rad((W / 2, H * 0.45), H * 0.7, [argb("#000000", 0), argb("#2a1408", 0.45)], [0.55, 1])))
+        return outs
+
+
+Flat.draw = _flat_draw
 
 
 # =================================================================================================================
@@ -334,6 +383,7 @@ class Room:
     WALL, FLOOR = "#4b5a6e", "#5a4a3c"
 
     def __init__(self):
+        self.props = []
         self.street = City(23, -3.6, 9, 30, -18, 18, 26, 4, 9, rain_box=((-2, 2), (-1, 4), (3.3, 7)))
 
     def shell(self, fr, cam, T):
@@ -436,5 +486,5 @@ class Room:
 
     def draw(self, fr, cam, T, cast, phone=0.0, laptop=1.0):
         self.shell(fr, cam, T)
-        items = self.furniture(cam, T, laptop)
+        items = self.furniture(cam, T, laptop) + prop_items(self.props, cam)
         return draw_people(fr, cam, T, cast, items, self.DLAMP, lambda fr, T, pid, o: self.grade(fr, T, pid, o, phone, laptop))

@@ -1452,24 +1452,37 @@ def replant(t, start, steps, h):
 
 
 # ---- props held in a hand ------------------------------------------------------------------------------
-def phone(on=True):
+def phone(on=True, case="#3a3f4d"):
+    """A slim phone in the hand (about 7.5 x 15.5 cm). on: the screen side lit; off: the back, a soft case colour
+    with an edge highlight and the camera, so a phone held to the ear still reads as a phone."""
     def fn(fr, cam, J, s, hd, fd, k):
         h = J["h"]
         ax = math.degrees(math.atan2(*reversed(_screen_dir(cam, J["wr_" + s], fd))))
         m = skia.Matrix()
         m.setRotate(ax + 90)
         m.postTranslate(hd[0], hd[1])
+        hw, top, bot = 0.024 * h * k, -0.072 * h * k, 0.02 * h * k
         body = skia.Path()
-        body.addRoundRect(skia.Rect(-0.035 * h * k, -0.06 * h * k, 0.035 * h * k, 0.02 * h * k), 0.01 * h * k, 0.01 * h * k)
+        body.addRoundRect(skia.Rect(-hw, top, hw, bot), 0.012 * h * k, 0.012 * h * k)
         body.transform(m)
-        fr.c.drawPath(body, paint("#14161d"))
+        bb = body.getBounds()
         if on:
+            fr.c.drawPath(body, paint("#14161d"))
             scr = skia.Path()
-            scr.addRoundRect(skia.Rect(-0.029 * h * k, -0.054 * h * k, 0.029 * h * k, 0.014 * h * k), 0.007 * h * k, 0.007 * h * k)
+            scr.addRoundRect(skia.Rect(-hw * 0.84, top + 0.005 * h * k, hw * 0.84, bot - 0.005 * h * k), 0.008 * h * k, 0.008 * h * k)
             scr.transform(m)
             b = scr.getBounds()
             fr.c.drawPath(scr, paint(shader=lin((b.left(), b.top()), (b.right(), b.bottom()), [argb("#9fd0ff"), argb("#3f7fe0")])))
-            fr.glow(b.centerX(), b.centerY(), 0.16 * h * k, "#3a78ff", a=0.35)
+            fr.glow(b.centerX(), b.centerY(), 0.14 * h * k, "#3a78ff", a=0.3)
+        else:
+            fr.c.drawPath(body, paint(shader=lin((bb.left(), bb.top()), (bb.right(), bb.bottom()), [argb(shade(case, 0.25)), argb(case), argb(shade(case, -0.35))], [0, 0.5, 1])))
+            lens = skia.Path()
+            lens.addRoundRect(skia.Rect(-hw * 0.7, top + 0.008 * h * k, -hw * 0.05, top + 0.03 * h * k), 0.006 * h * k, 0.006 * h * k)
+            lens.transform(m)
+            fr.c.drawPath(lens, paint(shade(case, -0.55)))
+            lb = lens.getBounds()
+            fr.c.drawCircle(lb.centerX(), lb.centerY(), 0.004 * h * k, paint("#0b0c10"))
+            fr.c.drawPath(body, paint("#ffffff", a=0.18, stroke=max(1.0, 0.003 * h * k)))
         fr.c.drawPath(body, paint("#05060a", stroke=max(1.2, 0.004 * h * k)))
     return fn
 

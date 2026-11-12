@@ -1,0 +1,226 @@
+[
+ {
+  "name": "dial",
+  "t": 4.155
+ },
+ {
+  "name": "click_greet",
+  "t": 6.595
+ },
+ {
+  "name": "hangup1",
+  "t": 14.402
+ },
+ {
+  "name": "ring1",
+  "t": 15.885
+ },
+ {
+  "name": "ring2",
+  "t": 17.185
+ },
+ {
+  "name": "click_hello",
+  "t": 17.789
+ },
+ {
+  "name": "drop",
+  "t": 19.909
+ },
+ {
+  "name": "tap_who_0",
+  "t": 33.031
+ },
+ {
+  "name": "tap_who_1",
+  "t": 33.161
+ },
+ {
+  "name": "tap_who_2",
+  "t": 33.291
+ },
+ {
+  "name": "tap_who_3",
+  "t": 33.421
+ },
+ {
+  "name": "tap_who_4",
+  "t": 33.551
+ },
+ {
+  "name": "tap_who_5",
+  "t": 33.681
+ },
+ {
+  "name": "tap_who_6",
+  "t": 33.811
+ },
+ {
+  "name": "tap_who_7",
+  "t": 33.941
+ },
+ {
+  "name": "tap_who_8",
+  "t": 34.071
+ },
+ {
+  "name": "tap_who_9",
+  "t": 34.201
+ },
+ {
+  "name": "send_who",
+  "t": 34.531
+ },
+ {
+  "name": "tap_typed_0",
+  "t": 36.081
+ },
+ {
+  "name": "tap_typed_1",
+  "t": 36.221
+ },
+ {
+  "name": "tap_typed_2",
+  "t": 36.361
+ },
+ {
+  "name": "tap_typed_3",
+  "t": 36.411
+ },
+ {
+  "name": "tap_typed_4",
+  "t": 36.551
+ },
+ {
+  "name": "tap_typed_5",
+  "t": 36.691
+ },
+ {
+  "name": "tap_typed_6",
+  "t": 36.741
+ },
+ {
+  "name": "tap_typed_7",
+  "t": 36.881
+ },
+ {
+  "name": "tap_typed_8",
+  "t": 37.021
+ },
+ {
+  "name": "tap_typed_9",
+  "t": 37.071
+ },
+ {
+  "name": "tap_typed_10",
+  "t": 37.211
+ },
+ {
+  "name": "tap_typed_11",
+  "t": 37.351
+ },
+ {
+  "name": "tap_typed_12",
+  "t": 37.401
+ },
+ {
+  "name": "tap_typed_13",
+  "t": 37.541
+ },
+ {
+  "name": "tap_typed_14",
+  "t": 37.681
+ },
+ {
+  "name": "tap_typed_15",
+  "t": 37.731
+ },
+ {
+  "name": "tap_typed_16",
+  "t": 37.871
+ },
+ {
+  "name": "tap_typed_17",
+  "t": 38.011
+ },
+ {
+  "name": "tap_typed_18",
+  "t": 38.061
+ },
+ {
+  "name": "tap_typed_19",
+  "t": 38.201
+ },
+ {
+  "name": "tap_typed_20",
+  "t": 38.341
+ },
+ {
+  "name": "tap_typed_21",
+  "t": 38.391
+ },
+ {
+  "name": "tap_typed_22",
+  "t": 38.531
+ },
+ {
+  "name": "tap_typed_23",
+  "t": 38.671
+ },
+ {
+  "name": "recv_who",
+  "t": 38.174
+ },
+ {
+  "name": "send_msg",
+  "t": 44.674
+ },
+ {
+  "name": "recv_dont",
+  "t": 49.015
+ },
+ {
+  "name": "buzz_ok",
+  "t": 54.115
+ },
+ {
+  "name": "ring_call",
+  "t": 58.995
+ },
+ {
+  "name": "ring_anniv_0",
+  "t": 102.565
+ },
+ {
+  "name": "ring_anniv_1",
+  "t": 104.465
+ },
+ {
+  "name": "ring_anniv_2",
+  "t": 106.365
+ },
+ {
+  "name": "vm_click",
+  "t": 107.601
+ },
+ {
+  "name": "beep",
+  "t": 119.575
+ },
+ {
+  "name": "hangup2",
+  "t": 124.079
+ },
+ {
+  "name": "ring_dad_0",
+  "t": 127.095
+ },
+ {
+  "name": "ring_dad_1",
+  "t": 128.895
+ },
+ {
+  "name": "answer",
+  "t": 131.545
+ }
+]
