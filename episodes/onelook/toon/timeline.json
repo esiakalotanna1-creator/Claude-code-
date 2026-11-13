@@ -1,0 +1,900 @@
+{
+ "title": "ONE LOOK",
+ "label": "100 DAYS \u00b7 PART 1",
+ "total": 90.147,
+ "beats": {
+  "hook": {
+   "speaker": "NAR",
+   "t0": 0.3,
+   "t1": 3.819,
+   "text": "There's a virus you don't catch by breathing. You catch it with your eyes."
+  },
+  "second": {
+   "speaker": "NAR",
+   "t0": 4.019,
+   "t1": 6.895,
+   "text": "One second of eye contact, and your mind is gone."
+  },
+  "smile": {
+   "speaker": "NAR",
+   "t0": 7.195,
+   "t1": 10.726,
+   "text": "You don't feel sick. You just smile... and look for the next person."
+  },
+  "alaska": {
+   "speaker": "NAR",
+   "t0": 11.226,
+   "t1": 15.528,
+   "text": "It starts in a tiny fishing town in Alaska. Doctors call it low risk."
+  },
+  "numbers": {
+   "speaker": "NAR",
+   "t0": 15.828,
+   "t1": 20.111,
+   "text": "Then they run the numbers. Every country on Earth. Inside one hundred days."
+  },
+  "deal": {
+   "speaker": "NAR",
+   "t0": 20.611,
+   "t1": 25.303,
+   "text": "So here's the deal. You get one million dollars, and one hundred days to survive it."
+  },
+  "house": {
+   "speaker": "NAR",
+   "t0": 25.703,
+   "t1": 28.862,
+   "text": "A house deep in the woods. Three hundred and fifty grand."
+  },
+  "shutters": {
+   "speaker": "NAR",
+   "t0": 29.162,
+   "t1": 30.839,
+   "text": "Steel shutters on every window."
+  },
+  "bunker": {
+   "speaker": "NAR",
+   "t0": 31.139,
+   "t1": 33.5,
+   "text": "A bunker under the floor, with a blast door."
+  },
+  "cameras": {
+   "speaker": "NAR",
+   "t0": 33.8,
+   "t1": 38.785,
+   "text": "Thermal cameras on the tree line. Because you can't check someone's eyes... without looking at them."
+  },
+  "food": {
+   "speaker": "NAR",
+   "t0": 39.085,
+   "t1": 44.158,
+   "text": "A year of food, a wall of batteries, and a dog. Dogs don't care about eye contact."
+  },
+  "helmet": {
+   "speaker": "NAR",
+   "t0": 44.458,
+   "t1": 49.011,
+   "text": "And the last twenty-five thousand, on one helmet. The visor is solid black."
+  },
+  "zero": {
+   "speaker": "NAR",
+   "t0": 49.311,
+   "t1": 50.637,
+   "text": "Zero dollars left."
+  },
+  "city": {
+   "speaker": "NAR",
+   "t0": 51.637,
+   "t1": 53.875,
+   "text": "Day one hundred. It reaches the city."
+  },
+  "streets": {
+   "speaker": "NAR",
+   "t0": 54.175,
+   "t1": 57.678,
+   "text": "Within hours, the streets are full of people. Smiling. Looking."
+  },
+  "blind": {
+   "speaker": "NAR",
+   "t0": 57.978,
+   "t1": 62.487,
+   "text": "Everyone left ties something over their eyes. The ones who don't... join the smile."
+  },
+  "dark": {
+   "speaker": "NAR",
+   "t0": 63.087,
+   "t1": 65.867,
+   "text": "Day one hundred and three. The TV goes dark."
+  },
+  "gate": {
+   "speaker": "NAR",
+   "t0": 66.267,
+   "t1": 68.151,
+   "text": "Then the gate camera picks up movement."
+  },
+  "woman": {
+   "speaker": "NAR",
+   "t0": 68.451,
+   "t1": 70.485,
+   "text": "A woman. Blindfolded. Alone."
+  },
+  "please": {
+   "speaker": "MAYA",
+   "t0": 70.885,
+   "t1": 73.947,
+   "text": "Please. I haven't looked at anyone. Please, let me in."
+  },
+  "heat": {
+   "speaker": "NAR",
+   "t0": 74.547,
+   "t1": 79.026,
+   "text": "Your camera only sees heat. And you can't check her eyes... without opening the door."
+  },
+  "trees": {
+   "speaker": "NAR",
+   "t0": 79.426,
+   "t1": 82.106,
+   "text": "Behind her, between the trees, something is smiling."
+  },
+  "thirty": {
+   "speaker": "NAR",
+   "t0": 82.906,
+   "t1": 84.119,
+   "text": "You have thirty seconds."
+  },
+  "choice": {
+   "speaker": "NAR",
+   "t0": 84.419,
+   "t1": 87.147,
+   "text": "Open the gate. Or keep it closed. What do you do?"
+  }
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "speaker": "NAR",
+   "text": "There's a virus you don't catch by breathing. You catch it with your eyes.",
+   "t0": 0.3,
+   "t1": 3.819,
+   "chunks": [
+    {
+     "text": "There's a virus",
+     "t0": 0.3,
+     "t1": 1.054
+    },
+    {
+     "text": "you don't catch",
+     "t0": 1.054,
+     "t1": 1.808
+    },
+    {
+     "text": "by breathing.",
+     "t0": 1.808,
+     "t1": 2.461
+    },
+    {
+     "text": "You catch it",
+     "t0": 2.461,
+     "t1": 3.065
+    },
+    {
+     "text": "with your [eyes].",
+     "t0": 3.065,
+     "t1": 3.819
+    }
+   ]
+  },
+  {
+   "id": "second",
+   "speaker": "NAR",
+   "text": "One second of eye contact, and your mind is gone.",
+   "t0": 4.019,
+   "t1": 6.895,
+   "chunks": [
+    {
+     "text": "One second",
+     "t0": 4.019,
+     "t1": 4.644
+    },
+    {
+     "text": "of [eye contact],",
+     "t0": 4.644,
+     "t1": 5.582
+    },
+    {
+     "text": "and your mind",
+     "t0": 5.582,
+     "t1": 6.395
+    },
+    {
+     "text": "is [gone].",
+     "t0": 6.395,
+     "t1": 6.895
+    }
+   ]
+  },
+  {
+   "id": "smile",
+   "speaker": "NAR",
+   "text": "You don't feel sick. You just smile... and look for the next person.",
+   "t0": 7.195,
+   "t1": 10.726,
+   "chunks": [
+    {
+     "text": "You don't",
+     "t0": 7.195,
+     "t1": 7.691
+    },
+    {
+     "text": "feel sick.",
+     "t0": 7.691,
+     "t1": 8.243
+    },
+    {
+     "text": "You just [smile]...",
+     "t0": 8.243,
+     "t1": 9.181
+    },
+    {
+     "text": "and look for",
+     "t0": 9.181,
+     "t1": 9.843
+    },
+    {
+     "text": "the [next person].",
+     "t0": 9.843,
+     "t1": 10.726
+    }
+   ]
+  },
+  {
+   "id": "alaska",
+   "speaker": "NAR",
+   "text": "It starts in a tiny fishing town in Alaska. Doctors call it low risk.",
+   "t0": 11.226,
+   "t1": 15.528,
+   "chunks": [
+    {
+     "text": "It starts",
+     "t0": 11.226,
+     "t1": 11.831
+    },
+    {
+     "text": "in a tiny",
+     "t0": 11.831,
+     "t1": 12.436
+    },
+    {
+     "text": "fishing town",
+     "t0": 12.436,
+     "t1": 13.243
+    },
+    {
+     "text": "in [Alaska].",
+     "t0": 13.243,
+     "t1": 13.915
+    },
+    {
+     "text": "Doctors call it",
+     "t0": 13.915,
+     "t1": 14.923
+    },
+    {
+     "text": "[low risk].",
+     "t0": 14.923,
+     "t1": 15.528
+    }
+   ]
+  },
+  {
+   "id": "numbers",
+   "speaker": "NAR",
+   "text": "Then they run the numbers. Every country on Earth. Inside one hundred days.",
+   "t0": 15.828,
+   "t1": 20.111,
+   "chunks": [
+    {
+     "text": "Then they run",
+     "t0": 15.828,
+     "t1": 16.726
+    },
+    {
+     "text": "the [numbers].",
+     "t0": 16.726,
+     "t1": 17.555
+    },
+    {
+     "text": "Every country",
+     "t0": 17.555,
+     "t1": 18.453
+    },
+    {
+     "text": "on Earth.",
+     "t0": 18.453,
+     "t1": 19.075
+    },
+    {
+     "text": "Inside",
+     "t0": 19.075,
+     "t1": 19.489
+    },
+    {
+     "text": "[100 days].",
+     "t0": 19.489,
+     "t1": 20.111
+    }
+   ]
+  },
+  {
+   "id": "deal",
+   "speaker": "NAR",
+   "text": "So here's the deal. You get one million dollars, and one hundred days to survive it.",
+   "t0": 20.611,
+   "t1": 25.303,
+   "chunks": [
+    {
+     "text": "So here's",
+     "t0": 20.611,
+     "t1": 21.292
+    },
+    {
+     "text": "the deal.",
+     "t0": 21.292,
+     "t1": 21.973
+    },
+    {
+     "text": "You get",
+     "t0": 21.973,
+     "t1": 22.503
+    },
+    {
+     "text": "[$1,000,000],",
+     "t0": 22.503,
+     "t1": 23.336
+    },
+    {
+     "text": "and 100 days",
+     "t0": 23.336,
+     "t1": 24.244
+    },
+    {
+     "text": "to [survive] it.",
+     "t0": 24.244,
+     "t1": 25.303
+    }
+   ]
+  },
+  {
+   "id": "house",
+   "speaker": "NAR",
+   "text": "A house deep in the woods. Three hundred and fifty grand.",
+   "t0": 25.703,
+   "t1": 28.862,
+   "chunks": [
+    {
+     "text": "A house",
+     "t0": 25.703,
+     "t1": 26.354
+    },
+    {
+     "text": "deep in the [woods].",
+     "t0": 26.354,
+     "t1": 28.026
+    },
+    {
+     "text": "$350,000.",
+     "t0": 28.026,
+     "t1": 28.862
+    }
+   ]
+  },
+  {
+   "id": "shutters",
+   "speaker": "NAR",
+   "text": "Steel shutters on every window.",
+   "t0": 29.162,
+   "t1": 30.839,
+   "chunks": [
+    {
+     "text": "Steel [shutters]",
+     "t0": 29.162,
+     "t1": 29.944
+    },
+    {
+     "text": "on every window.",
+     "t0": 29.944,
+     "t1": 30.839
+    }
+   ]
+  },
+  {
+   "id": "bunker",
+   "speaker": "NAR",
+   "text": "A bunker under the floor, with a blast door.",
+   "t0": 31.139,
+   "t1": 33.5,
+   "chunks": [
+    {
+     "text": "A [bunker]",
+     "t0": 31.139,
+     "t1": 31.589
+    },
+    {
+     "text": "under the floor,",
+     "t0": 31.589,
+     "t1": 32.488
+    },
+    {
+     "text": "with a blast door.",
+     "t0": 32.488,
+     "t1": 33.5
+    }
+   ]
+  },
+  {
+   "id": "cameras",
+   "speaker": "NAR",
+   "text": "Thermal cameras on the tree line. Because you can't check someone's eyes... without looking at them.",
+   "t0": 33.8,
+   "t1": 38.785,
+   "chunks": [
+    {
+     "text": "[Thermal] cameras",
+     "t0": 33.8,
+     "t1": 34.587
+    },
+    {
+     "text": "on the tree line.",
+     "t0": 34.587,
+     "t1": 35.479
+    },
+    {
+     "text": "Because you can't",
+     "t0": 35.479,
+     "t1": 36.371
+    },
+    {
+     "text": "check someone's eyes...",
+     "t0": 36.371,
+     "t1": 37.578
+    },
+    {
+     "text": "without [looking]",
+     "t0": 37.578,
+     "t1": 38.365
+    },
+    {
+     "text": "at them.",
+     "t0": 38.365,
+     "t1": 38.785
+    }
+   ]
+  },
+  {
+   "id": "food",
+   "speaker": "NAR",
+   "text": "A year of food, a wall of batteries, and a dog. Dogs don't care about eye contact.",
+   "t0": 39.085,
+   "t1": 44.158,
+   "chunks": [
+    {
+     "text": "A year of food,",
+     "t0": 39.085,
+     "t1": 40.061
+    },
+    {
+     "text": "a wall of batteries,",
+     "t0": 40.061,
+     "t1": 41.361
+    },
+    {
+     "text": "and a [dog].",
+     "t0": 41.361,
+     "t1": 42.012
+    },
+    {
+     "text": "Dogs don't care",
+     "t0": 42.012,
+     "t1": 42.987
+    },
+    {
+     "text": "about [eye contact].",
+     "t0": 42.987,
+     "t1": 44.158
+    }
+   ]
+  },
+  {
+   "id": "helmet",
+   "speaker": "NAR",
+   "text": "And the last twenty-five thousand, on one helmet. The visor is solid black.",
+   "t0": 44.458,
+   "t1": 49.011,
+   "chunks": [
+    {
+     "text": "And the last",
+     "t0": 44.458,
+     "t1": 45.4
+    },
+    {
+     "text": "$25,000,",
+     "t0": 45.4,
+     "t1": 46.028
+    },
+    {
+     "text": "on one [helmet].",
+     "t0": 46.028,
+     "t1": 47.127
+    },
+    {
+     "text": "The visor",
+     "t0": 47.127,
+     "t1": 47.833
+    },
+    {
+     "text": "is solid [black].",
+     "t0": 47.833,
+     "t1": 49.011
+    }
+   ]
+  },
+  {
+   "id": "zero",
+   "speaker": "NAR",
+   "text": "Zero dollars left.",
+   "t0": 49.311,
+   "t1": 50.637,
+   "chunks": [
+    {
+     "text": "[Zero] dollars left.",
+     "t0": 49.311,
+     "t1": 50.637
+    }
+   ]
+  },
+  {
+   "id": "city",
+   "speaker": "NAR",
+   "text": "Day one hundred. It reaches the city.",
+   "t0": 51.637,
+   "t1": 53.875,
+   "chunks": [
+    {
+     "text": "Day [100].",
+     "t0": 51.637,
+     "t1": 52.3
+    },
+    {
+     "text": "It reaches",
+     "t0": 52.3,
+     "t1": 53.129
+    },
+    {
+     "text": "the [city].",
+     "t0": 53.129,
+     "t1": 53.875
+    }
+   ]
+  },
+  {
+   "id": "streets",
+   "speaker": "NAR",
+   "text": "Within hours, the streets are full of people. Smiling. Looking.",
+   "t0": 54.175,
+   "t1": 57.678,
+   "chunks": [
+    {
+     "text": "Within hours,",
+     "t0": 54.175,
+     "t1": 54.947
+    },
+    {
+     "text": "the streets",
+     "t0": 54.947,
+     "t1": 55.6
+    },
+    {
+     "text": "are full of people.",
+     "t0": 55.6,
+     "t1": 56.728
+    },
+    {
+     "text": "[Smiling].",
+     "t0": 56.728,
+     "t1": 57.203
+    },
+    {
+     "text": "[Looking].",
+     "t0": 57.203,
+     "t1": 57.678
+    }
+   ]
+  },
+  {
+   "id": "blind",
+   "speaker": "NAR",
+   "text": "Everyone left ties something over their eyes. The ones who don't... join the smile.",
+   "t0": 57.978,
+   "t1": 62.487,
+   "chunks": [
+    {
+     "text": "Everyone left",
+     "t0": 57.978,
+     "t1": 58.72
+    },
+    {
+     "text": "ties something",
+     "t0": 58.72,
+     "t1": 59.519
+    },
+    {
+     "text": "over their [eyes].",
+     "t0": 59.519,
+     "t1": 60.432
+    },
+    {
+     "text": "The ones who don't...",
+     "t0": 60.432,
+     "t1": 61.631
+    },
+    {
+     "text": "join the [smile].",
+     "t0": 61.631,
+     "t1": 62.487
+    }
+   ]
+  },
+  {
+   "id": "dark",
+   "speaker": "NAR",
+   "text": "Day one hundred and three. The TV goes dark.",
+   "t0": 63.087,
+   "t1": 65.867,
+   "chunks": [
+    {
+     "text": "Day 103.",
+     "t0": 63.087,
+     "t1": 64.014
+    },
+    {
+     "text": "The TV",
+     "t0": 64.014,
+     "t1": 64.709
+    },
+    {
+     "text": "goes [dark].",
+     "t0": 64.709,
+     "t1": 65.867
+    }
+   ]
+  },
+  {
+   "id": "gate",
+   "speaker": "NAR",
+   "text": "Then the gate camera picks up movement.",
+   "t0": 66.267,
+   "t1": 68.151,
+   "chunks": [
+    {
+     "text": "Then the",
+     "t0": 66.267,
+     "t1": 66.674
+    },
+    {
+     "text": "gate camera",
+     "t0": 66.674,
+     "t1": 67.235
+    },
+    {
+     "text": "picks up [movement].",
+     "t0": 67.235,
+     "t1": 68.151
+    }
+   ]
+  },
+  {
+   "id": "woman",
+   "speaker": "NAR",
+   "text": "A woman. Blindfolded. Alone.",
+   "t0": 68.451,
+   "t1": 70.485,
+   "chunks": [
+    {
+     "text": "A [woman].",
+     "t0": 68.451,
+     "t1": 69.077
+    },
+    {
+     "text": "Blindfolded.",
+     "t0": 69.077,
+     "t1": 70.016
+    },
+    {
+     "text": "Alone.",
+     "t0": 70.016,
+     "t1": 70.485
+    }
+   ]
+  },
+  {
+   "id": "please",
+   "speaker": "MAYA",
+   "text": "Please. I haven't looked at anyone. Please, let me in.",
+   "t0": 70.885,
+   "t1": 73.947,
+   "chunks": [
+    {
+     "text": "[Please].",
+     "t0": 70.885,
+     "t1": 71.314
+    },
+    {
+     "text": "I haven't looked",
+     "t0": 71.314,
+     "t1": 72.293
+    },
+    {
+     "text": "at anyone.",
+     "t0": 72.293,
+     "t1": 72.906
+    },
+    {
+     "text": "Please,",
+     "t0": 72.906,
+     "t1": 73.334
+    },
+    {
+     "text": "let me [in].",
+     "t0": 73.334,
+     "t1": 73.947
+    }
+   ]
+  },
+  {
+   "id": "heat",
+   "speaker": "NAR",
+   "text": "Your camera only sees heat. And you can't check her eyes... without opening the door.",
+   "t0": 74.547,
+   "t1": 79.026,
+   "chunks": [
+    {
+     "text": "Your camera",
+     "t0": 74.547,
+     "t1": 75.163
+    },
+    {
+     "text": "only sees [heat].",
+     "t0": 75.163,
+     "t1": 76.003
+    },
+    {
+     "text": "And you can't",
+     "t0": 76.003,
+     "t1": 76.731
+    },
+    {
+     "text": "check her eyes...",
+     "t0": 76.731,
+     "t1": 77.683
+    },
+    {
+     "text": "without opening",
+     "t0": 77.683,
+     "t1": 78.522
+    },
+    {
+     "text": "the [door].",
+     "t0": 78.522,
+     "t1": 79.026
+    }
+   ]
+  },
+  {
+   "id": "trees",
+   "speaker": "NAR",
+   "text": "Behind her, between the trees, something is smiling.",
+   "t0": 79.426,
+   "t1": 82.106,
+   "chunks": [
+    {
+     "text": "Behind her,",
+     "t0": 79.426,
+     "t1": 80.028
+    },
+    {
+     "text": "between the trees,",
+     "t0": 80.028,
+     "t1": 81.012
+    },
+    {
+     "text": "something",
+     "t0": 81.012,
+     "t1": 81.504
+    },
+    {
+     "text": "is [smiling].",
+     "t0": 81.504,
+     "t1": 82.106
+    }
+   ]
+  },
+  {
+   "id": "thirty",
+   "speaker": "NAR",
+   "text": "You have thirty seconds.",
+   "t0": 82.906,
+   "t1": 84.119,
+   "chunks": [
+    {
+     "text": "You have",
+     "t0": 82.906,
+     "t1": 83.417
+    },
+    {
+     "text": "[30 seconds].",
+     "t0": 83.417,
+     "t1": 84.119
+    }
+   ]
+  },
+  {
+   "id": "choice",
+   "speaker": "NAR",
+   "text": "Open the gate. Or keep it closed. What do you do?",
+   "t0": 84.419,
+   "t1": 87.147,
+   "chunks": [
+    {
+     "text": "Open the gate.",
+     "t0": 84.419,
+     "t1": 85.268
+    },
+    {
+     "text": "Or keep",
+     "t0": 85.268,
+     "t1": 85.692
+    },
+    {
+     "text": "it [closed].",
+     "t0": 85.692,
+     "t1": 86.298
+    },
+    {
+     "text": "What do",
+     "t0": 86.298,
+     "t1": 86.723
+    },
+    {
+     "text": "[you] do?",
+     "t0": 86.723,
+     "t1": 87.147
+    }
+   ]
+  }
+ ],
+ "marks": {
+  "hook": 0.3,
+  "second": 4.019,
+  "smile": 7.195,
+  "alaska": 11.226,
+  "numbers": 15.828,
+  "deal": 20.611,
+  "house": 25.703,
+  "shutters": 29.162,
+  "bunker": 31.139,
+  "cameras": 33.8,
+  "food": 39.085,
+  "helmet": 44.458,
+  "zero": 49.311,
+  "city": 51.637,
+  "streets": 54.175,
+  "blind": 57.978,
+  "dark": 63.087,
+  "gate": 66.267,
+  "woman": 68.451,
+  "please": 70.885,
+  "heat": 74.547,
+  "trees": 79.426,
+  "thirty": 82.906,
+  "choice": 84.419
+ }
+}
