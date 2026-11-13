@@ -2,7 +2,9 @@
 the last 30 seconds, and a low boom on the title. All synthesised."""
 import numpy as np
 
-import script as S
+import os, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import script as S  # noqa: E402
 
 SR = 48000
 

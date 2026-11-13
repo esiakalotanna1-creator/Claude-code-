@@ -1,0 +1,150 @@
+[
+ {
+  "name": "title_boom",
+  "t": 0.2
+ },
+ {
+  "name": "wh_second",
+  "t": 3.819
+ },
+ {
+  "name": "wh_alaska",
+  "t": 11.026
+ },
+ {
+  "name": "wh_numbers",
+  "t": 15.628
+ },
+ {
+  "name": "wh_deal",
+  "t": 20.411
+ },
+ {
+  "name": "wh_city",
+  "t": 51.437
+ },
+ {
+  "name": "wh_dark",
+  "t": 62.887
+ },
+ {
+  "name": "wh_gate",
+  "t": 66.067
+ },
+ {
+  "name": "wh_woman",
+  "t": 68.251
+ },
+ {
+  "name": "wh_heat",
+  "t": 74.347
+ },
+ {
+  "name": "wh_trees",
+  "t": 79.226
+ },
+ {
+  "name": "wh_thirty",
+  "t": 82.706
+ },
+ {
+  "name": "wh_choice",
+  "t": 84.219
+ },
+ {
+  "name": "turn",
+  "t": 5.219
+ },
+ {
+  "name": "stamp",
+  "t": 14.826
+ },
+ {
+  "name": "cash_house",
+  "t": 25.753
+ },
+ {
+  "name": "cash_shutters",
+  "t": 29.212
+ },
+ {
+  "name": "cash_bunker",
+  "t": 31.189
+ },
+ {
+  "name": "cash_cameras",
+  "t": 33.85
+ },
+ {
+  "name": "cash_food",
+  "t": 39.135
+ },
+ {
+  "name": "cash_helmet",
+  "t": 44.508
+ },
+ {
+  "name": "static",
+  "t": 63.087
+ },
+ {
+  "name": "alarm0",
+  "t": 66.267
+ },
+ {
+  "name": "alarm1",
+  "t": 66.967
+ },
+ {
+  "name": "alarm2",
+  "t": 67.667
+ },
+ {
+  "name": "alarm3",
+  "t": 68.367
+ },
+ {
+  "name": "alarm4",
+  "t": 69.067
+ },
+ {
+  "name": "alarm5",
+  "t": 69.767
+ },
+ {
+  "name": "beat0",
+  "t": 82.906
+ },
+ {
+  "name": "beat1",
+  "t": 83.706
+ },
+ {
+  "name": "beat2",
+  "t": 84.506
+ },
+ {
+  "name": "beat3",
+  "t": 85.306
+ },
+ {
+  "name": "beat4",
+  "t": 86.106
+ },
+ {
+  "name": "beat5",
+  "t": 86.906
+ },
+ {
+  "name": "beat6",
+  "t": 87.706
+ },
+ {
+  "name": "beat7",
+  "t": 88.506
+ },
+ {
+  "name": "beat8",
+  "t": 89.306
+ }
+]
