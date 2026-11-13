@@ -1,0 +1,474 @@
+{
+ "id": "DoubleJump",
+ "slug": "double-jump",
+ "topic": "What if every jump took you twice as high?",
+ "title": [
+  "WHAT IF EVERY JUMP",
+  "WENT TWICE AS HIGH?"
+ ],
+ "accent": "TWICE",
+ "power": {
+  "word": "Jump (and its number)",
+  "rule": "every jump goes twice as high as the last one, and it never resets",
+  "look": "a JUMP chip with the jump number and the height, a whoosh trail under him"
+ },
+ "voice": {
+  "engine": "kokoro",
+  "id": "af_heart",
+  "speed": 1.05
+ },
+ "script": [
+  {
+   "beat": "1 cold open, demo 1 (small and selfish)",
+   "text": "Jump. The top shelf. Easy."
+  },
+  {
+   "beat": "1 cold open, demo 2 (useful)",
+   "text": "Jump five. You're on the roof."
+  },
+  {
+   "beat": "1 cold open, demo 3 (a little uncanny)",
+   "text": "Jump eight. The birds look worried."
+  },
+  {
+   "beat": "2 the premise (title card)",
+   "text": "What if every jump took you twice as high?"
+  },
+  {
+   "beat": "4 the turn: the cost, one real fact",
+   "text": "Here's the problem. It never stops doubling. Jump twenty-one passes the space station. That's real."
+  },
+  {
+   "beat": "5-7 folded into a threat",
+   "text": "And you still have to come down."
+  }
+ ],
+ "science": [
+  {
+   "claim": "Starting from half a metre and doubling every jump, jump 21 passes the International Space Station.",
+   "working": "Jump n reaches 0.5 m x 2^(n-1). Jump 5: 0.5 x 16 = 8 m (a two-storey roof). Jump 8: 0.5 x 128 = 64 m (where birds fly). Jump 15: 0.5 x 16,384 = 8.2 km (airliner height). Jump 20: 0.5 x 524,288 = 262 km, below the ISS. Jump 21: 0.5 x 1,048,576 = 524 km, above the ISS's orbit at about 400-420 km.",
+   "source": "doubling arithmetic; NASA, International Space Station facts (orbit about 400 km / 250 miles)"
+  }
+ ],
+ "gaps": {
+  "pairs": {
+   "Easy|Jump": 0.35,
+   "roof|Jump": 0.35,
+   "worried|What": 0.4,
+   "high|Here": 0.45,
+   "real|And": 0.45
+  }
+ },
+ "shots": [
+  {
+   "id": "S1",
+   "size": "medium",
+   "set": "kitchen",
+   "key": 12,
+   "note": "Pip under the top shelf, eyeing the cookie jar; he crouches"
+  },
+  {
+   "id": "S2",
+   "size": "wide",
+   "set": "kitchen",
+   "key": 12,
+   "note": "the jump: up to the top shelf, grabs the jar at the top of the arc; JUMP 1 chip"
+  },
+  {
+   "id": "S3",
+   "size": "medium",
+   "set": "kitchen",
+   "key": 14,
+   "note": "lands, smug, the jar under his arm"
+  },
+  {
+   "id": "S4",
+   "size": "low angle",
+   "set": "rooftop",
+   "key": 16,
+   "note": "he shoots up past the parapet and lands on the roof; JUMP 5 chip"
+  },
+  {
+   "id": "S5",
+   "size": "medium",
+   "set": "rooftop",
+   "key": 18,
+   "note": "on the roof, shades on"
+  },
+  {
+   "id": "S6",
+   "size": "wide",
+   "set": "sky",
+   "key": 16,
+   "note": "he rockets up through a flock of birds; JUMP 8 chip"
+  },
+  {
+   "id": "S7",
+   "size": "close-up",
+   "set": "sky",
+   "key": 14,
+   "note": "a bird turns to watch him go, worried, a sweat drop"
+  },
+  {
+   "id": "S8",
+   "size": "title, wide",
+   "set": "rooftop",
+   "key": 40,
+   "note": "title card; Pip crouches and launches out of frame"
+  },
+  {
+   "id": "S9",
+   "size": "schematic",
+   "set": "schematic",
+   "key": 60,
+   "note": "the doubling ladder: 0.5 m, 8 m, 64 m, 8 km, 262 km, 524 km; the ISS line at 400 km"
+  },
+  {
+   "id": "S10",
+   "size": "wide",
+   "set": "space",
+   "key": 40,
+   "note": "he rises past the space station; an astronaut stares out of a window; JUMP 21 chip"
+  },
+  {
+   "id": "S11",
+   "size": "close-up",
+   "set": "space",
+   "key": 20,
+   "note": "at the top of the jump, floating, he looks down at Earth"
+  },
+  {
+   "id": "S12",
+   "size": "wide, high",
+   "set": "space",
+   "key": 20,
+   "note": "he starts to fall; the Earth below; a red flash at the end"
+  }
+ ],
+ "edit": [
+  {
+   "shot": "S1",
+   "at": "f:0"
+  },
+  {
+   "shot": "S2",
+   "at": "The"
+  },
+  {
+   "shot": "S3",
+   "at": "Easy"
+  },
+  {
+   "shot": "S4",
+   "at": "Jump"
+  },
+  {
+   "shot": "S5",
+   "at": "You're"
+  },
+  {
+   "shot": "S6",
+   "at": "Jump"
+  },
+  {
+   "shot": "S7",
+   "at": "birds"
+  },
+  {
+   "shot": "S8",
+   "at": "What"
+  },
+  {
+   "shot": "S9",
+   "at": "Here's"
+  },
+  {
+   "shot": "S10",
+   "at": "Jump"
+  },
+  {
+   "shot": "S11",
+   "at": "That's"
+  },
+  {
+   "shot": "S12",
+   "at": "come"
+  }
+ ],
+ "fx": [
+  {
+   "at": "S4+16",
+   "kind": "shake",
+   "len": 8,
+   "amp": 14
+  },
+  {
+   "at": "S8",
+   "kind": "flash",
+   "color": "#FFF3DC"
+  },
+  {
+   "at": "S12+14",
+   "kind": "flash",
+   "color": "#FF3344"
+  }
+ ],
+ "sound": {
+  "clips": {
+   "clink": [
+    "a ceramic coffee mug knocked by a hand on a wooden desk, short clink and scrape",
+    0.7
+   ],
+   "fall_whoosh": [
+    "a small object falling fast through the air, short soft whoosh",
+    0.6
+   ],
+   "sparkle": [
+    "a short bright magical sparkle twinkle, cartoon",
+    0.8
+   ],
+   "land": [
+    "a heavy body landing flat on a wooden floor, cartoon thud",
+    0.6
+   ],
+   "title_boom": [
+    "a cinematic whoosh rising into a deep boom impact",
+    1.6
+   ],
+   "drone_hit": [
+    "a dark ominous low drone hit, deep cinematic horror sting",
+    2.6
+   ],
+   "crack": [
+    "glass cracking sharply, the crack spreading across a pane",
+    1.1
+   ],
+   "roof_wind": [
+    "a gentle evening breeze on a city rooftop, distant traffic",
+    7.0
+   ],
+   "room_tone": [
+    "quiet indoor room tone in the evening, faint distant city hum, no voices",
+    12.5
+   ],
+   "music": [
+    "playful quirky cartoon background music, pizzicato strings, glockenspiel and soft bass, light and curious, 110 bpm, no vocals",
+    17.0
+   ],
+   "big_step": [
+    "a cartoon exaggerated careful tiptoe step, light airy whoosh",
+    0.7
+   ],
+   "shades": [
+    "cool sunglasses sliding on with a swoosh and a bright metallic glint",
+    0.9
+   ],
+   "cookie_crunch": [
+    "one crunchy bite into a chocolate chip cookie, close up",
+    0.6
+   ],
+   "gulp": [
+    "a nervous cartoon gulp, short",
+    0.5
+   ],
+   "gasp": [
+    "two young people gasping in surprise at the same moment, cartoon, short",
+    0.8
+   ],
+   "counter_tick": [
+    "a fast mechanical counter ticking up rapidly, digits rolling over, getting faster",
+    1.6
+   ],
+   "select_draw": [
+    "a quick digital selection sound, a soft rising electronic shimmer as a box is drawn on screen, short",
+    0.6
+   ],
+   "jump_up": [
+    "synthesized locally: a rising whoosh with a springy cartoon boing, the jump",
+    0.9
+   ],
+   "wing_flaps": [
+    "synthesized locally: a flock of birds flapping their wings, soft fast flaps",
+    1.2
+   ],
+   "space_hum": [
+    "synthesized locally: the hush of space, a low airless hum",
+    6.0
+   ]
+  },
+  "events": [
+   [
+    "S1",
+    "room_tone",
+    0.1,
+    "onset",
+    "S4"
+   ],
+   [
+    "S1+12",
+    "big_step",
+    0.3
+   ],
+   [
+    "S2+3",
+    "jump_up",
+    0.3,
+    "onset"
+   ],
+   [
+    "S2+14",
+    "clink",
+    0.35
+   ],
+   [
+    "S2+15",
+    "sparkle",
+    0.3
+   ],
+   [
+    "S2+27",
+    "land",
+    0.45
+   ],
+   [
+    "S3+6",
+    "cookie_crunch",
+    0.35
+   ],
+   [
+    "S4",
+    "roof_wind",
+    0.16,
+    "onset",
+    "S6"
+   ],
+   [
+    "S4",
+    "jump_up",
+    0.3,
+    "onset"
+   ],
+   [
+    "S4+16",
+    "land",
+    0.45
+   ],
+   [
+    "S5+10",
+    "shades",
+    0.45
+   ],
+   [
+    "S5+19",
+    "sparkle",
+    0.35
+   ],
+   [
+    "S6",
+    "jump_up",
+    0.3,
+    "onset"
+   ],
+   [
+    "S6+4",
+    "wing_flaps",
+    0.18,
+    "onset"
+   ],
+   [
+    "S6",
+    "roof_wind",
+    0.22,
+    "onset",
+    "S8"
+   ],
+   [
+    "S7+6",
+    "wing_flaps",
+    0.18,
+    "onset"
+   ],
+   [
+    "S7+34",
+    "gulp",
+    0.25
+   ],
+   [
+    "S8",
+    "title_boom",
+    0.6,
+    "peak"
+   ],
+   [
+    "S8",
+    "roof_wind",
+    0.16,
+    "onset",
+    "S9"
+   ],
+   [
+    "S8+52",
+    "jump_up",
+    0.3,
+    "onset"
+   ],
+   [
+    "S9+4",
+    "counter_tick",
+    0.25,
+    "onset"
+   ],
+   [
+    "S9+50",
+    "select_draw",
+    0.4
+   ],
+   [
+    "S10",
+    "space_hum",
+    0.07,
+    "onset"
+   ],
+   [
+    "S10",
+    "jump_up",
+    0.3,
+    "onset"
+   ],
+   [
+    "S10+32",
+    "gasp",
+    0.35
+   ],
+   [
+    "S11+30",
+    "gulp",
+    0.4
+   ],
+   [
+    "S12+17",
+    "drone_hit",
+    0.8
+   ],
+   [
+    "S12+18",
+    "fall_whoosh",
+    0.6,
+    "onset"
+   ],
+   [
+    "S12+30",
+    "crack",
+    0.55
+   ]
+  ],
+  "music": {
+   "clip": "music",
+   "until": "S12"
+  },
+  "levels": {
+   "sfx_lu": -6.0,
+   "music_lu": -12.0
+  }
+ }
+}

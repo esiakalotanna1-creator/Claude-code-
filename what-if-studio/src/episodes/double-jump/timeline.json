@@ -1,0 +1,240 @@
+{
+ "slug": "double-jump",
+ "title": "WHAT IF EVERY JUMP WENT TWICE AS HIGH?",
+ "fps": 30,
+ "total": 534,
+ "segments": [
+  {
+   "shot": "S1",
+   "a": 0,
+   "b": 20,
+   "t0": 0,
+   "t1": 20,
+   "line": "Jump."
+  },
+  {
+   "shot": "S2",
+   "a": 20,
+   "b": 51,
+   "t0": 0,
+   "t1": 31,
+   "line": "The top shelf."
+  },
+  {
+   "shot": "S3",
+   "a": 51,
+   "b": 73,
+   "t0": 0,
+   "t1": 22,
+   "line": "Easy."
+  },
+  {
+   "shot": "S4",
+   "a": 73,
+   "b": 104,
+   "t0": 0,
+   "t1": 31,
+   "line": "Jump five."
+  },
+  {
+   "shot": "S5",
+   "a": 104,
+   "b": 137,
+   "t0": 0,
+   "t1": 33,
+   "line": "You're on the roof."
+  },
+  {
+   "shot": "S6",
+   "a": 137,
+   "b": 170,
+   "t0": 0,
+   "t1": 33,
+   "line": "Jump eight. The"
+  },
+  {
+   "shot": "S7",
+   "a": 170,
+   "b": 208,
+   "t0": 0,
+   "t1": 38,
+   "line": "birds look worried."
+  },
+  {
+   "shot": "S8",
+   "a": 208,
+   "b": 276,
+   "t0": 0,
+   "t1": 68,
+   "line": "What if every jump took you twice as high?"
+  },
+  {
+   "shot": "S9",
+   "a": 276,
+   "b": 355,
+   "t0": 0,
+   "t1": 79,
+   "line": "Here's the problem. It never stops doubling."
+  },
+  {
+   "shot": "S10",
+   "a": 355,
+   "b": 431,
+   "t0": 0,
+   "t1": 76,
+   "line": "Jump twenty- one passes the space station."
+  },
+  {
+   "shot": "S11",
+   "a": 431,
+   "b": 491,
+   "t0": 0,
+   "t1": 60,
+   "line": "That's real. And you still have"
+  },
+  {
+   "shot": "S12",
+   "a": 491,
+   "b": 534,
+   "t0": 0,
+   "t1": 43,
+   "line": "to come down."
+  }
+ ],
+ "shots": [
+  {
+   "id": "S1",
+   "size": "medium",
+   "key": 12,
+   "len": 20,
+   "first": 0,
+   "line": "Jump.",
+   "note": "Pip under the top shelf, eyeing the cookie jar; he crouches"
+  },
+  {
+   "id": "S2",
+   "size": "wide",
+   "key": 12,
+   "len": 31,
+   "first": 20,
+   "line": "The top shelf.",
+   "note": "the jump: up to the top shelf, grabs the jar at the top of the arc; JUMP 1 chip"
+  },
+  {
+   "id": "S3",
+   "size": "medium",
+   "key": 14,
+   "len": 22,
+   "first": 51,
+   "line": "Easy.",
+   "note": "lands, smug, the jar under his arm"
+  },
+  {
+   "id": "S4",
+   "size": "low angle",
+   "key": 16,
+   "len": 31,
+   "first": 73,
+   "line": "Jump five.",
+   "note": "he shoots up past the parapet and lands on the roof; JUMP 5 chip"
+  },
+  {
+   "id": "S5",
+   "size": "medium",
+   "key": 18,
+   "len": 33,
+   "first": 104,
+   "line": "You're on the roof.",
+   "note": "on the roof, shades on"
+  },
+  {
+   "id": "S6",
+   "size": "wide",
+   "key": 16,
+   "len": 33,
+   "first": 137,
+   "line": "Jump eight. The",
+   "note": "he rockets up through a flock of birds; JUMP 8 chip"
+  },
+  {
+   "id": "S7",
+   "size": "close-up",
+   "key": 14,
+   "len": 38,
+   "first": 170,
+   "line": "birds look worried.",
+   "note": "a bird turns to watch him go, worried, a sweat drop"
+  },
+  {
+   "id": "S8",
+   "size": "title, wide",
+   "key": 40,
+   "len": 68,
+   "first": 208,
+   "line": "What if every jump took you twice as high?",
+   "note": "title card; Pip crouches and launches out of frame"
+  },
+  {
+   "id": "S9",
+   "size": "schematic",
+   "key": 60,
+   "len": 79,
+   "first": 276,
+   "line": "Here's the problem. It never stops doubling.",
+   "note": "the doubling ladder: 0.5 m, 8 m, 64 m, 8 km, 262 km, 524 km; the ISS line at 400 km"
+  },
+  {
+   "id": "S10",
+   "size": "wide",
+   "key": 40,
+   "len": 76,
+   "first": 355,
+   "line": "Jump twenty- one passes the space station.",
+   "note": "he rises past the space station; an astronaut stares out of a window; JUMP 21 chip"
+  },
+  {
+   "id": "S11",
+   "size": "close-up",
+   "key": 20,
+   "len": 60,
+   "first": 431,
+   "line": "That's real. And you still have",
+   "note": "at the top of the jump, floating, he looks down at Earth"
+  },
+  {
+   "id": "S12",
+   "size": "wide, high",
+   "key": 20,
+   "len": 43,
+   "first": 491,
+   "line": "to come down.",
+   "note": "he starts to fall; the Earth below; a red flash at the end"
+  }
+ ],
+ "fx": [
+  {
+   "kind": "shake",
+   "len": 8,
+   "amp": 14,
+   "f": 89
+  },
+  {
+   "kind": "flash",
+   "color": "#FFF3DC",
+   "f": 208
+  },
+  {
+   "kind": "flash",
+   "color": "#FF3344",
+   "f": 505
+  }
+ ],
+ "audio": {
+  "voice": "double-jump/voice.wav",
+  "sfx": "double-jump/sfx.wav",
+  "voiceVol": 0.8,
+  "sfxVol": 0.4657,
+  "music": "double-jump/music.wav",
+  "musicVol": 0.1312
+ }
+}
