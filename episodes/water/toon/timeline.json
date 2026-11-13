@@ -1,0 +1,741 @@
+{
+ "title": "5 SECONDS WITHOUT WATER",
+ "label": "WHAT IF",
+ "total": 70.352,
+ "beats": {
+  "hook": {
+   "speaker": "NAR",
+   "t0": 0.3,
+   "t1": 4.554,
+   "text": "What if every drop of water on Earth disappeared... for just five seconds?"
+  },
+  "s1": {
+   "speaker": "NAR",
+   "t0": 5.154,
+   "t1": 5.947,
+   "text": "Second one."
+  },
+  "gone": {
+   "speaker": "NAR",
+   "t0": 6.147,
+   "t1": 9.03,
+   "text": "Every ocean. Every river. Every cloud. Gone."
+  },
+  "you": {
+   "speaker": "NAR",
+   "t0": 9.33,
+   "t1": 11.236,
+   "text": "And so is the water inside you."
+  },
+  "sixty": {
+   "speaker": "NAR",
+   "t0": 11.436,
+   "t1": 15.848,
+   "text": "You're sixty percent water. In one blink, you lose more than half your body weight."
+  },
+  "diet": {
+   "speaker": "NAR",
+   "t0": 16.148,
+   "t1": 18.817,
+   "text": "Great for your diet. Terrible for being alive."
+  },
+  "s2": {
+   "speaker": "NAR",
+   "t0": 19.517,
+   "t1": 20.363,
+   "text": "Second two."
+  },
+  "plants": {
+   "speaker": "NAR",
+   "t0": 20.563,
+   "t1": 25.333,
+   "text": "Every plant on Earth crumbles to dust. Trees. Grass. Your mom's houseplants."
+  },
+  "s3": {
+   "speaker": "NAR",
+   "t0": 25.633,
+   "t1": 26.517,
+   "text": "Second three."
+  },
+  "concrete": {
+   "speaker": "NAR",
+   "t0": 26.717,
+   "t1": 31.837,
+   "text": "Concrete is held together by water. Without it, skyscrapers crumble like cookies."
+  },
+  "ships": {
+   "speaker": "NAR",
+   "t0": 32.137,
+   "t1": 35.992,
+   "text": "At sea, every ship drops into a hole up to eleven kilometers deep."
+  },
+  "fall": {
+   "speaker": "NAR",
+   "t0": 36.192,
+   "t1": 40.851,
+   "text": "In five seconds, they fall a hundred and twenty meters. A forty story building."
+  },
+  "s4": {
+   "speaker": "NAR",
+   "t0": 41.151,
+   "t1": 42.014,
+   "text": "Second four."
+  },
+  "sky": {
+   "speaker": "NAR",
+   "t0": 42.214,
+   "t1": 46.672,
+   "text": "The sky turns perfectly clear. No clouds. No rain. Just silence."
+  },
+  "s5": {
+   "speaker": "NAR",
+   "t0": 47.572,
+   "t1": 48.467,
+   "text": "Second five."
+  },
+  "back": {
+   "speaker": "NAR",
+   "t0": 48.667,
+   "t1": 50.881,
+   "text": "The water comes back. All of it. At once."
+  },
+  "after": {
+   "speaker": "NAR",
+   "t0": 51.681,
+   "t1": 58.218,
+   "text": "Ships are a hundred meters underwater. Cities are rubble. And you... are a little pile of dust in your clothes."
+  },
+  "but": {
+   "speaker": "NAR",
+   "t0": 59.118,
+   "t1": 60.534,
+   "text": "But not everything died."
+  },
+  "tardi": {
+   "speaker": "NAR",
+   "t0": 61.134,
+   "t1": 65.358,
+   "text": "Tardigrades survive being dried out completely. They'll shake off the dust..."
+  },
+  "planet": {
+   "speaker": "NAR",
+   "t0": 65.558,
+   "t1": 67.652,
+   "text": "...and finally have the planet to themselves."
+  }
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "speaker": "NAR",
+   "text": "What if every drop of water on Earth disappeared... for just five seconds?",
+   "t0": 0.3,
+   "t1": 4.554,
+   "chunks": [
+    {
+     "text": "What if",
+     "t0": 0.3,
+     "t1": 0.738
+    },
+    {
+     "text": "every drop",
+     "t0": 0.738,
+     "t1": 1.363
+    },
+    {
+     "text": "of [water]",
+     "t0": 1.363,
+     "t1": 1.864
+    },
+    {
+     "text": "on Earth",
+     "t0": 1.864,
+     "t1": 2.364
+    },
+    {
+     "text": "[disappeared]...",
+     "t0": 2.364,
+     "t1": 3.24
+    },
+    {
+     "text": "for just",
+     "t0": 3.24,
+     "t1": 3.741
+    },
+    {
+     "text": "[five seconds]?",
+     "t0": 3.741,
+     "t1": 4.554
+    }
+   ]
+  },
+  {
+   "id": "s1",
+   "speaker": "NAR",
+   "text": "Second one.",
+   "t0": 5.154,
+   "t1": 5.947,
+   "chunks": [
+    {
+     "text": "Second [one].",
+     "t0": 5.154,
+     "t1": 5.947
+    }
+   ]
+  },
+  {
+   "id": "gone",
+   "speaker": "NAR",
+   "text": "Every ocean. Every river. Every cloud. Gone.",
+   "t0": 6.147,
+   "t1": 9.03,
+   "chunks": [
+    {
+     "text": "Every [ocean].",
+     "t0": 6.147,
+     "t1": 6.991
+    },
+    {
+     "text": "Every river.",
+     "t0": 6.991,
+     "t1": 7.835
+    },
+    {
+     "text": "Every cloud.",
+     "t0": 7.835,
+     "t1": 8.679
+    },
+    {
+     "text": "[Gone].",
+     "t0": 8.679,
+     "t1": 9.03
+    }
+   ]
+  },
+  {
+   "id": "you",
+   "speaker": "NAR",
+   "text": "And so is the water inside you.",
+   "t0": 9.33,
+   "t1": 11.236,
+   "chunks": [
+    {
+     "text": "And so is",
+     "t0": 9.33,
+     "t1": 9.922
+    },
+    {
+     "text": "the water",
+     "t0": 9.922,
+     "t1": 10.513
+    },
+    {
+     "text": "[inside you].",
+     "t0": 10.513,
+     "t1": 11.236
+    }
+   ]
+  },
+  {
+   "id": "sixty",
+   "speaker": "NAR",
+   "text": "You're sixty percent water. In one blink, you lose more than half your body weight.",
+   "t0": 11.436,
+   "t1": 15.848,
+   "chunks": [
+    {
+     "text": "You're",
+     "t0": 11.436,
+     "t1": 11.78
+    },
+    {
+     "text": "[sixty percent]",
+     "t0": 11.78,
+     "t1": 12.525
+    },
+    {
+     "text": "water.",
+     "t0": 12.525,
+     "t1": 12.868
+    },
+    {
+     "text": "In one blink,",
+     "t0": 12.868,
+     "t1": 13.613
+    },
+    {
+     "text": "you lose",
+     "t0": 13.613,
+     "t1": 14.071
+    },
+    {
+     "text": "more than [half]",
+     "t0": 14.071,
+     "t1": 14.874
+    },
+    {
+     "text": "your body weight.",
+     "t0": 14.874,
+     "t1": 15.848
+    }
+   ]
+  },
+  {
+   "id": "diet",
+   "speaker": "NAR",
+   "text": "Great for your diet. Terrible for being alive.",
+   "t0": 16.148,
+   "t1": 18.817,
+   "chunks": [
+    {
+     "text": "Great for",
+     "t0": 16.148,
+     "t1": 16.706
+    },
+    {
+     "text": "your [diet].",
+     "t0": 16.706,
+     "t1": 17.327
+    },
+    {
+     "text": "Terrible for",
+     "t0": 17.327,
+     "t1": 18.072
+    },
+    {
+     "text": "being [alive].",
+     "t0": 18.072,
+     "t1": 18.817
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "speaker": "NAR",
+   "text": "Second two.",
+   "t0": 19.517,
+   "t1": 20.363,
+   "chunks": [
+    {
+     "text": "Second [two].",
+     "t0": 19.517,
+     "t1": 20.363
+    }
+   ]
+  },
+  {
+   "id": "plants",
+   "speaker": "NAR",
+   "text": "Every plant on Earth crumbles to dust. Trees. Grass. Your mom's houseplants.",
+   "t0": 20.563,
+   "t1": 25.333,
+   "chunks": [
+    {
+     "text": "Every [plant]",
+     "t0": 20.563,
+     "t1": 21.312
+    },
+    {
+     "text": "on Earth",
+     "t0": 21.312,
+     "t1": 21.857
+    },
+    {
+     "text": "crumbles to [dust].",
+     "t0": 21.857,
+     "t1": 23.016
+    },
+    {
+     "text": "Trees.",
+     "t0": 23.016,
+     "t1": 23.425
+    },
+    {
+     "text": "Grass.",
+     "t0": 23.425,
+     "t1": 23.834
+    },
+    {
+     "text": "Your mom's",
+     "t0": 23.834,
+     "t1": 24.515
+    },
+    {
+     "text": "[houseplants].",
+     "t0": 24.515,
+     "t1": 25.333
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "speaker": "NAR",
+   "text": "Second three.",
+   "t0": 25.633,
+   "t1": 26.517,
+   "chunks": [
+    {
+     "text": "Second [three].",
+     "t0": 25.633,
+     "t1": 26.517
+    }
+   ]
+  },
+  {
+   "id": "concrete",
+   "speaker": "NAR",
+   "text": "Concrete is held together by water. Without it, skyscrapers crumble like cookies.",
+   "t0": 26.717,
+   "t1": 31.837,
+   "chunks": [
+    {
+     "text": "Concrete",
+     "t0": 26.717,
+     "t1": 27.256
+    },
+    {
+     "text": "is held together",
+     "t0": 27.256,
+     "t1": 28.333
+    },
+    {
+     "text": "by [water].",
+     "t0": 28.333,
+     "t1": 28.94
+    },
+    {
+     "text": "Without it,",
+     "t0": 28.94,
+     "t1": 29.681
+    },
+    {
+     "text": "skyscrapers",
+     "t0": 29.681,
+     "t1": 30.422
+    },
+    {
+     "text": "crumble like [cookies].",
+     "t0": 30.422,
+     "t1": 31.837
+    }
+   ]
+  },
+  {
+   "id": "ships",
+   "speaker": "NAR",
+   "text": "At sea, every ship drops into a hole up to eleven kilometers deep.",
+   "t0": 32.137,
+   "t1": 35.992,
+   "chunks": [
+    {
+     "text": "At sea,",
+     "t0": 32.137,
+     "t1": 32.572
+    },
+    {
+     "text": "every [ship]",
+     "t0": 32.572,
+     "t1": 33.194
+    },
+    {
+     "text": "drops into a hole",
+     "t0": 33.194,
+     "t1": 34.251
+    },
+    {
+     "text": "up to [eleven kilometers]",
+     "t0": 34.251,
+     "t1": 35.681
+    },
+    {
+     "text": "deep.",
+     "t0": 35.681,
+     "t1": 35.992
+    }
+   ]
+  },
+  {
+   "id": "fall",
+   "speaker": "NAR",
+   "text": "In five seconds, they fall a hundred and twenty meters. A forty story building.",
+   "t0": 36.192,
+   "t1": 40.851,
+   "chunks": [
+    {
+     "text": "In five seconds,",
+     "t0": 36.192,
+     "t1": 37.478
+    },
+    {
+     "text": "they fall",
+     "t0": 37.478,
+     "t1": 38.201
+    },
+    {
+     "text": "[120 meters].",
+     "t0": 38.201,
+     "t1": 39.084
+    },
+    {
+     "text": "A forty story",
+     "t0": 39.084,
+     "t1": 40.128
+    },
+    {
+     "text": "[building].",
+     "t0": 40.128,
+     "t1": 40.851
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "speaker": "NAR",
+   "text": "Second four.",
+   "t0": 41.151,
+   "t1": 42.014,
+   "chunks": [
+    {
+     "text": "Second [four].",
+     "t0": 41.151,
+     "t1": 42.014
+    }
+   ]
+  },
+  {
+   "id": "sky",
+   "speaker": "NAR",
+   "text": "The sky turns perfectly clear. No clouds. No rain. Just silence.",
+   "t0": 42.214,
+   "t1": 46.672,
+   "chunks": [
+    {
+     "text": "The sky turns",
+     "t0": 42.214,
+     "t1": 43.18
+    },
+    {
+     "text": "perfectly [clear].",
+     "t0": 43.18,
+     "t1": 44.369
+    },
+    {
+     "text": "No clouds.",
+     "t0": 44.369,
+     "t1": 45.112
+    },
+    {
+     "text": "No rain.",
+     "t0": 45.112,
+     "t1": 45.706
+    },
+    {
+     "text": "Just [silence].",
+     "t0": 45.706,
+     "t1": 46.672
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "speaker": "NAR",
+   "text": "Second five.",
+   "t0": 47.572,
+   "t1": 48.467,
+   "chunks": [
+    {
+     "text": "Second [five].",
+     "t0": 47.572,
+     "t1": 48.467
+    }
+   ]
+  },
+  {
+   "id": "back",
+   "speaker": "NAR",
+   "text": "The water comes back. All of it. At once.",
+   "t0": 48.667,
+   "t1": 50.881,
+   "chunks": [
+    {
+     "text": "The water",
+     "t0": 48.667,
+     "t1": 49.191
+    },
+    {
+     "text": "comes [back].",
+     "t0": 49.191,
+     "t1": 49.832
+    },
+    {
+     "text": "All of it.",
+     "t0": 49.832,
+     "t1": 50.415
+    },
+    {
+     "text": "At [once].",
+     "t0": 50.415,
+     "t1": 50.881
+    }
+   ]
+  },
+  {
+   "id": "after",
+   "speaker": "NAR",
+   "text": "Ships are a hundred meters underwater. Cities are rubble. And you... are a little pile of dust in your clothes.",
+   "t0": 51.681,
+   "t1": 58.218,
+   "chunks": [
+    {
+     "text": "Ships are",
+     "t0": 51.681,
+     "t1": 52.252
+    },
+    {
+     "text": "a hundred meters",
+     "t0": 52.252,
+     "t1": 53.268
+    },
+    {
+     "text": "[underwater].",
+     "t0": 53.268,
+     "t1": 53.966
+    },
+    {
+     "text": "Cities are",
+     "t0": 53.966,
+     "t1": 54.601
+    },
+    {
+     "text": "[rubble].",
+     "t0": 54.601,
+     "t1": 55.045
+    },
+    {
+     "text": "And you...",
+     "t0": 55.045,
+     "t1": 55.68
+    },
+    {
+     "text": "are a little",
+     "t0": 55.68,
+     "t1": 56.441
+    },
+    {
+     "text": "pile of [dust]",
+     "t0": 56.441,
+     "t1": 57.203
+    },
+    {
+     "text": "in your clothes.",
+     "t0": 57.203,
+     "t1": 58.218
+    }
+   ]
+  },
+  {
+   "id": "but",
+   "speaker": "NAR",
+   "text": "But not everything died.",
+   "t0": 59.118,
+   "t1": 60.534,
+   "chunks": [
+    {
+     "text": "But not",
+     "t0": 59.118,
+     "t1": 59.549
+    },
+    {
+     "text": "everything [died].",
+     "t0": 59.549,
+     "t1": 60.534
+    }
+   ]
+  },
+  {
+   "id": "tardi",
+   "speaker": "NAR",
+   "text": "Tardigrades survive being dried out completely. They'll shake off the dust...",
+   "t0": 61.134,
+   "t1": 65.358,
+   "chunks": [
+    {
+     "text": "[Tardigrades]",
+     "t0": 61.134,
+     "t1": 61.78
+    },
+    {
+     "text": "survive being",
+     "t0": 61.78,
+     "t1": 62.542
+    },
+    {
+     "text": "dried out",
+     "t0": 62.542,
+     "t1": 63.07
+    },
+    {
+     "text": "completely.",
+     "t0": 63.07,
+     "t1": 63.715
+    },
+    {
+     "text": "They'll shake",
+     "t0": 63.715,
+     "t1": 64.478
+    },
+    {
+     "text": "off the [dust]...",
+     "t0": 64.478,
+     "t1": 65.358
+    }
+   ]
+  },
+  {
+   "id": "planet",
+   "speaker": "NAR",
+   "text": "...and finally have the planet to themselves.",
+   "t0": 65.558,
+   "t1": 67.652,
+   "chunks": [
+    {
+     "text": "...and finally",
+     "t0": 65.558,
+     "t1": 66.24
+    },
+    {
+     "text": "have the [planet]",
+     "t0": 66.24,
+     "t1": 66.97
+    },
+    {
+     "text": "to themselves.",
+     "t0": 66.97,
+     "t1": 67.652
+    }
+   ]
+  }
+ ],
+ "marks": {
+  "hook": 0.3,
+  "s1": 5.154,
+  "gone": 6.147,
+  "you": 9.33,
+  "sixty": 11.436,
+  "diet": 16.148,
+  "s2": 19.517,
+  "plants": 20.563,
+  "s3": 25.633,
+  "concrete": 26.717,
+  "ships": 32.137,
+  "fall": 36.192,
+  "s4": 41.151,
+  "sky": 42.214,
+  "s5": 47.572,
+  "back": 48.667,
+  "after": 51.681,
+  "but": 59.118,
+  "tardi": 61.134,
+  "planet": 65.558
+ }
+}
