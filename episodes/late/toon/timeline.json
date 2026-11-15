@@ -1,0 +1,724 @@
+{
+ "title": "THREE SECONDS LATE",
+ "label": "PART 1",
+ "total": 47.034,
+ "beats": {
+  "hook": {
+   "speaker": "KAI",
+   "t0": 0.0,
+   "t1": 4.266,
+   "text": "At 3:07 a.m. on a Tuesday, every reflection on Earth fell three seconds behind."
+  },
+  "friday": {
+   "speaker": "KAI",
+   "t0": 4.326,
+   "t1": 6.094,
+   "text": "By Friday, they'd stopped trying to catch up."
+  },
+  "mirrors": {
+   "speaker": "KAI",
+   "t0": 6.154,
+   "t1": 6.6,
+   "text": "Mirrors."
+  },
+  "windows": {
+   "speaker": "KAI",
+   "t0": 6.66,
+   "t1": 7.183,
+   "text": "Windows."
+  },
+  "puddles": {
+   "speaker": "KAI",
+   "t0": 7.243,
+   "t1": 7.736,
+   "text": "Puddles."
+  },
+  "phone": {
+   "speaker": "KAI",
+   "t0": 7.796,
+   "t1": 9.19,
+   "text": "Your phone, when the screen goes black."
+  },
+  "face": {
+   "speaker": "KAI",
+   "t0": 9.25,
+   "t1": 11.429,
+   "text": "If it shows your face, it isn't on your side anymore."
+  },
+  "dad": {
+   "speaker": "KAI",
+   "t0": 11.489,
+   "t1": 13.853,
+   "text": "My dad said it was fake. Then he shaved without a mirror."
+  },
+  "blender": {
+   "speaker": "KAI",
+   "t0": 13.913,
+   "t1": 17.161,
+   "text": "Now he looks like he lost a fight with a blender. And he believes everything."
+  },
+  "anchor1": {
+   "speaker": "ANCHOR",
+   "t0": 17.221,
+   "t1": 20.026,
+   "text": "The delay is growing. Three seconds. Then five. Then ten."
+  },
+  "anchor2": {
+   "speaker": "ANCHOR",
+   "t0": 20.086,
+   "t1": 23.046,
+   "text": "And if your reflection ever moves before you do, do not look away."
+  },
+  "normal": {
+   "speaker": "KAI",
+   "t0": 23.106,
+   "t1": 24.066,
+   "text": "Cool. Normal Tuesday."
+  },
+  "cover": {
+   "speaker": "KAI",
+   "t0": 24.126,
+   "t1": 25.697,
+   "text": "So we covered every mirror in the house."
+  },
+  "gma1": {
+   "speaker": "GMA",
+   "t0": 25.757,
+   "t1": 30.623,
+   "text": "I've survived two husbands, a recession, and your mother's cooking. I am not scared of my own face."
+  },
+  "remi": {
+   "speaker": "REMI",
+   "t0": 30.683,
+   "t1": 32.059,
+   "text": "What if your face is scared of you?"
+  },
+  "gma2": {
+   "speaker": "GMA",
+   "t0": 32.119,
+   "t1": 33.485,
+   "text": "Then she's got good sense."
+  },
+  "vanity": {
+   "speaker": "KAI",
+   "t0": 33.545,
+   "t1": 34.897,
+   "text": "She kept her big mirror uncovered."
+  },
+  "night": {
+   "speaker": "KAI",
+   "t0": 34.957,
+   "t1": 38.867,
+   "text": "Two a.m. My phone went black, and my reflection put it down a whole second after me."
+  },
+  "laugh": {
+   "speaker": "KAI",
+   "t0": 38.927,
+   "t1": 41.036,
+   "text": "Then I heard Grandma laughing. Talking to someone."
+  },
+  "pretty": {
+   "speaker": "GMA",
+   "t0": 41.096,
+   "t1": 42.822,
+   "text": "Oh, you were always the pretty one."
+  },
+  "which": {
+   "speaker": "KAI",
+   "t0": 42.882,
+   "t1": 44.274,
+   "text": "Grandma? Which one of you is talking?"
+  },
+  "card": {
+   "speaker": "SCREEN",
+   "t0": 44.334,
+   "t1": 46.534,
+   "text": ""
+  }
+ },
+ "lines": [
+  {
+   "id": "hook",
+   "speaker": "KAI",
+   "text": "At 3:07 a.m. on a Tuesday, every reflection on Earth fell three seconds behind.",
+   "t0": 0.0,
+   "t1": 4.266,
+   "chunks": [
+    {
+     "text": "At [3:07] a.m.",
+     "t0": 0.0,
+     "t1": 0.683
+    },
+    {
+     "text": "on a Tuesday,",
+     "t0": 0.683,
+     "t1": 1.422
+    },
+    {
+     "text": "every reflection on",
+     "t0": 1.422,
+     "t1": 2.503
+    },
+    {
+     "text": "Earth fell [three",
+     "t0": 2.503,
+     "t1": 3.413
+    },
+    {
+     "text": "seconds] behind.",
+     "t0": 3.413,
+     "t1": 4.266
+    }
+   ]
+  },
+  {
+   "id": "friday",
+   "speaker": "KAI",
+   "text": "By Friday, they'd stopped trying to catch up.",
+   "t0": 4.326,
+   "t1": 6.094,
+   "chunks": [
+    {
+     "text": "By Friday,",
+     "t0": 4.326,
+     "t1": 4.737
+    },
+    {
+     "text": "they'd stopped trying",
+     "t0": 4.737,
+     "t1": 5.6
+    },
+    {
+     "text": "to [catch up].",
+     "t0": 5.6,
+     "t1": 6.094
+    }
+   ]
+  },
+  {
+   "id": "mirrors",
+   "speaker": "KAI",
+   "text": "Mirrors.",
+   "t0": 6.154,
+   "t1": 6.6,
+   "chunks": [
+    {
+     "text": "[Mirrors].",
+     "t0": 6.154,
+     "t1": 6.6
+    }
+   ]
+  },
+  {
+   "id": "windows",
+   "speaker": "KAI",
+   "text": "Windows.",
+   "t0": 6.66,
+   "t1": 7.183,
+   "chunks": [
+    {
+     "text": "[Windows].",
+     "t0": 6.66,
+     "t1": 7.183
+    }
+   ]
+  },
+  {
+   "id": "puddles",
+   "speaker": "KAI",
+   "text": "Puddles.",
+   "t0": 7.243,
+   "t1": 7.736,
+   "chunks": [
+    {
+     "text": "[Puddles].",
+     "t0": 7.243,
+     "t1": 7.736
+    }
+   ]
+  },
+  {
+   "id": "phone",
+   "speaker": "KAI",
+   "text": "Your phone, when the screen goes black.",
+   "t0": 7.796,
+   "t1": 9.19,
+   "chunks": [
+    {
+     "text": "Your phone,",
+     "t0": 7.796,
+     "t1": 8.21
+    },
+    {
+     "text": "when the screen",
+     "t0": 8.21,
+     "t1": 8.775
+    },
+    {
+     "text": "goes [black].",
+     "t0": 8.775,
+     "t1": 9.19
+    }
+   ]
+  },
+  {
+   "id": "face",
+   "speaker": "KAI",
+   "text": "If it shows your face, it isn't on your side anymore.",
+   "t0": 9.25,
+   "t1": 11.429,
+   "chunks": [
+    {
+     "text": "If it shows",
+     "t0": 9.25,
+     "t1": 9.729
+    },
+    {
+     "text": "your face,",
+     "t0": 9.729,
+     "t1": 10.165
+    },
+    {
+     "text": "it isn't on",
+     "t0": 10.165,
+     "t1": 10.644
+    },
+    {
+     "text": "your [side] anymore.",
+     "t0": 10.644,
+     "t1": 11.429
+    }
+   ]
+  },
+  {
+   "id": "dad",
+   "speaker": "KAI",
+   "text": "My dad said it was fake. Then he shaved without a mirror.",
+   "t0": 11.489,
+   "t1": 13.853,
+   "chunks": [
+    {
+     "text": "My dad said",
+     "t0": 11.489,
+     "t1": 11.97
+    },
+    {
+     "text": "it was [fake].",
+     "t0": 11.97,
+     "t1": 12.496
+    },
+    {
+     "text": "Then he shaved",
+     "t0": 12.496,
+     "t1": 13.109
+    },
+    {
+     "text": "without a mirror.",
+     "t0": 13.109,
+     "t1": 13.853
+    }
+   ]
+  },
+  {
+   "id": "blender",
+   "speaker": "KAI",
+   "text": "Now he looks like he lost a fight with a blender. And he believes everything.",
+   "t0": 13.913,
+   "t1": 17.161,
+   "chunks": [
+    {
+     "text": "Now he looks",
+     "t0": 13.913,
+     "t1": 14.454
+    },
+    {
+     "text": "like he lost",
+     "t0": 14.454,
+     "t1": 14.996
+    },
+    {
+     "text": "a fight with",
+     "t0": 14.996,
+     "t1": 15.537
+    },
+    {
+     "text": "a [blender].",
+     "t0": 15.537,
+     "t1": 15.988
+    },
+    {
+     "text": "And he believes",
+     "t0": 15.988,
+     "t1": 16.665
+    },
+    {
+     "text": "everything.",
+     "t0": 16.665,
+     "t1": 17.161
+    }
+   ]
+  },
+  {
+   "id": "anchor1",
+   "speaker": "ANCHOR",
+   "text": "The delay is growing. Three seconds. Then five. Then ten.",
+   "t0": 17.221,
+   "t1": 20.026,
+   "chunks": [
+    {
+     "text": "The delay is",
+     "t0": 17.221,
+     "t1": 17.856
+    },
+    {
+     "text": "[growing].",
+     "t0": 17.856,
+     "t1": 18.28
+    },
+    {
+     "text": "Three seconds.",
+     "t0": 18.28,
+     "t1": 19.021
+    },
+    {
+     "text": "Then five.",
+     "t0": 19.021,
+     "t1": 19.55
+    },
+    {
+     "text": "Then [ten].",
+     "t0": 19.55,
+     "t1": 20.026
+    }
+   ]
+  },
+  {
+   "id": "anchor2",
+   "speaker": "ANCHOR",
+   "text": "And if your reflection ever moves before you do, do not look away.",
+   "t0": 20.086,
+   "t1": 23.046,
+   "chunks": [
+    {
+     "text": "And if your",
+     "t0": 20.086,
+     "t1": 20.611
+    },
+    {
+     "text": "reflection ever moves",
+     "t0": 20.611,
+     "t1": 21.614
+    },
+    {
+     "text": "[before] you do,",
+     "t0": 21.614,
+     "t1": 22.282
+    },
+    {
+     "text": "do not look",
+     "t0": 22.282,
+     "t1": 22.807
+    },
+    {
+     "text": "away.",
+     "t0": 22.807,
+     "t1": 23.046
+    }
+   ]
+  },
+  {
+   "id": "normal",
+   "speaker": "KAI",
+   "text": "Cool. Normal Tuesday.",
+   "t0": 23.106,
+   "t1": 24.066,
+   "chunks": [
+    {
+     "text": "Cool.",
+     "t0": 23.106,
+     "t1": 23.346
+    },
+    {
+     "text": "Normal [Tuesday].",
+     "t0": 23.346,
+     "t1": 24.066
+    }
+   ]
+  },
+  {
+   "id": "cover",
+   "speaker": "KAI",
+   "text": "So we covered every mirror in the house.",
+   "t0": 24.126,
+   "t1": 25.697,
+   "chunks": [
+    {
+     "text": "So we covered",
+     "t0": 24.126,
+     "t1": 24.664
+    },
+    {
+     "text": "[every] mirror in",
+     "t0": 24.664,
+     "t1": 25.284
+    },
+    {
+     "text": "the house.",
+     "t0": 25.284,
+     "t1": 25.697
+    }
+   ]
+  },
+  {
+   "id": "gma1",
+   "speaker": "GMA",
+   "text": "I've survived two husbands, a recession, and your mother's cooking. I am not scared of my own face.",
+   "t0": 25.757,
+   "t1": 30.623,
+   "chunks": [
+    {
+     "text": "I've survived two",
+     "t0": 25.757,
+     "t1": 26.656
+    },
+    {
+     "text": "husbands,",
+     "t0": 26.656,
+     "t1": 27.132
+    },
+    {
+     "text": "a recession,",
+     "t0": 27.132,
+     "t1": 27.767
+    },
+    {
+     "text": "and your mother's",
+     "t0": 27.767,
+     "t1": 28.666
+    },
+    {
+     "text": "[cooking].",
+     "t0": 28.666,
+     "t1": 29.09
+    },
+    {
+     "text": "I am not",
+     "t0": 29.09,
+     "t1": 29.513
+    },
+    {
+     "text": "scared of my",
+     "t0": 29.513,
+     "t1": 30.147
+    },
+    {
+     "text": "own face.",
+     "t0": 30.147,
+     "t1": 30.623
+    }
+   ]
+  },
+  {
+   "id": "remi",
+   "speaker": "REMI",
+   "text": "What if your face is scared of you?",
+   "t0": 30.683,
+   "t1": 32.059,
+   "chunks": [
+    {
+     "text": "What if your",
+     "t0": 30.683,
+     "t1": 31.184
+    },
+    {
+     "text": "face is scared",
+     "t0": 31.184,
+     "t1": 31.768
+    },
+    {
+     "text": "of [you]?",
+     "t0": 31.768,
+     "t1": 32.059
+    }
+   ]
+  },
+  {
+   "id": "gma2",
+   "speaker": "GMA",
+   "text": "Then she's got good sense.",
+   "t0": 32.119,
+   "t1": 33.485,
+   "chunks": [
+    {
+     "text": "Then she's got",
+     "t0": 32.119,
+     "t1": 32.884
+    },
+    {
+     "text": "good [sense].",
+     "t0": 32.884,
+     "t1": 33.485
+    }
+   ]
+  },
+  {
+   "id": "vanity",
+   "speaker": "KAI",
+   "text": "She kept her big mirror uncovered.",
+   "t0": 33.545,
+   "t1": 34.897,
+   "chunks": [
+    {
+     "text": "She kept her",
+     "t0": 33.545,
+     "t1": 34.037
+    },
+    {
+     "text": "big mirror [uncovered].",
+     "t0": 34.037,
+     "t1": 34.897
+    }
+   ]
+  },
+  {
+   "id": "night",
+   "speaker": "KAI",
+   "text": "Two a.m. My phone went black, and my reflection put it down a whole second after me.",
+   "t0": 34.957,
+   "t1": 38.867,
+   "chunks": [
+    {
+     "text": "Two a.m.",
+     "t0": 34.957,
+     "t1": 35.358
+    },
+    {
+     "text": "My phone went",
+     "t0": 35.358,
+     "t1": 36.01
+    },
+    {
+     "text": "black,",
+     "t0": 36.01,
+     "t1": 36.311
+    },
+    {
+     "text": "and my reflection",
+     "t0": 36.311,
+     "t1": 37.163
+    },
+    {
+     "text": "put it down",
+     "t0": 37.163,
+     "t1": 37.714
+    },
+    {
+     "text": "a whole [second]",
+     "t0": 37.714,
+     "t1": 38.416
+    },
+    {
+     "text": "after me.",
+     "t0": 38.416,
+     "t1": 38.867
+    }
+   ]
+  },
+  {
+   "id": "laugh",
+   "speaker": "KAI",
+   "text": "Then I heard Grandma laughing. Talking to someone.",
+   "t0": 38.927,
+   "t1": 41.036,
+   "chunks": [
+    {
+     "text": "Then I heard",
+     "t0": 38.927,
+     "t1": 39.455
+    },
+    {
+     "text": "Grandma [laughing].",
+     "t0": 39.455,
+     "t1": 40.202
+    },
+    {
+     "text": "Talking to someone.",
+     "t0": 40.202,
+     "t1": 41.036
+    }
+   ]
+  },
+  {
+   "id": "pretty",
+   "speaker": "GMA",
+   "text": "Oh, you were always the pretty one.",
+   "t0": 41.096,
+   "t1": 42.822,
+   "chunks": [
+    {
+     "text": "Oh,",
+     "t0": 41.096,
+     "t1": 41.253
+    },
+    {
+     "text": "you were always",
+     "t0": 41.253,
+     "t1": 42.038
+    },
+    {
+     "text": "the [pretty] one.",
+     "t0": 42.038,
+     "t1": 42.822
+    }
+   ]
+  },
+  {
+   "id": "which",
+   "speaker": "KAI",
+   "text": "Grandma? Which one of you is talking?",
+   "t0": 42.882,
+   "t1": 44.274,
+   "chunks": [
+    {
+     "text": "Grandma?",
+     "t0": 42.882,
+     "t1": 43.2
+    },
+    {
+     "text": "Which one of",
+     "t0": 43.2,
+     "t1": 43.678
+    },
+    {
+     "text": "you is [talking]?",
+     "t0": 43.678,
+     "t1": 44.274
+    }
+   ]
+  }
+ ],
+ "marks": {
+  "hook": 0.0,
+  "friday": 4.326,
+  "mirrors": 6.154,
+  "windows": 6.66,
+  "puddles": 7.243,
+  "phone": 7.796,
+  "face": 9.25,
+  "dad": 11.489,
+  "blender": 13.913,
+  "anchor1": 17.221,
+  "anchor2": 20.086,
+  "normal": 23.106,
+  "cover": 24.126,
+  "gma1": 25.757,
+  "remi": 30.683,
+  "gma2": 32.119,
+  "vanity": 33.545,
+  "night": 34.957,
+  "laugh": 38.927,
+  "pretty": 41.096,
+  "which": 42.882,
+  "card": 44.334
+ }
+}

@@ -1,0 +1,206 @@
+[
+ {
+  "name": "scrub",
+  "t": 0.05
+ },
+ {
+  "name": "scrub_ref",
+  "t": 1.35
+ },
+ {
+  "name": "title",
+  "t": 0.0
+ },
+ {
+  "name": "stop",
+  "t": 1.35
+ },
+ {
+  "name": "wh_friday",
+  "t": 4.206
+ },
+ {
+  "name": "wh_mirrors",
+  "t": 6.034
+ },
+ {
+  "name": "wh_windows",
+  "t": 6.54
+ },
+ {
+  "name": "wh_puddles",
+  "t": 7.123
+ },
+ {
+  "name": "wh_phone",
+  "t": 7.676
+ },
+ {
+  "name": "wh_face",
+  "t": 9.13
+ },
+ {
+  "name": "wh_dad",
+  "t": 11.369
+ },
+ {
+  "name": "wh_anchor1",
+  "t": 17.101
+ },
+ {
+  "name": "wh_normal",
+  "t": 22.986
+ },
+ {
+  "name": "wh_cover",
+  "t": 24.006
+ },
+ {
+  "name": "wh_gma1",
+  "t": 25.637
+ },
+ {
+  "name": "wh_remi",
+  "t": 30.563
+ },
+ {
+  "name": "wh_vanity",
+  "t": 33.425
+ },
+ {
+  "name": "wh_night",
+  "t": 34.837
+ },
+ {
+  "name": "wh_laugh",
+  "t": 38.807
+ },
+ {
+  "name": "wh_pretty",
+  "t": 40.976
+ },
+ {
+  "name": "wh_which",
+  "t": 42.762
+ },
+ {
+  "name": "boom_globe",
+  "t": 4.326
+ },
+ {
+  "name": "blip0",
+  "t": 4.426
+ },
+ {
+  "name": "blip1",
+  "t": 4.586
+ },
+ {
+  "name": "blip2",
+  "t": 4.746
+ },
+ {
+  "name": "blip3",
+  "t": 4.906
+ },
+ {
+  "name": "blip4",
+  "t": 5.066
+ },
+ {
+  "name": "blip5",
+  "t": 5.226
+ },
+ {
+  "name": "blip6",
+  "t": 5.386
+ },
+ {
+  "name": "blip7",
+  "t": 5.546
+ },
+ {
+  "name": "blip8",
+  "t": 5.706
+ },
+ {
+  "name": "blip9",
+  "t": 5.866
+ },
+ {
+  "name": "tape",
+  "t": 6.274
+ },
+ {
+  "name": "drip",
+  "t": 7.393
+ },
+ {
+  "name": "click",
+  "t": 8.196
+ },
+ {
+  "name": "pop0",
+  "t": 12.639
+ },
+ {
+  "name": "pop1",
+  "t": 12.759
+ },
+ {
+  "name": "pop2",
+  "t": 12.879
+ },
+ {
+  "name": "pop3",
+  "t": 12.999
+ },
+ {
+  "name": "pop4",
+  "t": 13.119
+ },
+ {
+  "name": "pop5",
+  "t": 13.239
+ },
+ {
+  "name": "pop6",
+  "t": 13.359
+ },
+ {
+  "name": "blender",
+  "t": 15.163
+ },
+ {
+  "name": "news",
+  "t": 17.171
+ },
+ {
+  "name": "pen",
+  "t": 23.106
+ },
+ {
+  "name": "blanket",
+  "t": 24.326
+ },
+ {
+  "name": "glint",
+  "t": 34.145
+ },
+ {
+  "name": "off",
+  "t": 35.957
+ },
+ {
+  "name": "creak",
+  "t": 41.646
+ },
+ {
+  "name": "sting",
+  "t": 42.934
+ },
+ {
+  "name": "boom_end",
+  "t": 44.334
+ }
+]

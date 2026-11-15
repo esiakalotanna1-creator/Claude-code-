@@ -776,6 +776,40 @@ def _pattern(L, c, path, o, k, seed, lw, colr):
     c.drawPath(path, paint(shade(colr, -0.72), stroke=lw))
 
 
+_BT_FONT = {}
+
+
+def _back_text(L, c, cam, J, Bc, path, h, tf):
+    """Look "back_text": a word printed across the upper back of the top (the "Neat" brand), shown only while the lens
+    sees the back, laid on the torso with the body's own axes so it turns and foreshortens with it."""
+    txt = L.get("back_text")
+    if not txt:
+        return
+    vis = -dot(Bc.f, norm(sub(cam.pos, J["pelvis"])))
+    if vis < 0.12:
+        return
+    if "tf" not in _BT_FONT:
+        import toon as _T
+        _BT_FONT["tf"] = _T.typeface(True)
+    font = skia.Font(_BT_FONT["tf"], 100)
+    tw = font.measureText(txt)
+    yb, d = 0.205 * h * tf, -0.079 * h
+    P = lambda w: cam.proj(w)                                 # noqa: E731
+    o, rp, lp, up = P(Bc.w(J["pelvis"], 0, yb, d)), P(Bc.w(J["pelvis"], 0.068 * h, yb, d * 0.9)), \
+        P(Bc.w(J["pelvis"], -0.068 * h, yb, d * 0.9)), P(Bc.w(J["pelvis"], 0, yb + 0.125 * h * 72 / tw, d))
+    if o[2] <= 0.05:
+        return
+    ex = ((rp[0] - lp[0]) / tw, (rp[1] - lp[1]) / tw)
+    dn = ((o[0] - up[0]) / 72.0, (o[1] - up[1]) / 72.0)
+    m = skia.Matrix()
+    m.setAll(ex[0], dn[0], o[0], ex[1], dn[1], o[1], 0, 0, 1)
+    c.save()
+    c.clipPath(path, skia.ClipOp.kIntersect, True)
+    c.concat(m)
+    c.drawString(txt, -tw / 2, 36, font, paint(L.get("back_text_col", "#f4f1ea"), a=min(1.0, (vis - 0.12) * 5)))
+    c.restore()
+
+
 def _grin(c, cam, Hd, k, ex, L):
     """Look face "grin": small fixed dots for eyes and a smile that is too wide, laid on the head's surface so it
     turns with the head. It opens a little when the character speaks; nothing else in the face moves."""
@@ -1189,6 +1223,7 @@ def draw(fr, cam, look, pose, light=None, glow=None, held=None, shadow=True):
                 cv.drawPath(fold, paint("#05060c", a=0.22, blur=0.01 * h * k, stroke=0.012 * h * k))
             fr.part(path, L["top"], ld, width=0.24 * h * k, line=lw, occl=occl)
             _pattern(L, c, path, P(J["pelvis"])[:2], k, 6, lw, L["top"])
+            _back_text(L, c, cam, J, Bc, path, h, tf)
             # neck opening (shaded hollow on the torso), then a slim neck rising out of it: no hood volume
             nb = P(add(J["neck"], mul(Bc.u, -0.012 * h)))
             cl = skia.Path()
