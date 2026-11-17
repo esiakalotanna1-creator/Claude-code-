@@ -1,5 +1,5 @@
 # 50 Ways to Kill a Zombie
-Kick the Buddy-style zombie sandbox. Pick an item from the scrollable grid at the bottom, then use it on the zombie.
+Kick the Buddy-style zombie sandbox in a ruined room. Pick an item from the scrollable grid at the bottom, then use it on the zombie.
 
 Wreck the zombie to earn coins, then buy new ways to kill him. 50 ways in total: 25 are free, 25 more unlock with coins. The "Unlock all ways (testing)" checkbox in the settings panel (gameConfig.unlockAll) opens every way for testing; switch it off before publishing. Each way has its own damage, physics, particles, sound and haptics. Damage total shows top-left. The zombie starts rotten but intact; wounds, blood, ribs and bones appear part by part as he takes damage, and a new zombie resets them.
 
