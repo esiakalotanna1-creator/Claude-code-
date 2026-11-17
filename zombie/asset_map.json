@@ -1,0 +1,1090 @@
+{
+  "wood_back": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M6SDM0DQEKRDYN1DC46W8FKG_2297293f-0ccf-40ae-aec3-4e96b2540a46_5a99db02-54df-450f-888e-066284a46acc.webp",
+    "type": "image",
+    "prompt": "Seamless top-down flat texture of a warm orange-brown wooden plank wall: five vertical wooden planks side by side with thin dark seams, visible natural wood grain, a few knots, small dark nail heads near plank ends, painterly cartoon game style, warm amber orange color, soft lighter glow in the center, no objects, no text.",
+    "description": "Warm orange-brown wooden plank texture for the box back panel",
+    "subtype": "background",
+    "aspect_ratio": [
+      1536,
+      1024
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_hand": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M6SF59HAGY18P64P280G5VAJ_3c47feec-572d-411e-8997-ae05ae42dcc8_85c67b5d-f4d9-4e28-bbdc-2a957590c417.webp",
+    "type": "image",
+    "prompt": "Cartoon mobile game item sprite: white cartoon glove hand",
+    "description": "Cartoon game item: white cartoon glove hand",
+    "subtype": "object",
+    "aspect_ratio": [
+      813,
+      921
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_hammer": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M6SF5ATJXBDEGRKZXCT43FSZ_28478a99-857a-4cca-b19e-519d94645d36_73d27c9c-a5f2-453e-bc7f-c3f02df5c5a5.webp",
+    "type": "image",
+    "prompt": "Cartoon mobile game item sprite: sledgehammer",
+    "description": "Cartoon game item: sledgehammer",
+    "subtype": "object",
+    "aspect_ratio": [
+      857,
+      911
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_pistol": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M6SF5BZ3E0NVYPXCGZ35APEX_86e8185c-026b-48f4-b000-07fe30ef97ab_19f45f7b-98f4-4c0a-bd5a-d89083c56822.webp",
+    "type": "image",
+    "prompt": "Cartoon mobile game item sprite: pistol",
+    "description": "Cartoon game item: pistol",
+    "subtype": "object",
+    "aspect_ratio": [
+      876,
+      841
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_shotgun": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M6SF5DDBFVK2XQ2MC6RMZ524_aca93fc0-659e-47c3-bf82-0b7cac2e0066_8c49eafb-586c-4d66-8959-55592e17297a.webp",
+    "type": "image",
+    "prompt": "Cartoon mobile game item sprite: shotgun",
+    "description": "Cartoon game item: shotgun",
+    "subtype": "object",
+    "aspect_ratio": [
+      1437,
+      669
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_dynamite": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M6SF5EQ3EFE7W2ECNEY3DND7_02cb70f9-b9ae-4b83-b01a-41c9a88b6c4c_215f1937-bdc7-4a10-b14a-0ecd7973ba25.webp",
+    "type": "image",
+    "prompt": "Cartoon mobile game item sprite: dynamite bundle",
+    "description": "Cartoon game item: dynamite bundle",
+    "subtype": "object",
+    "aspect_ratio": [
+      789,
+      998
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_rocket": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M6SF5G5B5X7YP38S9YXNZYZK_6bfb4931-643e-453e-b7c9-c4d2c75f7839_cc9cf163-e5c4-44d5-a371-6bc40c25f889.webp",
+    "type": "image",
+    "prompt": "Cartoon mobile game item sprite: bazooka",
+    "description": "Cartoon game item: bazooka",
+    "subtype": "object",
+    "aspect_ratio": [
+      1419,
+      730
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_anvil": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M6SF5HHPZ8DSY7Q5KCKYHVC3_e7e7ad1e-7116-450b-99ee-b443ae17bb1f_c26248cd-afba-46e0-8eb2-c12ad8e38c33.webp",
+    "type": "image",
+    "prompt": "Cartoon mobile game item sprite: anvil",
+    "description": "Cartoon game item: anvil",
+    "subtype": "object",
+    "aspect_ratio": [
+      905,
+      738
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_taser": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M6SF5K7ABY7G31WGAGYPF9W6_4551f4ec-bcf2-4eeb-89ec-50a32a1b07ff_d2111e49-b107-4faf-bf65-faace7a3926d.webp",
+    "type": "image",
+    "prompt": "Cartoon mobile game item sprite: yellow taser",
+    "description": "Cartoon game item: yellow taser",
+    "subtype": "object",
+    "aspect_ratio": [
+      826,
+      675
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_flamethrower": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M6SFBNJWY6S3A4F1YP5Z34JP_6066e8a0-e99f-480d-a088-56d93fa9c660_790c9e09-6163-4761-8fcc-eeedfbb198c9.webp",
+    "type": "image",
+    "prompt": "Cartoon mobile game item sprite: flamethrower",
+    "description": "Cartoon game item: flamethrower",
+    "subtype": "object",
+    "aspect_ratio": [
+      1162,
+      799
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_saw": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M6SFBPTYQWRKGSV4SXRJPW3X_61122ba8-3195-4647-9048-8c377977a929_d45ac63a-261f-439c-9736-f5a5b4e558dc.webp",
+    "type": "image",
+    "prompt": "Cartoon mobile game item sprite: buzzsaw blade",
+    "description": "Cartoon game item: buzzsaw blade",
+    "subtype": "object",
+    "aspect_ratio": [
+      917,
+      907
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_blackhole": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M6SFBRBWTJHDYZA5A1DPQP4Y_7f3616fe-e906-4d9b-8da5-1a6bf52e7201_5c7ccd59-4f1b-458e-8d65-b6dd07b2b0f2.webp",
+    "type": "image",
+    "prompt": "Cartoon mobile game item sprite: black hole",
+    "description": "Cartoon game item: black hole",
+    "subtype": "object",
+    "aspect_ratio": [
+      917,
+      911
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_katana": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M6T888R77WPYBYH8CSREQAYD_b386b1df-01a3-480e-9907-37539d4da556_746c2853-716b-4c99-9b15-13dfe708ec37.webp",
+    "type": "image",
+    "prompt": "Cartoon item: katana",
+    "description": "Cartoon game item: katana",
+    "subtype": "object",
+    "aspect_ratio": [
+      1005,
+      914
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_chainsaw": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M6T889YH1ZD95CWHVTXDN4ZQ_4ff13863-48f2-4846-8e00-3b7e7f0f345b_8c857515-e392-4139-b174-fd3abda63fcc.webp",
+    "type": "image",
+    "prompt": "Cartoon item: chainsaw",
+    "description": "Cartoon game item: chainsaw",
+    "subtype": "object",
+    "aspect_ratio": [
+      1435,
+      764
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_grenade": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M6T88B65ATRGMCJ6PYNN8Z91_123715b6-626c-418f-935e-789a595d99a0_cda8f715-c3d0-4f8f-9a87-2e63ef1e4757.webp",
+    "type": "image",
+    "prompt": "Cartoon item: grenade",
+    "description": "Cartoon game item: grenade",
+    "subtype": "object",
+    "aspect_ratio": [
+      734,
+      931
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_landmine": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M6T88C7JR00AKS85PVJWPQJA_0179a690-3aaa-4046-8621-657d5e1541b5_64ed5827-7c67-4d05-bb91-94a5b11b61b0.webp",
+    "type": "image",
+    "prompt": "Cartoon item: landmine",
+    "description": "Cartoon game item: landmine",
+    "subtype": "object",
+    "aspect_ratio": [
+      835,
+      765
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_freezeray": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M6T88DX0PETWVR9BC8XDASAJ_24f44609-9b9a-4cd6-8e37-27516c27790b_06d849d5-be40-40fd-ac79-2f0fa104fef6.webp",
+    "type": "image",
+    "prompt": "Cartoon item: freeze ray",
+    "description": "Cartoon game item: freeze ray",
+    "subtype": "object",
+    "aspect_ratio": [
+      1171,
+      763
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_wreckingball": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M6T88EKWFQAYMC0E29R5FKZR_e9e4fe46-28a4-456e-9784-82468b95ed1f_631d8db5-95cb-4449-8a39-43be7c238cf3.webp",
+    "type": "image",
+    "prompt": "Cartoon item: wrecking ball",
+    "description": "Cartoon game item: wrecking ball",
+    "subtype": "object",
+    "aspect_ratio": [
+      745,
+      1328
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_lightning": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M6T88FP4V9M7Y67CAQ6F5PTQ_238d3203-9c11-4845-8b1e-ceb69fe619dc_4c04f8fc-dc8c-4bad-83c1-a47c041a9453.webp",
+    "type": "image",
+    "prompt": "Cartoon item: lightning storm",
+    "description": "Cartoon game item: lightning storm",
+    "subtype": "object",
+    "aspect_ratio": [
+      822,
+      866
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_guillotine": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M6T88GTY9ZG1BM5BFMJQV32V_155af182-649f-4380-8b87-507903bc6812_037e62b5-d19c-47c7-b27e-47a2424679a5.webp",
+    "type": "image",
+    "prompt": "Cartoon item: guillotine",
+    "description": "Cartoon game item: guillotine",
+    "subtype": "object",
+    "aspect_ratio": [
+      864,
+      1332
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_meteor": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M6T8CQZ2AK5RAGPVCGXH0DZB_7e5676a5-054b-4c74-a4ab-535bb5584892_8f2393ca-9e93-41a6-aee4-6b3f0dec7de1.webp",
+    "type": "image",
+    "prompt": "Cartoon item: flaming meteor",
+    "description": "Cartoon game item: flaming meteor",
+    "subtype": "object",
+    "aspect_ratio": [
+      865,
+      1110
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_crossbow": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M6T8CRQEDKKFVB68YAS2V8GW_397f31dc-afe1-4813-bfb4-e63a8be456ce_ba25860c-82f5-4b03-b012-4c37bad4042e.webp",
+    "type": "image",
+    "prompt": "Cartoon item: crossbow",
+    "description": "Cartoon game item: crossbow",
+    "subtype": "object",
+    "aspect_ratio": [
+      1112,
+      886
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_minigun": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M6T9SMEH2XHKDKC4NC02925N_6b400605-f686-453c-97bc-7f97cf7280a3_d61ca35a-54eb-4c99-abb0-adf07fb1363d.webp",
+    "type": "image",
+    "prompt": "Cartoon item: rotary minigun",
+    "description": "Cartoon game item: rotary minigun",
+    "subtype": "object",
+    "aspect_ratio": [
+      1201,
+      960
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_lasergrid": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M6T9SNH3RDVQKR57HCP8V38N_01c17e09-1d76-43c9-b46e-18bf1138bb07_1266ec7c-6dfa-4239-a73a-c350381a53c2.webp",
+    "type": "image",
+    "prompt": "Cartoon item: laser grid emitter",
+    "description": "Cartoon game item: laser grid emitter",
+    "subtype": "object",
+    "aspect_ratio": [
+      965,
+      870
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_acid": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M6T9SPJQ4RP3YEJBXNQVH2Z9_d939aa6d-cc33-4615-91cc-69920bd1474e_b7be7024-cd3d-4f07-8561-ce7e499b1958.webp",
+    "type": "image",
+    "prompt": "Cartoon item: acid bucket",
+    "description": "Cartoon game item: acid bucket",
+    "subtype": "object",
+    "aspect_ratio": [
+      830,
+      944
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_beartrap": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M6T9SQGSQWQ27V9MJED8HWH7_75b966a1-2bcb-4181-81a9-b0f356b02a61_93120bdf-9d49-4e5b-b8c1-254d1c396d7a.webp",
+    "type": "image",
+    "prompt": "Cartoon item: bear trap",
+    "description": "Cartoon game item: bear trap",
+    "subtype": "object",
+    "aspect_ratio": [
+      830,
+      641
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_nuke": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M6T9SRJVK2AVM85C1KBDZF8S_da8e162f-b5a7-4580-8b67-b613a3943f3f_d37d71d2-8a0f-478b-9085-6ad3ad061e64.webp",
+    "type": "image",
+    "prompt": "Cartoon item: mini nuke",
+    "description": "Cartoon game item: mini nuke",
+    "subtype": "object",
+    "aspect_ratio": [
+      883,
+      852
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_magnet": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M6T9SSFK8MC7JR8C6NW1F66R_c9a6473d-1ea7-4d0f-80d3-69d945177024_bc207bde-2cc3-4ba9-9324-a962eb9145cf.webp",
+    "type": "image",
+    "prompt": "Cartoon item: giant magnet",
+    "description": "Cartoon game item: giant magnet",
+    "subtype": "object",
+    "aspect_ratio": [
+      847,
+      865
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_cannon": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M6T9STHBV3RJRHB5Q1WNA6YP_ff9699a6-0009-4136-b2d1-73bedb4d6218_930aaf7d-ee65-4abe-8f02-a776189f8160.webp",
+    "type": "image",
+    "prompt": "Cartoon item: pirate cannon",
+    "description": "Cartoon game item: pirate cannon",
+    "subtype": "object",
+    "aspect_ratio": [
+      954,
+      838
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_wasps": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M6T9SVDEM66N6D06E6M7K21M_11605c6c-9e9e-4fed-bd89-664ab23f307d_da079450-1fd2-484b-a0fb-442c9c28de47.webp",
+    "type": "image",
+    "prompt": "Cartoon item: wasp nest",
+    "description": "Cartoon game item: wasp nest",
+    "subtype": "object",
+    "aspect_ratio": [
+      934,
+      952
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_airstrike": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M6T9WWNB9MFB7PVT3XMX9RY3_e4102724-a760-430f-b6bf-3cd6b6be897c_ab791224-e2d3-4aec-ad7f-2cc44b29c8b2.webp",
+    "type": "image",
+    "prompt": "Cartoon item: airstrike beacon",
+    "description": "Cartoon game item: airstrike beacon",
+    "subtype": "object",
+    "aspect_ratio": [
+      764,
+      1346
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_spikecrusher": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M6T9WXN7GRPTYT66C3WJGYFN_90d336b5-ec3e-40a4-bf8e-a62b5dd5de39_f5244543-1c2c-4985-9c40-4c99c24179e9.webp",
+    "type": "image",
+    "prompt": "Cartoon item: spike crusher",
+    "description": "Cartoon game item: spike crusher",
+    "subtype": "object",
+    "aspect_ratio": [
+      792,
+      946
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_glove": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/0d5afe21ba794d718831357f3b9024fd.webp",
+    "type": "image",
+    "prompt": "Cartoon mobile game item sprite: boxing glove on a spring",
+    "description": "Cartoon game item: boxing glove on a spring",
+    "subtype": "object",
+    "aspect_ratio": [
+      589,
+      947
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_piano": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/dd3c6772267a4c1985cfa35f6aaab33d.webp",
+    "type": "image",
+    "prompt": "Cartoon mobile game item sprite: grand piano",
+    "description": "Cartoon game item: grand piano",
+    "subtype": "object",
+    "aspect_ratio": [
+      864,
+      863
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_tornado": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/6316a5fdcc914b58ad93cb1b97970ffb.webp",
+    "type": "image",
+    "prompt": "Cartoon mobile game item sprite: tornado",
+    "description": "Cartoon game item: tornado",
+    "subtype": "object",
+    "aspect_ratio": [
+      804,
+      807
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_sniper": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/a5d61dec4f5a4ce9a5417c67b865fa37.webp",
+    "type": "image",
+    "prompt": "Cartoon mobile game item sprite: sniper rifle",
+    "description": "Cartoon game item: sniper rifle",
+    "subtype": "object",
+    "aspect_ratio": [
+      1414,
+      570
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_fireworks": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/56048098be4e4576b404562baa29ba3d.webp",
+    "type": "image",
+    "prompt": "Cartoon mobile game item sprite: firework rockets",
+    "description": "Cartoon game item: firework rockets",
+    "subtype": "object",
+    "aspect_ratio": [
+      802,
+      865
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_ufo": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/f0ae45cd6f3e425781f791f012bb4dd3.webp",
+    "type": "image",
+    "prompt": "Cartoon mobile game item sprite: UFO with tractor beam",
+    "description": "Cartoon game item: UFO with tractor beam",
+    "subtype": "object",
+    "aspect_ratio": [
+      875,
+      903
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_shuriken": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/ffef4cc215074f29afde6fd196214a48.webp",
+    "type": "image",
+    "prompt": "Cartoon mobile game item sprite: shuriken throwing stars",
+    "description": "Cartoon game item: shuriken throwing stars",
+    "subtype": "object",
+    "aspect_ratio": [
+      900,
+      930
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_car": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/009fed27e91f4e4d981e3dc4449ef46c.webp",
+    "type": "image",
+    "prompt": "Cartoon mobile game item sprite: red sports car",
+    "description": "Cartoon game item: red sports car",
+    "subtype": "object",
+    "aspect_ratio": [
+      1090,
+      556
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_horde": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M73KAF3R8A06QPDP1A1AA83R_bc8c066d-d7b8-40c4-bad2-82c864a58560_cde5b6b0-b212-40eb-a1f8-ae386a44b874.webp",
+    "type": "image",
+    "prompt": "Cartoon mobile game item sprite: zombie horde",
+    "description": "Cartoon game item: zombie horde",
+    "subtype": "object",
+    "aspect_ratio": [
+      1018,
+      797
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_bat": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M73KAFZH4MCSEBP3EC8VPAE3_139c29b1-c32b-4591-9fa6-70c8ed902aca_bdf84c4e-3007-4f24-ba8f-4f79dff18e0c.webp",
+    "type": "image",
+    "prompt": "Cartoon mobile game item sprite: nail bat",
+    "description": "Cartoon game item: baseball bat with nails",
+    "subtype": "object",
+    "aspect_ratio": [
+      860,
+      1267
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_coffin": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M73KAGNEZ3WKD1N47Q6WE7GP_85aaec3e-4aa0-421c-866c-e5a9257aad80_6b4cb5eb-12ff-4b00-96d7-ae38fc37f63f.webp",
+    "type": "image",
+    "prompt": "Cartoon mobile game item sprite: coffin",
+    "description": "Cartoon game item: coffin",
+    "subtype": "object",
+    "aspect_ratio": [
+      759,
+      1257
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_graveyard": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M73KAHN5C51Q2G3NVSP1B3JV_e9c27af9-dc95-46a6-9263-c656d5f1e467_351c755b-962a-4f0f-9b8d-59fc911e0b00.webp",
+    "type": "image",
+    "prompt": "Cartoon mobile game item sprite: grave hands",
+    "description": "Cartoon game item: zombie hands from a grave",
+    "subtype": "object",
+    "aspect_ratio": [
+      909,
+      854
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_molotov": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M73KAJ9STVX9HVPX55E4YKG9_48a3c841-ab0e-4474-b190-0a053382c3d4_a74abd65-d94a-4a29-9632-6d68a31759d9.webp",
+    "type": "image",
+    "prompt": "Cartoon mobile game item sprite: molotov",
+    "description": "Cartoon game item: molotov cocktail",
+    "subtype": "object",
+    "aspect_ratio": [
+      645,
+      1268
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_efence": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M73KAJYDP2K9JCD91S261E99_f67c2311-1a0e-45b0-b586-c165d3b90017_2006e62c-39c0-45a9-b112-776b2f5e70e0.webp",
+    "type": "image",
+    "prompt": "Cartoon mobile game item sprite: electric fence",
+    "description": "Cartoon game item: electric fence",
+    "subtype": "object",
+    "aspect_ratio": [
+      887,
+      798
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_grinder": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M73KAKR4MX61ST95MV0N5ESM_6359317a-07c9-47e4-812d-c9c0946f9dc3_16b81cd1-0c7e-4f90-9c93-10239e45fba9.webp",
+    "type": "image",
+    "prompt": "Cartoon mobile game item sprite: meat grinder",
+    "description": "Cartoon game item: meat grinder",
+    "subtype": "object",
+    "aspect_ratio": [
+      913,
+      921
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_holywater": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M73KAMEHGFYT4DW66S2F3VJM_bc9645d6-9718-4db5-900d-9303f048639e_11369b7c-e51f-41e9-a517-9af7cb798e57.webp",
+    "type": "image",
+    "prompt": "Cartoon mobile game item sprite: holy water",
+    "description": "Cartoon game item: holy water bottle",
+    "subtype": "object",
+    "aspect_ratio": [
+      627,
+      1183
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_machete": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M73KDJBGRG2WF9S88MNZS4Z2_9634d38f-7bc4-403f-a99e-adbfc64f92af_4228d6bb-87eb-4f55-90d5-ac5c692e1f1b.webp",
+    "type": "image",
+    "prompt": "Cartoon mobile game item sprite: machete",
+    "description": "Cartoon game item: machete",
+    "subtype": "object",
+    "aspect_ratio": [
+      850,
+      1060
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_mower": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M73KDKMJQWAN8AJJ4YC2FRXR_7c703676-2c80-4ff2-819a-de5bd3b0ffb3_f49c8646-6efe-4b39-86ad-605aba757986.webp",
+    "type": "image",
+    "prompt": "Cartoon mobile game item sprite: lawnmower",
+    "description": "Cartoon game item: bloody lawnmower",
+    "subtype": "object",
+    "aspect_ratio": [
+      871,
+      876
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_axe": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M73KDN2W5CZYHCYRW913JBD7_252f352d-090a-4092-95f7-8edba49d4dc1_19be807d-7b33-4e00-9906-4bbd98caaa4f.webp",
+    "type": "image",
+    "prompt": "Cartoon mobile game item sprite: fire axe",
+    "description": "Cartoon game item: fire axe",
+    "subtype": "object",
+    "aspect_ratio": [
+      883,
+      1202
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_shovel": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M73KDP2A6JD87GSJF3JQXEP3_d32c6beb-cce0-4fe2-8c4e-b6449beacf24_1b41edc5-8417-442d-8392-d172d292f0b8.webp",
+    "type": "image",
+    "prompt": "Cartoon mobile game item sprite: shovel",
+    "description": "Cartoon game item: gravedigger shovel",
+    "subtype": "object",
+    "aspect_ratio": [
+      794,
+      1218
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_revolver": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M73KDPYE1CM3B0JMXKW72SJA_9fd81848-b161-4d3d-b79b-1f244e3bfc6f_c1776484-b34f-4be9-8e81-6894ecd8c173.webp",
+    "type": "image",
+    "prompt": "Cartoon mobile game item sprite: silver revolver",
+    "description": "Cartoon game item: silver revolver",
+    "subtype": "object",
+    "aspect_ratio": [
+      981,
+      886
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_truck": {
+    "animation": null,
+    "aspect_ratio": [
+      842,
+      959
+    ],
+    "compression_suggestion": "original",
+    "description": "Game icon: garbage truck",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "prompt": "Game icon: garbage truck",
+    "subtype": "object",
+    "type": "image",
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M73M0570J762202HCGR9RP3S_7cc19dce-d998-4586-aabb-8052dc080820_a9b41743-9317-439d-83d6-07776746d1bb.webp"
+  },
+  "item_crowbar": {
+    "animation": null,
+    "aspect_ratio": [
+      523,
+      1306
+    ],
+    "compression_suggestion": "original",
+    "description": "Game icon: crowbar",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "prompt": "Game icon: crowbar",
+    "subtype": "object",
+    "type": "image",
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M73M06MRPVSKFHG4K7CMQP4D_00543e8c-eb15-4c9b-a301-c3b2214dd010_1e95d4fd-1ad8-4e4e-975b-c6832f0cf853.webp"
+  },
+  "item_chipper": {
+    "animation": null,
+    "aspect_ratio": [
+      734,
+      893
+    ],
+    "compression_suggestion": "original",
+    "description": "Game icon: wood chipper",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "prompt": "Game icon: wood chipper",
+    "subtype": "object",
+    "type": "image",
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M73M080BV397QCXRK5GBRGHW_3e501e88-d62c-40f1-9be8-2e1ee426ecc7_9c95b3f7-562f-4190-abac-24169326783e.webp"
+  },
+  "item_spikepit": {
+    "animation": null,
+    "aspect_ratio": [
+      970,
+      886
+    ],
+    "compression_suggestion": "original",
+    "description": "Game icon: spike pit",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "prompt": "Game icon: spike pit",
+    "subtype": "object",
+    "type": "image",
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M73M09XRZAPBXX3WBVC35Y23_73ac2316-e27a-432b-88f3-c698a19df88c_96ba4f81-701a-4742-8514-9aacaec02f0b.webp"
+  },
+  "item_zdog": {
+    "animation": null,
+    "aspect_ratio": [
+      835,
+      887
+    ],
+    "compression_suggestion": "original",
+    "description": "Game icon: zombie dog",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "prompt": "Game icon: zombie dog",
+    "subtype": "object",
+    "type": "image",
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M73M0ARNV617GBJ7N2HHKTSJ_427889d7-240a-44d3-a32c-6be34382e538_872e9018-03f9-40ed-817c-cfcbcd09dc9b.webp"
+  },
+  "item_noose": {
+    "animation": null,
+    "aspect_ratio": [
+      892,
+      891
+    ],
+    "compression_suggestion": "original",
+    "description": "Game icon: noose",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "prompt": "Game icon: noose",
+    "subtype": "object",
+    "type": "image",
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M73M0BDS8GC8WKE9V88WJZR5_e80f0968-79cf-4e90-a572-72478c80d424_4b0915fb-3d37-4b6c-ad03-32c654965287.webp"
+  },
+  "item_barrels": {
+    "animation": null,
+    "aspect_ratio": [
+      814,
+      942
+    ],
+    "compression_suggestion": "original",
+    "description": "Game icon: explosive barrels",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "prompt": "Game icon: explosive barrels",
+    "subtype": "object",
+    "type": "image",
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M73M0C3TNR0EAASSBXKWPZ46_1d491f79-c4f6-48af-bab4-247bdee0191e_41ece3cb-2197-4d7c-a9a1-77cafeb79f5e.webp"
+  },
+  "item_brainbait": {
+    "animation": null,
+    "aspect_ratio": [
+      782,
+      934
+    ],
+    "compression_suggestion": "original",
+    "description": "Game icon: brain bait",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "prompt": "Game icon: brain bait",
+    "subtype": "object",
+    "type": "image",
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M73M0CT5V2J75DXY0R5QJ1AD_f138936e-efd4-4928-8980-6233e5698fb8_259d96a7-b75b-4295-bea5-fdb17ea9ad7f.webp"
+  },
+  "item_rooftop": {
+    "animation": null,
+    "aspect_ratio": [
+      703,
+      971
+    ],
+    "compression_suggestion": "original",
+    "description": "Game icon: rooftop drop",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "prompt": "Game icon: rooftop drop",
+    "subtype": "object",
+    "type": "image",
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M73M14V56G0Y55BSGTKRP1Y7_5e7e6213-5738-4579-b7a2-643e2c82c286_3554fd7b-3310-4781-b51b-5546c353879f.webp"
+  },
+  "item_sunbeam": {
+    "animation": null,
+    "aspect_ratio": [
+      777,
+      955
+    ],
+    "compression_suggestion": "original",
+    "description": "Game icon: sunbeam",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "prompt": "Game icon: sunbeam",
+    "subtype": "object",
+    "type": "image",
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M73M16FCSS5XGXYGK2JAJTZD_7528223a-9467-46f5-a94c-ea924789d59f_56f672e5-1209-4785-b5c5-5665a2787130.webp"
+  },
+  "item_pit": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/direct_asset_generation_01M73KDQKT7GZ0AX56949Q401W_5c44f7b3-2f63-4ea0-898b-0675f6f2c076_fd9e8d63-71c0-434c-b06c-00fec8ca3c95.webp",
+    "type": "image",
+    "prompt": "Cartoon mobile game item sprite: dirt pile",
+    "description": "Cartoon game item: graveyard dirt pile",
+    "subtype": "object",
+    "aspect_ratio": [
+      948,
+      837
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "item_lava": {
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/images/7ca0e002e98d4b59b1731086a95288b3.webp",
+    "type": "image",
+    "prompt": "Cartoon mobile game item sprite: erupting lava volcano",
+    "description": "Cartoon game item: erupting lava volcano",
+    "subtype": "object",
+    "aspect_ratio": [
+      855,
+      928
+    ],
+    "compression_suggestion": "original",
+    "duration_secs": null,
+    "loop": null,
+    "opus_url": null,
+    "animation": null
+  },
+  "zgroan1": {
+    "animation": null,
+    "aspect_ratio": null,
+    "compression_suggestion": "original",
+    "description": "zgroan1",
+    "duration_secs": 1.85,
+    "loop": false,
+    "subtype": "effect",
+    "type": "audio",
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/sounds/effect/direct_asset_generation_01M75PJCSMZ5C7728ENFCPXNW0_848941e2-8f9d-4427-9b76-31c3d8f9376a_b0d5681b-91dc-440a-90ad-4308d97592ff.mp3",
+    "prompt": "zgroan1"
+  },
+  "zgroan2": {
+    "animation": null,
+    "aspect_ratio": null,
+    "compression_suggestion": "original",
+    "description": "zgroan2",
+    "duration_secs": 1.98,
+    "loop": false,
+    "subtype": "effect",
+    "type": "audio",
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/sounds/effect/direct_asset_generation_01M75PJDFSQBKYNBESKTPVB8MM_70f9e623-e958-445c-b287-b54f058afeef_477c78f0-d275-4406-8307-b04d943b1cfa.mp3",
+    "prompt": "zgroan2"
+  },
+  "zgroan3": {
+    "animation": null,
+    "aspect_ratio": null,
+    "compression_suggestion": "original",
+    "description": "zgroan3",
+    "duration_secs": 2,
+    "loop": false,
+    "subtype": "effect",
+    "type": "audio",
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/sounds/effect/direct_asset_generation_01M75PJE4J9TA0AMEW7C3DJPK5_0ae797ab-3496-488b-8ab5-b10239b601b9_0d938cdc-4006-4744-bba2-039fc7ddaaf4.mp3",
+    "prompt": "zgroan3"
+  },
+  "zdeath": {
+    "animation": null,
+    "aspect_ratio": null,
+    "compression_suggestion": "original",
+    "description": "zdeath",
+    "duration_secs": 3.71,
+    "loop": false,
+    "subtype": "effect",
+    "type": "audio",
+    "url": "https://d2oir5eh8rty2e.cloudfront.net/assets/sounds/effect/direct_asset_generation_01M75PJETTFHZ3YRMCTKD0YA20_f882f8f1-b3dc-48f2-b38c-214424158d8e_b85ba5bc-1fd6-4ce1-b048-cc87253d795b.mp3",
+    "prompt": "zdeath"
+  }
+}

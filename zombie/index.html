@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>50 Ways to Kill a Zombie</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<style>
+*{box-sizing:border-box;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;touch-action:none}
+:root{--u:min(1vw,.5625vh);--ink:#1d1f24}
+html,body{margin:0;height:100%;overflow:hidden;background:#0b130b;font-family:"Arial Rounded MT Bold","Trebuchet MS","Segoe UI",system-ui,sans-serif;font-weight:800;color:#fff}
+#root{position:fixed;inset:0;overflow:hidden}
+#gl{position:absolute;left:0;right:0;top:0;bottom:calc(var(--u)*46)}#gl canvas{width:100%;height:100%;display:block}
+#ui{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.ol{text-shadow:0 calc(var(--u)*.7) 0 var(--ink),calc(var(--u)*.35) calc(var(--u)*.35) 0 var(--ink),calc(var(--u)*-.35) calc(var(--u)*.35) 0 var(--ink);-webkit-text-stroke:calc(var(--u)*.9) var(--ink);paint-order:stroke fill}
+#title{position:absolute;left:0;right:0;top:calc(var(--u)*4);text-align:center;line-height:1}
+#title small{display:block;font-size:calc(var(--u)*5.2);letter-spacing:.08em;color:#ffd23f}
+#title b{display:block;font-size:calc(var(--u)*9.4);margin-top:calc(var(--u)*1);color:#fff}
+#hint{position:absolute;left:50%;top:calc(var(--u)*5);transform:translateX(-50%);padding:calc(var(--u)*2.4) calc(var(--u)*5);border-radius:calc(var(--u)*6);background:rgba(20,22,26,.62);font-size:calc(var(--u)*3.8);white-space:nowrap;letter-spacing:.04em;transition:opacity .6s;opacity:1}
+#hint.off{opacity:0}
+.btn{position:absolute;pointer-events:auto;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:calc(var(--u)*1.6);height:calc(var(--u)*14);padding:0 calc(var(--u)*5);border-radius:calc(var(--u)*7);background:linear-gradient(#ff6a5c,#e03a3a);border:calc(var(--u)*.8) solid var(--ink);box-shadow:0 calc(var(--u)*1) 0 #8e1f26;font-size:calc(var(--u)*5);color:#fff}
+.btn:active{transform:translateY(calc(var(--u)*.8))}
+#btnReset{right:calc(var(--u)*2);top:auto;left:auto;bottom:calc(var(--u)*47.5);transform:none;width:calc(var(--u)*9);height:calc(var(--u)*9);line-height:calc(var(--u)*9);padding:0;text-align:center;font-size:calc(var(--u)*5.5);border-radius:50%;background:#e01b1b;box-shadow:0 calc(var(--u)*.8) 0 #8e1010;-webkit-text-stroke:0;text-shadow:none}
+#btnReset:active{transform:scale(.9)}
+
+#dmg{position:absolute;left:calc(var(--u)*3.5);top:calc(var(--u)*3);line-height:1;pointer-events:none}
+#dmg small{display:block;font-size:calc(var(--u)*3);letter-spacing:.12em;color:#ffd23f}
+#dmg b{display:block;font-size:calc(var(--u)*8.5);color:#fff;transform-origin:left center;transition:transform .12s}
+#hp{position:absolute;left:calc(var(--u)*3.5);top:calc(var(--u)*16.5);width:34px;width:calc(var(--u)*34);height:calc(var(--u)*3.6);border-radius:calc(var(--u)*2);background:rgba(0,0,0,.5);border:calc(var(--u)*.5) solid rgba(255,255,255,.4);overflow:hidden;pointer-events:none}
+#hpf{display:block;height:100%;width:100%;background:#3ddc57;transition:width .18s}
+#kos{position:absolute;left:calc(var(--u)*3.5);top:calc(var(--u)*16.5);font-size:calc(var(--u)*3.2);color:#ffd23f;letter-spacing:.08em;pointer-events:none}
+#dmg b.bump{transform:scale(1.22)}
+#fx{position:absolute;left:0;right:0;top:0;bottom:calc(var(--u)*46);pointer-events:none;overflow:hidden}
+.pop{position:absolute;transform:translate(-50%,-50%);font-weight:900;color:#fff;white-space:nowrap;pointer-events:none;will-change:transform,opacity;-webkit-text-stroke:calc(var(--u)*.9) var(--ink);paint-order:stroke fill;text-shadow:0 calc(var(--u)*.6) 0 var(--ink)}
+#flash{position:absolute;left:0;right:0;top:0;bottom:calc(var(--u)*46);background:#fff;opacity:0;pointer-events:none}
+#panel{position:absolute;left:0;right:0;bottom:0;height:calc(var(--u)*46);background:linear-gradient(#6a4423,#3a2312);border-top:calc(var(--u)*1.2) solid #24130a;box-shadow:0 calc(var(--u)*-1) calc(var(--u)*3) rgba(0,0,0,.45);pointer-events:auto}
+#grid{position:absolute;left:0;right:0;top:calc(var(--u)*2.4);bottom:calc(var(--u)*2);display:grid;grid-auto-flow:column;grid-template-rows:repeat(2,calc(var(--u)*19));grid-auto-columns:calc(var(--u)*19);gap:calc(var(--u)*2);padding:0 calc(var(--u)*3);overflow-x:auto;overflow-y:hidden;touch-action:pan-x;scrollbar-width:none}
+#grid::-webkit-scrollbar{display:none}
+.cell{position:relative;border-radius:calc(var(--u)*3);background:linear-gradient(#f6d9a8,#d4a05a);border:calc(var(--u)*.7) solid #24130a;box-shadow:inset 0 calc(var(--u)*-1) 0 rgba(0,0,0,.2);cursor:pointer;touch-action:pan-x}
+.cell img{position:absolute;left:7%;top:5%;width:86%;height:70%;object-fit:contain;pointer-events:none;-webkit-user-drag:none}
+.cell em{position:absolute;left:0;right:0;top:8%;height:68%;display:flex;align-items:center;justify-content:center;font-style:normal;font-size:calc(var(--u)*9)}
+.cell i{position:absolute;left:0;right:0;bottom:calc(var(--u)*1);text-align:center;font-style:normal;font-size:calc(var(--u)*2.7);color:#3b200c;letter-spacing:.03em}
+#coins{position:absolute;right:calc(var(--u)*3.5);top:calc(var(--u)*4.5);font-size:calc(var(--u)*4.6);color:#ffd23f;letter-spacing:.04em;pointer-events:none;-webkit-text-stroke:calc(var(--u)*.7) var(--ink);paint-order:stroke fill;text-shadow:0 calc(var(--u)*.6) 0 var(--ink);transition:transform .12s;transform-origin:right center}
+#coins .cn{display:inline-block;width:calc(var(--u)*4.4);height:calc(var(--u)*4.4);border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff3a0,#ffc400 55%,#c88a00);border:calc(var(--u)*.6) solid var(--ink);vertical-align:-12%;margin-right:calc(var(--u)*1.2);-webkit-text-stroke:0}
+#coins.bump{transform:scale(1.25)}
+.cell.locked img,.cell.locked em{filter:grayscale(1) brightness(.5)}
+.cell.locked{background:linear-gradient(#bfa98a,#8d7656)}
+.cell.locked i{color:#2a1608}
+.cell .lk{position:absolute;left:0;right:0;top:0;bottom:0;pointer-events:none;font-style:normal;color:#ffd23f;font-size:calc(var(--u)*4.2)}
+.cell .lk s{position:absolute;right:calc(var(--u)*1.2);top:calc(var(--u)*.8);text-decoration:none;filter:drop-shadow(0 1px 0 #000)}
+.cell .lk b{position:absolute;left:12%;right:12%;top:36%;text-align:center;background:rgba(10,5,2,.78);border-radius:calc(var(--u)*2);padding:calc(var(--u)*.5) 0;font-size:calc(var(--u)*4);color:#ffd23f;-webkit-text-stroke:0;text-shadow:none}
+.cell.shk{animation:shk .3s}
+.cell.buy{animation:buy .55s}
+@keyframes shk{20%{transform:translateX(-5%)}40%{transform:translateX(5%)}60%{transform:translateX(-4%)}80%{transform:translateX(3%)}}
+@keyframes buy{0%{transform:scale(.8)}40%{transform:scale(1.25);box-shadow:0 0 calc(var(--u)*6) #ffe36a}100%{transform:scale(1)}}
+.cell.on{background:linear-gradient(#fff3c4,#ffc93f);border-color:#fff;box-shadow:0 0 0 calc(var(--u)*.9) #ff9d00,0 0 calc(var(--u)*4) #ffb000}
+#loader{position:fixed;inset:0;z-index:50;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 40%,#2f4d27,#13230f 65%,#070d06);box-shadow:inset 0 0 calc(var(--u)*30) rgba(120,0,0,.55);transition:opacity .45s;pointer-events:auto}
+#loader.done{opacity:0;pointer-events:none}
+#ldhead{position:relative;width:calc(var(--u)*30);height:calc(var(--u)*30);border-radius:50%;background:radial-gradient(circle at 38% 32%,#c9e0a4,#9db87a 60%,#587345);border:calc(var(--u)*1) solid var(--ink);animation:ldbob .9s ease-in-out infinite}
+#ldhead:before,#ldhead:after{content:"";position:absolute;top:36%;width:18%;height:18%;font-size:0;background:linear-gradient(45deg,transparent 42%,var(--ink) 42% 58%,transparent 58%),linear-gradient(-45deg,transparent 42%,var(--ink) 42% 58%,transparent 58%)}
+#ldhead:before{left:22%}#ldhead:after{right:22%}
+#ldhead i{position:absolute;left:34%;right:34%;top:64%;height:12%;border-radius:0 0 50% 50%;background:var(--ink)}
+@keyframes ldbob{0%,100%{transform:translateY(0) rotate(-8deg)}50%{transform:translateY(calc(var(--u)*-5)) rotate(8deg)}}
+#ldtitle{margin-top:calc(var(--u)*8);text-align:center;line-height:1}
+#ldtitle small{display:block;font-size:calc(var(--u)*5.2);letter-spacing:.08em;color:#ff4a3a}
+#ldtitle b{display:block;font-size:calc(var(--u)*8.6);margin-top:calc(var(--u)*1);color:#b6ff5a}
+#ldtrack{margin-top:calc(var(--u)*9);width:calc(var(--u)*64);height:calc(var(--u)*6);border-radius:calc(var(--u)*3);background:rgba(0,0,0,.6);border:calc(var(--u)*.8) solid #0a1209;overflow:hidden}
+#ldbar{height:100%;background:linear-gradient(#e03a3a,#8e1010);transform-origin:left center;transform:scaleX(.05);transition:transform .25s}
+#ldpct{margin-top:calc(var(--u)*3);font-size:calc(var(--u)*5);color:#fff;letter-spacing:.06em}
+</style>
+</head>
+<body>
+<div id="root">
+  <div id="gl"></div>
+  <div id="ui">
+    <div id="dmg"><small>DAMAGE</small><b id="dmgv">0</b></div>
+    <div id="kos">KOs 0</div>
+    <div id="coins"><span class="cn"></span><span id="cv">0</span></div>
+    <div id="hint">DRAG THE ZOMBIE TO GRAB &amp; FLING IT</div>
+    <div class="btn ol" id="btnReset" title="New zombie">&#8635;</div>
+    <div id="fx"></div><div id="flash"></div>
+    <div id="panel"><div id="grid"></div></div>
+  </div>
+  <div id="loader"><div id="ldhead"><i></i></div><div id="ldtitle" class="ol"><small>50 WAYS TO KILL</small><b>A ZOMBIE</b></div><div id="ldtrack"><div id="ldbar"></div></div><div id="ldpct" class="ol">LOADING...</div></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cannon.js/0.6.2/cannon.min.js"></script>
+<script type="module" src="./game.js"></script>
+</body>
+</html>
